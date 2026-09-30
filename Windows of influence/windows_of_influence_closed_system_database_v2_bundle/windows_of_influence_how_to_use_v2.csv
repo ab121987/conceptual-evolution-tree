@@ -1,0 +1,18 @@
+﻿WINDOWS OF INFLUENCE — CLOSED-SYSTEM DATABASE v2,
+Purpose,"Reconstruct the closed-system Figure 12 using individually addressable relationship trajectories, significant curve events, property markers, and event-derived Windows of Influence."
+Critical v2 change,The temporal graph is no longer modelled as one material property = one curve. It now contains 9 addressable relationship curves. Material-property circles are a separate marker layer.
+Coordinate system,"time_x and influence_y are normalised 0–100. Y means Extent of influence, not a physical material unit."
+Relationship Curves,One row per plotted relationship trajectory (CRV-01 to CRV-09). Diagnostic colours come from the user's cleaned reference and are reconstruction aids only.
+Relationship Events,"Defines origin, peak, decline, zero, re-emergence, plateau, bifurcation, capture, etc. Use these events to construct smooth curves. CRV-04 explicitly branches into A and B."
+Stimulus Curves,The two blue stimulus-impact curves remain separate from the 9 relationship trajectories.
+Property Marker Instances,Patterned circles identify which material properties participate at particular times. The same property can appear more than once and can relate to different curves at different times.
+Window Definitions,Defines what each Window of Influence means and which relationship/stimulus events establish it.
+Window Instances,Defines the spatial instances for each conceptual window. WIN-06 deliberately has multiple instances because several relationships can be captured at different influence levels.
+Window rule,"Do not generate the red boxes as seven equal timeline phases. Derive them from the event coordinates / curve segments they describe, with small visual padding."
+Legacy Property Timeline,Retained only for provenance. It should not drive the v2 graph.
+Existing Relationships,Relationships and Relationship States remain the semantic research model. New curve mapping columns are working many-to-many mappings and are intentionally marked with confidence.
+Hierarchy,"Direct, Secondary and Tertiary describe changing influence hierarchy, not permanent classifications of a property."
+Accumulated prior interactions,"Later behaviour can embody earlier stimuli, state changes and accumulated material history. This remains central to Windows of Influence."
+Runtime recommendation,"For the v2 temporal graph load Relationship Curves, Relationship Events, Stimulus Curves, Stimulus Curve Events, Property Marker Instances, Window Definitions and Window Instances, plus Entities/Relationships as semantic references."
+Visual refinement,"The coordinate values are seed tracings from the cleaned reference images. Render them first, then refine coordinates against the original rather than manually moving red boxes independently."
+Open-system boundary,"This database still represents the closed reference system. Cascades, leaks, multiple ecological agents and open-system reparameterisation remain for the later iteration."

@@ -1,0 +1,20 @@
+﻿hierarchy_level,,relationship_state,,coupling_type,,confidence,,enabled,,legacy_strength,,entity_type,curve_event_type,curve_role,window_geometry_rule,branch_id
+Direct,,inactive,,direct association,,high,,yes,,none,,Digital parameter,origin,relationship,fixed state-span,main
+Secondary,,available,,direct influence,,medium,,no,,low,,Stimulus parameter,rise,stimulus,relationship-segment bounds,A
+Tertiary,,active,,direct coupling,,low,,,,medium,,Stimulus event,rapid rise,,event-cluster bounds,B
+Not applicable,,emergent,,indirect coupling,,,,,,high,,Stimulus,emergence,,relationship + stimulus event bounds,
+Stimulus parameter,,increasing,,indirect association,,,,,,,,Material state,rapid emergence,,multiple relationship-segment bounds,
+,,predominant,,delayed emergent,,,,,,,,Material process,peak,,state-span,
+,,diminished,,overriding influence,,,,,,,,Material property,decline,,segment-bounds,
+,,paused,,state transition,,,,,,,,,diminishing,,event-cluster-bounds,
+,,decoupled,,state-dependent enabling,,,,,,,,,zero / inactive,,event/segment-bounds,
+,,disconnected,,capture relationship,,,,,,,,,zero / decoupled,,,
+,,recoupled,,conditional capture,,,,,,,,,re-emergence,,,
+,,residual,,possible indirect,,,,,,,,,plateau-start,,,
+,,captured,,possible delayed,,,,,,,,,captured,,,
+,,conditional,,,,,,,,,,,persistent,,,
+,,background,,,,,,,,,,,bifurcation,,,
+,,,,,,,,,,,,,branch plateau-start,,,
+,,,,,,,,,,,,,branch decline,,,
+,,,,,,,,,,,,,residual / persistent,,,
+,,,,,,,,,,,,,background,,,

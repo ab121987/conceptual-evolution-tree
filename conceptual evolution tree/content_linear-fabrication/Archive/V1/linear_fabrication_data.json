@@ -1,0 +1,345 @@
+{
+    "title": "Linear Fabrication",
+    "subtitle": "Matter is extracted, stabilised, formed, consumed and discarded through predominantly one-way systems.",
+    "note": "Speculative diagrammatic dataset. Numeric values are relative visual weights only, not measured quantities.",
+    "nodes": [
+      {
+        "id": "virgin_resources",
+        "label": "Virgin resources",
+        "type": "resource",
+        "stage": 0
+      },
+      {
+        "id": "extraction",
+        "label": "Extraction",
+        "type": "process",
+        "stage": 1
+      },
+      {
+        "id": "processing",
+        "label": "Material processing",
+        "type": "process",
+        "stage": 2
+      },
+      {
+        "id": "fabrication",
+        "label": "Fabrication / manufacture",
+        "type": "process",
+        "stage": 3
+      },
+      {
+        "id": "distribution",
+        "label": "Distribution",
+        "type": "process",
+        "stage": 4
+      },
+      {
+        "id": "use",
+        "label": "Use / consumption",
+        "type": "process",
+        "stage": 5
+      },
+      {
+        "id": "end_of_use",
+        "label": "End of use",
+        "type": "process",
+        "stage": 6
+      },
+      {
+        "id": "resource_depletion",
+        "label": "Resource depletion",
+        "type": "impact",
+        "stage": 2
+      },
+      {
+        "id": "habitat_loss",
+        "label": "Habitat loss",
+        "type": "impact",
+        "stage": 2
+      },
+      {
+        "id": "land_degradation",
+        "label": "Land degradation",
+        "type": "impact",
+        "stage": 2
+      },
+      {
+        "id": "exploitation",
+        "label": "Labour / resource exploitation",
+        "type": "impact",
+        "stage": 3
+      },
+      {
+        "id": "processing_emissions",
+        "label": "Emissions",
+        "type": "waste",
+        "stage": 3
+      },
+      {
+        "id": "toxic_effluent",
+        "label": "Toxic effluent / residues",
+        "type": "waste",
+        "stage": 3
+      },
+      {
+        "id": "production_waste",
+        "label": "Offcuts / rejects / surplus",
+        "type": "waste",
+        "stage": 4
+      },
+      {
+        "id": "transport_emissions",
+        "label": "Transport emissions",
+        "type": "impact",
+        "stage": 5
+      },
+      {
+        "id": "damage",
+        "label": "Damage / failure",
+        "type": "cause",
+        "stage": 6
+      },
+      {
+        "id": "obsolescence",
+        "label": "Obsolescence / out of fashion",
+        "type": "cause",
+        "stage": 6
+      },
+      {
+        "id": "overconsumption",
+        "label": "Overconsumption",
+        "type": "cause",
+        "stage": 6
+      },
+      {
+        "id": "landfill",
+        "label": "Landfill",
+        "type": "dead_end",
+        "stage": 7
+      },
+      {
+        "id": "incineration",
+        "label": "Incineration",
+        "type": "dead_end",
+        "stage": 7
+      },
+      {
+        "id": "exported_waste",
+        "label": "Exported / displaced waste",
+        "type": "dead_end",
+        "stage": 7
+      },
+      {
+        "id": "pollution",
+        "label": "Pollution / leakage",
+        "type": "impact",
+        "stage": 8
+      },
+      {
+        "id": "carbon_release",
+        "label": "Carbon release",
+        "type": "impact",
+        "stage": 8
+      },
+      {
+        "id": "toxicity",
+        "label": "Persistent toxicity",
+        "type": "impact",
+        "stage": 8
+      },
+      {
+        "id": "limited_reuse",
+        "label": "Limited reuse / repair",
+        "type": "partial_loop",
+        "stage": 6
+      },
+      {
+        "id": "limited_recycling",
+        "label": "Limited recycling / downcycling",
+        "type": "partial_loop",
+        "stage": 7
+      }
+    ],
+    "links": [
+      {
+        "source": "virgin_resources",
+        "target": "extraction",
+        "value": 100,
+        "status": "main_flow"
+      },
+      {
+        "source": "extraction",
+        "target": "processing",
+        "value": 82,
+        "status": "main_flow"
+      },
+      {
+        "source": "processing",
+        "target": "fabrication",
+        "value": 70,
+        "status": "main_flow"
+      },
+      {
+        "source": "fabrication",
+        "target": "distribution",
+        "value": 60,
+        "status": "main_flow"
+      },
+      {
+        "source": "distribution",
+        "target": "use",
+        "value": 56,
+        "status": "main_flow"
+      },
+      {
+        "source": "use",
+        "target": "end_of_use",
+        "value": 48,
+        "status": "main_flow"
+      },
+      {
+        "source": "extraction",
+        "target": "resource_depletion",
+        "value": 7,
+        "status": "harm"
+      },
+      {
+        "source": "extraction",
+        "target": "habitat_loss",
+        "value": 6,
+        "status": "harm"
+      },
+      {
+        "source": "extraction",
+        "target": "land_degradation",
+        "value": 5,
+        "status": "harm"
+      },
+      {
+        "source": "processing",
+        "target": "exploitation",
+        "value": 3,
+        "status": "harm"
+      },
+      {
+        "source": "processing",
+        "target": "processing_emissions",
+        "value": 5,
+        "status": "waste_stream"
+      },
+      {
+        "source": "processing",
+        "target": "toxic_effluent",
+        "value": 4,
+        "status": "waste_stream"
+      },
+      {
+        "source": "fabrication",
+        "target": "production_waste",
+        "value": 10,
+        "status": "waste_stream"
+      },
+      {
+        "source": "distribution",
+        "target": "transport_emissions",
+        "value": 4,
+        "status": "harm"
+      },
+      {
+        "source": "use",
+        "target": "damage",
+        "value": 3,
+        "status": "driver"
+      },
+      {
+        "source": "use",
+        "target": "obsolescence",
+        "value": 3,
+        "status": "driver"
+      },
+      {
+        "source": "use",
+        "target": "overconsumption",
+        "value": 2,
+        "status": "driver"
+      },
+      {
+        "source": "damage",
+        "target": "end_of_use",
+        "value": 3,
+        "status": "waste_stream"
+      },
+      {
+        "source": "obsolescence",
+        "target": "end_of_use",
+        "value": 3,
+        "status": "waste_stream"
+      },
+      {
+        "source": "overconsumption",
+        "target": "end_of_use",
+        "value": 2,
+        "status": "waste_stream"
+      },
+      {
+        "source": "end_of_use",
+        "target": "landfill",
+        "value": 22,
+        "status": "dead_end"
+      },
+      {
+        "source": "end_of_use",
+        "target": "incineration",
+        "value": 12,
+        "status": "dead_end"
+      },
+      {
+        "source": "end_of_use",
+        "target": "exported_waste",
+        "value": 6,
+        "status": "dead_end"
+      },
+      {
+        "source": "end_of_use",
+        "target": "limited_reuse",
+        "value": 4,
+        "status": "partial_loop"
+      },
+      {
+        "source": "end_of_use",
+        "target": "limited_recycling",
+        "value": 4,
+        "status": "partial_loop"
+      },
+      {
+        "source": "landfill",
+        "target": "pollution",
+        "value": 5,
+        "status": "harm"
+      },
+      {
+        "source": "incineration",
+        "target": "carbon_release",
+        "value": 8,
+        "status": "harm"
+      },
+      {
+        "source": "exported_waste",
+        "target": "toxicity",
+        "value": 3,
+        "status": "harm"
+      },
+      {
+        "source": "limited_reuse",
+        "target": "use",
+        "value": 4,
+        "status": "partial_loop"
+      },
+      {
+        "source": "limited_recycling",
+        "target": "processing",
+        "value": 4,
+        "status": "partial_loop"
+      }
+    ]
+  }

@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "mapping_id": "linear_fabrication_stage_mapping",
+  "status": "test_mapping_for_mit_global_flow_data",
+  "purpose": "Map detailed MIT global economy Sankey categories into the seven conceptual Linear Fabrication transformation stages. This is a test mapping for validating the rendering/data logic. It is not yet a UK manufacturing evidence model.",
+  "input_file": "mit_sankey_test_flows.csv",
+  "input_rules": {
+    "header_detection": "Find the row containing Source, Target, ID, Quantity, Type, Unit and Reference. Ignore note/blank rows before it.",
+    "required_columns": [
+      "Source",
+      "Target",
+      "ID",
+      "Quantity",
+      "Type",
+      "Unit",
+      "Reference"
+    ],
+    "optional_columns": [
+      "Color",
+      "Dummy 1",
+      "Dummy 2",
+      "Dummy 3",
+      "Source URL",
+      "Data Status"
+    ],
+    "do_not_modify_source_values": true
+  },
+  "main_stages": [
+    {
+      "id": "virgin_resources",
+      "label": "Virgin Resources",
+      "order": 0,
+      "role": "source_aggregation",
+      "synthetic_stage": true,
+      "description": "Aggregates primary material resources entering extraction. Energy sources remain a separate flow family."
+    },
+    {
+      "id": "extraction",
+      "label": "Extraction",
+      "order": 1,
+      "role": "transformation",
+      "description": "Primary extraction or harvesting of geological and biological resources."
+    },
+    {
+      "id": "material_processing",
+      "label": "Material Processing",
+      "order": 2,
+      "role": "transformation",
+      "description": "Refining, beneficiation, concentration and primary material transformation."
+    },
+    {
+      "id": "fabrication_manufacture",
+      "label": "Fabrication / Manufacture",
+      "order": 3,
+      "role": "transformation",
+      "description": "Conversion of processed materials into components, products and built assemblies."
+    },
+    {
+      "id": "distribution",
+      "label": "Distribution",
+      "order": 4,
+      "role": "transformation_service",
+      "synthetic_stage": true,
+      "description": "Movement and distribution of goods. Do not automatically map all MIT 'Transportation' flows here; transport can also be an end-use sector."
+    },
+    {
+      "id": "use_consumption",
+      "label": "Use / Consumption",
+      "order": 5,
+      "role": "use",
+      "description": "Final use in goods, transport, buildings/infrastructure and other consumption contexts."
+    },
+    {
+      "id": "end_of_use",
+      "label": "End of Use",
+      "order": 6,
+      "role": "end_of_life_transformation",
+      "description": "Collection, recovery, reuse, recycling, landfill, energy recovery and terminal loss pathways."
+    }
+  ],
+  "node_geometry": {
+    "shape": "rounded_rectangle",
+    "corner_radius_px": 6,
+    "orientation": "vertical_bar_in_left_to_right_flow",
+    "size_rule": "The node's long dimension must scale to the largest compatible throughflow bundle (normally material mass for the main backbone). Do not numerically add incompatible units such as Mt material and Mtoe/PJ energy. Energy ribbons attach through separate ports/lanes and remain quantitatively separate.",
+    "minimum_length_px": 18,
+    "minimum_width_px": 10
+  },
+  "flow_family_rules": {
+    "Material": {
+      "canonical_unit_family": "mass",
+      "preferred_display_units": [
+        "Mt",
+        "kt",
+        "t"
+      ],
+      "role": "main_material_backbone",
+      "can_define_main_node_size": true
+    },
+    "Energy": {
+      "canonical_unit_family": "energy",
+      "preferred_display_units": [
+        "Mtoe",
+        "PJ",
+        "TJ",
+        "GWh",
+        "kWh"
+      ],
+      "role": "secondary_input_or_energy_output_network",
+      "can_define_main_node_size": false,
+      "rule": "Never add energy quantities to material quantities to calculate a combined ribbon thickness."
+    },
+    "Emissions": {
+      "canonical_unit_family": "emissions_mass",
+      "preferred_display_units": [
+        "MtCO2e",
+        "ktCO2e",
+        "tCO2e",
+        "t"
+      ],
+      "role": "terminal_or_output_network",
+      "can_define_main_node_size": false
+    },
+    "ContextualImpact": {
+      "canonical_unit_family": "context_specific",
+      "preferred_display_units": [
+        "ha",
+        "km2",
+        "m3",
+        "index"
+      ],
+      "role": "secondary_impact_or_annotation",
+      "can_define_main_node_size": false
+    }
+  },
+  "mit_node_mapping": {
+    "Extraction": [
+      "Oil and gas extraction",
+      "Coal mining",
+      "Mining, quarrying (non-energy)"
+    ],
+    "Material Processing": [
+      "Oil refining",
+      "Natural gas refining",
+      "Coal beneficiation",
+      "Ore concentration",
+      "Limestone crushing",
+      "Non-metallic production",
+      "Steelmaking"
+    ],
+    "Fabrication / Manufacture": [
+      "Petrochemicals",
+      "Machinery",
+      "Transportation equipment",
+      "Construction",
+      "Textiles",
+      "Other industry"
+    ],
+    "Use / Consumption": [
+      "Goods and consumables",
+      "Buildings and infrastructure",
+      "Transportation"
+    ],
+    "End of Use": [
+      "Collection and recovery",
+      "Landfill",
+      "Losses",
+      "Bio and waste energy"
+    ]
+  },
+  "mapping_cautions": [
+    "This mapping is deliberately coarse and only for testing the seven-stage visual structure.",
+    "Do not map every MIT Transportation flow to Distribution: the MIT node represents an end-use transport sector as well as movement.",
+    "Distribution remains a synthetic stage until freight/distribution-specific evidence is introduced.",
+    "Agriculture and renewable-energy categories should be treated according to the actual flow ID and Type rather than forced into a single stage.",
+    "Unmapped categories must be logged, not silently discarded."
+  ],
+  "aggregation_rules": {
+    "one_csv_row_equals_one_source_flow_record": true,
+    "aggregate_for_seven_stage_view": "Map Source and Target to conceptual stages, then aggregate only records that share compatible Type/unit family and the same mapped Source-stage/Target-stage relationship.",
+    "never_sum_across_unit_families": true,
+    "minor_flow_policy": "For the overview, small compatible flows may be grouped into an 'Other' ribbon within the same family/stage relationship. Preserve the original rows for hover/drill-down.",
+    "unmapped_policy": "Place in an Unmapped review report during development; do not guess."
+  },
+  "rendering_rules": {
+    "one_aggregated_flow_equals_one_addressable_ribbon": true,
+    "ribbon_width": "Proportional to Quantity within its compatible unit/family scale.",
+    "split_logic": "At a transformation node, outgoing ribbons split in proportion to their quantities. Branching ribbons should be ordered toward the outer edges of the bundle so continuing flows remain visually coherent.",
+    "join_logic": "Multiple compatible incoming ribbons may converge at a node. Energy inputs join through separate ports/lanes rather than being merged arithmetically with material mass.",
+    "terminal_logic": "Flows to landfill, losses, emissions or other terminal sinks end and do not continue unless the data explicitly defines a return flow.",
+    "loop_logic": "Reuse/recycling/recovery is represented only when a source record explicitly targets an earlier stage."
+  }
+}

@@ -1,0 +1,9 @@
+﻿field,value,description
+x_axis,Time,Normalised 0–100. Significant relationship events are addressed by time_x.
+y_axis,Extent of influence,"Normalised 0–100. Qualitative influence, not a physical measurement unit."
+curve_model,Event-based relationship trajectories,"Curves are defined by significant events (origin, peak, decline, zero, re-emergence, plateau, bifurcation, capture) rather than one property = one curve."
+property_markers,Separate layer,Patterned property circles indicate which material properties participate at particular moments; they do not define whole curves.
+window_model,Relationship-event bounds,"Windows of Influence should be derived from the significant relationship segments/events they describe, not from equal timeline phase rectangles."
+branching,Supported,CRV-04 includes an explicit bifurcation and branch IDs A/B.
+diagnostic_colours,Reference only,The nine colours come from the user's cleaned diagnostic image and exist only to distinguish the nine curves during reconstruction. Final graph should return to the original monochrome/grey hierarchy.
+coordinate_status,Seed coordinates,Current event coordinates are approximate tracings from the cleaned reference images and should be visually refined after the first event-driven SVG render.

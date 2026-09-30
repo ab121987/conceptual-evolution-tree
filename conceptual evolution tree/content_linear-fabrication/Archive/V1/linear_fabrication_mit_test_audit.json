@@ -1,0 +1,84 @@
+{
+  "audit_id": "linear_fabrication_mit_test_audit",
+  "created_for": "Linear Manufacturing Sankey MIT test refinement",
+  "data_source": "mit-sankey-data.csv",
+  "mapping_source": "linear_fabrication_stage_mapping.json",
+  "data_status": "MIT GLOBAL TEST DATA / COARSE CONCEPTUAL STAGE MAPPING",
+  "summary": {
+    "total_records_parsed": 272,
+    "total_mapped_records": 159,
+    "total_unmapped_records": 113,
+    "aggregated_visual_relationships_detected": 20
+  },
+  "stage_to_stage_relationships_detected": [
+    { "source": "virgin_resources", "target": "extraction", "family": "material", "unit_family": "mass", "unit": "Mt", "quantity": 23230, "records": 1, "synthetic": true },
+    { "source": "extraction", "target": "material_processing", "family": "material", "unit_family": "mass", "unit": "Mt", "quantity": 23230, "records": 11, "synthetic": false },
+    { "source": "material_processing", "target": "fabrication_manufacture", "family": "material", "unit_family": "mass", "unit": "Mt", "quantity": 13515, "records": 13, "synthetic": false },
+    { "source": "fabrication_manufacture", "target": "use_consumption", "family": "material", "unit_family": "mass", "unit": "Mt", "quantity": 13885.9, "records": 27, "synthetic": false },
+    { "source": "end_of_use", "target": "material_processing", "family": "material", "unit_family": "mass", "unit": "Mt", "quantity": 387, "records": 2, "synthetic": false },
+    { "source": "end_of_use", "target": "fabrication_manufacture", "family": "material", "unit_family": "mass", "unit": "Mt", "quantity": 40, "records": 1, "synthetic": false },
+    { "source": "end_of_use", "target": "sink_landfill", "family": "material", "unit_family": "mass", "unit": "Mt", "quantity": 2025.31, "records": 8, "synthetic": false },
+    { "source": "end_of_use", "target": "sink_losses", "family": "material", "unit_family": "mass", "unit": "Mt", "quantity": 2075.31, "records": 8, "synthetic": false },
+    { "source": "material_processing", "target": "sink_losses", "family": "material", "unit_family": "mass", "unit": "Mt", "quantity": 4746.4, "records": 3, "synthetic": false },
+    { "source": "energy_input", "target": "extraction", "family": "energy", "unit_family": "energy", "unit": "mtoe", "quantity": 259.3, "records": 6, "synthetic": false },
+    { "source": "energy_input", "target": "material_processing", "family": "energy", "unit_family": "energy", "unit": "mtoe", "quantity": 13297.3, "records": 15, "synthetic": false },
+    { "source": "energy_input", "target": "fabrication_manufacture", "family": "energy", "unit_family": "energy", "unit": "mtoe", "quantity": 811.8, "records": 21, "synthetic": false },
+    { "source": "energy_input", "target": "use_consumption", "family": "energy", "unit_family": "energy", "unit": "mtoe", "quantity": 4780.4, "records": 16, "synthetic": false },
+    { "source": "energy_input", "target": "end_of_use", "family": "energy", "unit_family": "energy", "unit": "mtoe", "quantity": 34, "records": 1, "synthetic": false },
+    { "source": "energy_input", "target": "sink_losses", "family": "energy", "unit_family": "energy", "unit": "mtoe", "quantity": 360.7, "records": 2, "synthetic": false }
+  ],
+  "distribution": {
+    "status": "synthetic_unresolved",
+    "records_into_distribution": 0,
+    "records_out_of_distribution": 0,
+    "totals_into_distribution_by_family_unit": {},
+    "totals_out_of_distribution_by_family_unit": {},
+    "interpretation": "The current MIT test mapping does not provide robust distribution/freight throughflow. Distribution should remain visibly marked as unresolved or be excluded from the material backbone in future test views."
+  },
+  "use_consumption_to_end_of_use": {
+    "status": "absent_in_current_test_data",
+    "records": 0,
+    "totals_by_family_unit": {},
+    "interpretation": "The current MIT test data/mapping does not evidence a direct Use / Consumption to End of Use relationship. The gap is a data/mapping limitation, not currently a rendering bug."
+  },
+  "energy": {
+    "energy_node_instantiated": true,
+    "energy_inflow_stages": [
+      "extraction",
+      "material_processing",
+      "fabrication_manufacture",
+      "use_consumption",
+      "end_of_use",
+      "sink_losses"
+    ],
+    "energy_inflows_by_stage_mtoe": {
+      "extraction": 259.3,
+      "material_processing": 13297.3,
+      "fabrication_manufacture": 811.8,
+      "use_consumption": 4780.4,
+      "end_of_use": 34,
+      "sink_losses": 360.7
+    }
+  },
+  "impact_outputs": {
+    "emissions_output_stages": [],
+    "quantified_in_current_test_data": [
+      "landfill",
+      "losses"
+    ],
+    "placeholder_only_in_current_test_data": [
+      "carbon dioxide / emissions by stage",
+      "land loss by stage",
+      "habitat loss by stage",
+      "species loss by stage",
+      "social / labour exploitation"
+    ]
+  },
+  "major_mapping_ambiguities": [
+    "The mapping compresses detailed MIT economy nodes into broad conceptual stages.",
+    "Distribution remains synthetic because the current mapping intentionally avoids treating all Transportation flows as distribution.",
+    "Use / Consumption to End of Use is absent in the current mapped test data.",
+    "Some material records have missing or colour-like Unit values and should be reviewed before evidential use.",
+    "Unmapped renewable energy, electricity generation, forestry and other categories require review before the UK evidence build."
+  ]
+}

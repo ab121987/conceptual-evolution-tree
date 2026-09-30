@@ -1,0 +1,98 @@
+jQuery(document).ready(function () {
+    jQuery("#back-to-top").click(function() {
+        jQuery("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+      });
+
+
+      jQuery("#next-section").click(function(evt) {
+        evt.preventDefault();
+        jQuery('html, body').animate({
+          scrollTop: jQuery("#latest-news").offset().top
+        }, 2000);
+
+        return false;
+      });
+
+
+      jQuery(".header__search").click(function() {
+        jQuery("#search-main").fadeIn();
+        jQuery("#search-input").focus();
+      });
+
+      jQuery(".search-close").on("click",function(ev) {      
+        ev.preventDefault();
+        jQuery("#search-main").fadeOut();
+      });
+
+
+      var item = jQuery( ".nav-item.active" ).first();
+      var position = item.position();
+
+      jQuery(".active .dropdown-toggle").blur(function(){
+        jQuery(".active-menu-item").first().focus();
+      });
+
+     
+
+      if (jQuery(".active-menu").length > 0) {
+        jQuery(".a2a_vertical_style").css("top","420px");
+      }
+
+      jQuery(".active-menu-item").last().blur(function(){
+        jQuery(".active .nav-link ").next(".nav-item .nav-link").focus();
+      });
+
+      if(position){
+        jQuery(".active-menu .inner-wrapper").css("padding-left", position.left)
+      }
+
+      jQuery('.filter-company').on('click', function(evt) {
+        var this_data_val = jQuery(this).data('value');       
+        if(this_data_val != 'all') {
+          jQuery("#industry-field").val(this_data_val);
+        }     
+      });
+
+      jQuery(".skip-to-content").click(function(ev) {
+          ev.preventDefault();
+          if ( jQuery(".breadcrumb a").length){
+            jQuery(".breadcrumb a").focus();
+          } else {
+            jQuery("#hero .btn").focus();
+          }
+          
+      });
+
+
+      jQuery(document).keyup(function(e) {
+        if (e.keyCode == 27) { // escape key maps to keycode `27`
+            jQuery('#navbarSupportedContent').removeClass('show')
+            jQuery('button.navbar-toggler').attr("aria-expanded","false").addClass('collapsed');
+       }
+   });
+
+      jQuery(window).scroll(function() {
+
+        if (jQuery(window).scrollTop() > 300) {
+          jQuery("#back-to-top").fadeIn();
+        } else {
+          jQuery("#back-to-top").fadeOut();
+        }
+
+        // console.log("start");
+        // console.log(jQuery(this).scrollTop());
+        //   if (jQuery(this).scrollTop() > 20) {          
+        //       jQuery('#animation-1').stop().animate({ right: '0px' });
+        //       jQuery('#animation-2').stop().delay(300).animate({ right: '0px' });
+        //       jQuery('#animation-3').stop().delay(500).animate({ right: '0px' });
+        //   } 
+        //   else {
+        //       jQuery('#animation-1').stop().animate({ right: '-700px' });
+        //       jQuery('#animation-2').stop().delay(300).animate({ right: '-600px' });
+        //       jQuery('#animation-3').stop().delay(600).animate({ right: '-600px' });
+        //   }
+      });
+
+});
+

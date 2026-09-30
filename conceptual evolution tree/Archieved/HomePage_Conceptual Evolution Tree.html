@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conceptual Evolution Tree</title>
+  <style>
+    :root {
+      --paper: #f3f0e8;
+      --ink: #111111;
+      --muted: #67645d;
+      --line: rgba(17, 17, 17, 0.24);
+      --panel: #fffdf6;
+      --accent: #ff4a00;
+      --rigid: rgba(255, 74, 0, 0.11);
+      --liquid: rgba(255, 74, 0, 0.17);
+      --stimuli: rgba(255, 74, 0, 0.24);
+      --digital: rgba(255, 74, 0, 0.32);
+      --font: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        linear-gradient(90deg, rgba(17, 17, 17, 0.035) 1px, transparent 1px),
+        linear-gradient(rgba(17, 17, 17, 0.025) 1px, transparent 1px),
+        var(--paper);
+      background-size: 48px 48px;
+      color: var(--ink);
+      font-family: var(--font);
+    }
+
+    .page {
+      width: min(1540px, 100%);
+      margin: 0 auto;
+      padding: clamp(1rem, 2vw, 2rem);
+    }
+
+    .masthead {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
+      gap: clamp(1rem, 2vw, 2rem);
+      padding-bottom: 1.25rem;
+      border-bottom: 3px solid var(--ink);
+    }
+
+    .eyebrow,
+    .panel-label,
+    .legend-item,
+    .scale-label,
+    .sector-label,
+    .node-label,
+    .node-code {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      line-height: 1.15;
+      text-transform: uppercase;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.7rem;
+      color: var(--accent);
+    }
+
+    h1 {
+      max-width: 12ch;
+      margin: 0;
+      font-size: clamp(2.6rem, 7vw, 7rem);
+      letter-spacing: -0.07em;
+      line-height: 0.83;
+      text-transform: uppercase;
+    }
+
+    .intro {
+      align-self: end;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .map-shell {
+      margin-top: clamp(1rem, 2vw, 2rem);
+      overflow: hidden;
+    }
+
+    .map-stage {
+      width: 100%;
+      min-height: 730px;
+      position: relative;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      min-height: 730px;
+    }
+
+    .sector {
+      stroke: rgba(17, 17, 17, 0.4);
+      stroke-width: 1.2;
+    }
+
+    .sector.rigid {
+      fill: var(--rigid);
+    }
+
+    .sector.liquid {
+      fill: var(--liquid);
+    }
+
+    .sector.stimuli-state {
+      fill: var(--stimuli);
+    }
+
+    .sector.digital {
+      fill: var(--digital);
+    }
+
+    .ring {
+      fill: none;
+      stroke: rgba(17, 17, 17, 0.42);
+      stroke-width: 1.25;
+    }
+
+    .ring-guide {
+      fill: none;
+      stroke: rgba(17, 17, 17, 0.34);
+      stroke-dasharray: 4 7;
+      stroke-width: 1.15;
+    }
+
+    .ring-guide.ring-inner {
+      stroke: rgba(17, 17, 17, 0.48);
+      stroke-dasharray: 4 6;
+      stroke-width: 1.4;
+    }
+
+    .scale-label,
+    .sector-label {
+      fill: var(--muted);
+    }
+
+    .scale-label {
+      font-size: 0.5rem;
+      letter-spacing: 0.08em;
+    }
+
+    .sector-label {
+      fill: var(--ink);
+      font-size: 0.76rem;
+      letter-spacing: 0.16em;
+    }
+
+    .terminal-label {
+      fill: var(--ink);
+      font-size: 0.58rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .link {
+      fill: none;
+      stroke: rgba(17, 17, 17, 0.34);
+      stroke-linecap: round;
+      stroke-width: 1.5;
+      pointer-events: stroke;
+      transition: opacity 120ms ease, stroke 120ms ease, stroke-width 120ms ease;
+    }
+
+    .link.is-muted {
+      opacity: 0.16;
+    }
+
+    .link.is-active,
+    .link:hover {
+      stroke: var(--accent);
+      stroke-width: 3;
+      opacity: 1;
+    }
+
+    .node {
+      cursor: pointer;
+      transition: opacity 120ms ease;
+    }
+
+    .node.is-muted {
+      opacity: 0.22;
+    }
+
+    .node-dot {
+      fill: var(--ink);
+      stroke: var(--ink);
+      stroke-width: 2;
+      transition: r 120ms ease, fill 120ms ease, stroke 120ms ease;
+    }
+
+    .node[data-state="forming"] .node-dot {
+      fill: var(--panel);
+      stroke-dasharray: 4 3;
+    }
+
+    .node.is-active .node-dot,
+    .node:hover .node-dot {
+      r: 8;
+      fill: var(--accent);
+      stroke: var(--ink);
+    }
+
+    .node-label,
+    .node-code {
+      fill: var(--ink);
+    }
+
+    .node-label {
+      display: none;
+      font-size: 0.62rem;
+      letter-spacing: 0.04em;
+      text-transform: none;
+    }
+
+    .node-code {
+      fill: var(--muted);
+      font-size: 0.62rem;
+      display: none;
+    }
+
+    .readout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      align-items: baseline;
+      padding: 0.85rem 0;
+      color: var(--muted);
+    }
+
+    .readout strong {
+      color: var(--ink);
+      font-size: 0.9rem;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem 1rem;
+      padding-top: 0.85rem;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--muted);
+    }
+
+    .swatch {
+      width: 0.85rem;
+      height: 0.85rem;
+      border: 1px solid rgba(17, 17, 17, 0.35);
+      background: var(--panel);
+    }
+
+    .swatch.rigid {
+      background: var(--rigid);
+    }
+
+    .swatch.liquid {
+      background: var(--liquid);
+    }
+
+    .swatch.stimuli-state {
+      background: var(--stimuli);
+    }
+
+    .swatch.digital {
+      background: var(--digital);
+    }
+
+    .hover-panel {
+      position: absolute;
+      z-index: 10;
+      top: 1rem;
+      right: 1rem;
+      width: min(360px, calc(100% - 2rem));
+      max-height: calc(100% - 2rem);
+      overflow: auto;
+      border-top: 8px solid var(--accent);
+      background: var(--ink);
+      color: var(--panel);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(6px);
+      transition: opacity 120ms ease, transform 120ms ease;
+    }
+
+    .hover-panel.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hover-panel-inner {
+      padding: 1rem;
+    }
+
+    .hover-panel h2 {
+      margin: 0 0 1rem;
+      font-size: clamp(1.25rem, 2vw, 1.8rem);
+      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+
+    .hover-panel dl {
+      display: grid;
+      grid-template-columns: 7rem 1fr;
+      gap: 0.45rem 0.75rem;
+      margin: 0;
+      font-size: 0.76rem;
+      line-height: 1.35;
+    }
+
+    .hover-panel dt,
+    .hover-panel dd {
+      margin: 0;
+    }
+
+    .hover-panel dt {
+      color: #aaa69c;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .project-view {
+      width: min(1200px, 100%);
+      margin: 0 auto;
+      padding: clamp(1rem, 2vw, 2rem);
+    }
+
+    .project-view header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 1rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 3px solid var(--ink);
+    }
+
+    .home-button {
+      align-self: start;
+      border: 2px solid var(--ink);
+      background: transparent;
+      padding: 0.75rem 0.9rem;
+      color: var(--ink);
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .home-button:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .project-view dl {
+      display: grid;
+      grid-template-columns: 10rem 1fr;
+      gap: 0.65rem 1rem;
+      max-width: 760px;
+      margin-top: 2rem;
+    }
+
+    .project-view dt,
+    .project-view dd {
+      margin: 0;
+    }
+
+    .project-view dt {
+      color: var(--muted);
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .project-view dd {
+      line-height: 1.4;
+    }
+
+    .status {
+      padding: 2rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">Research Homepage / Conceptual Evolution Tree</p>
+        <h1>Conceptual Evolution Tree</h1>
+      </div>
+      <p class="intro">
+        A conceptual map exploring how designed artefacts and ideas inherit, mutate and move across scales.
+        What can be learned by temporarily classifying the work in this way? Does a project operate at one scale,
+        or across several? How has the research evolved from intervening within individual scales toward designing
+        relationships between them?
+      </p>
+    </header>
+
+    <div class="legend" aria-label="Visual encoding legend">
+      <span class="legend-item">Filled node = executed</span>
+      <span class="legend-item">Hollow dashed node = forming</span>
+    </div>
+
+    <div class="readout" id="readout" aria-live="polite">
+      <span class="panel-label">Inspect</span>
+      <strong>Hover over a project or connection</strong>
+      <span>Connections show mutation values on hover.</span>
+    </div>
+
+    <section class="map-shell" aria-label="Radial conceptual evolution map">
+      <div class="map-stage">
+        <svg id="tree-svg" role="img" aria-label="Circular conceptual evolution map generated from CSV"></svg>
+        <aside class="hover-panel" id="hover-panel" aria-live="polite"></aside>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const CSV_FILE = "conceptual evolution tree_database.csv";
+    const CONFIG_FILE = "tree_config.json";
+    const SCALE_ORDER = ["Materials", "Objects", "Bodies", "Ecologies", "Governance"];
+    const SCAFFOLD_ORDER = ["Rigid", "Liquid", "Stimuli + State", "Digital"];
+    const SCALE_NORMALISATION = new Map([
+      ["atomic", "Materials"],
+      ["molecular", "Materials"],
+      ["material scale", "Materials"],
+      ["particulate / colloidal", "Materials"],
+      ["microstructural / material system", "Materials"],
+      ["component scale", "Objects"],
+      ["object scale", "Objects"],
+      ["body scale", "Bodies"],
+      ["organism scale", "Bodies"],
+      ["ecosystem scale", "Ecologies"],
+      ["landscape scale", "Ecologies"],
+      ["governance scale", "Governance"],
+      ["institutional scale", "Governance"]
+    ]);
+    const DEFAULT_CONFIG = {
+      tree: {
+        node_id_field: "ID Number",
+        node_label_field: "Combined ID Number + Project",
+        parent_field: "Parent Project ID"
+      },
+      visual_encoding: {
+        sector_field: "Scaffold Type Sectors",
+        scale_field: "Scale of Interaction",
+        node_size: "State",
+        branch_label: "Mutation"
+      }
+    };
+
+    const svg = document.querySelector("#tree-svg");
+    const readout = document.querySelector("#readout");
+    const hoverPanel = document.querySelector("#hover-panel");
+    let currentModel = null;
+    let currentConfig = null;
+
+    async function init() {
+      try {
+        const [config, csvText] = await Promise.all([
+          loadJson(CONFIG_FILE, DEFAULT_CONFIG),
+          loadText(CSV_FILE)
+        ]);
+        const rows = parseCsv(csvText).filter(isProjectRow);
+        const model = buildModel(rows, config);
+        currentModel = model;
+        currentConfig = config;
+        window.addEventListener("hashchange", handleRoute);
+        renderMap(model, config);
+        handleRoute();
+      } catch (error) {
+        showError(error);
+      }
+    }
+
+    async function loadText(path) {
+      const response = await fetch(`${path}?v=${Date.now()}`, { cache: "no-store" });
+      if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+      return response.text();
+    }
+
+    async function loadJson(path, fallback) {
+      try {
+        return JSON.parse(await loadText(path));
+      } catch (error) {
+        console.warn("Using fallback config:", error);
+        return fallback;
+      }
+    }
+
+    function parseCsv(text) {
+      const rows = [];
+      let row = [];
+      let field = "";
+      let inQuotes = false;
+      const cleanText = text.replace(/^\uFEFF/, "");
+
+      for (let index = 0; index < cleanText.length; index += 1) {
+        const char = cleanText[index];
+        const next = cleanText[index + 1];
+
+        if (char === "\"" && inQuotes && next === "\"") {
+          field += "\"";
+          index += 1;
+        } else if (char === "\"") {
+          inQuotes = !inQuotes;
+        } else if (char === "," && !inQuotes) {
+          row.push(field);
+          field = "";
+        } else if ((char === "\n" || char === "\r") && !inQuotes) {
+          if (char === "\r" && next === "\n") index += 1;
+          row.push(field);
+          rows.push(row);
+          row = [];
+          field = "";
+        } else {
+          field += char;
+        }
+      }
+
+      if (field || row.length) {
+        row.push(field);
+        rows.push(row);
+      }
+
+      const headers = (rows.shift() || []).map((header) => header.trim());
+      return rows.map((values) => {
+        const record = {};
+        headers.forEach((header, index) => {
+          record[header] = String(values[index] || "").trim();
+        });
+        return record;
+      });
+    }
+
+    function isProjectRow(row) {
+      return Object.values(row).some(hasValue) && hasValue(row["Combined ID Number + Project"]);
+    }
+
+    function buildModel(rows, config) {
+      const idField = config.tree.node_id_field;
+      const labelField = config.tree.node_label_field;
+      const parentField = config.tree.parent_field;
+      const sectorField = getSectorField(config);
+      const scaleField = getScaleField(config);
+      const nodes = rows.map((row) => ({
+        row,
+        id: row[idField],
+        label: row[labelField],
+        parentKey: row[parentField],
+        sector: normaliseScaffold(row[sectorField]),
+        scale: normaliseScale(row[scaleField]),
+        state: normaliseKey(row.State),
+        children: [],
+        parent: null,
+        x: 0,
+        y: 0,
+        angle: 0,
+        radius: 0
+      }));
+      const lookup = new Map();
+
+      nodes.forEach((node) => {
+        [node.id, node.label].forEach((value) => {
+          const key = normaliseKey(value);
+          if (key) lookup.set(key, node);
+        });
+      });
+
+      nodes.forEach((node) => {
+        const parent = lookup.get(normaliseKey(node.parentKey));
+        if (parent && parent !== node) {
+          node.parent = parent;
+          parent.children.push(node);
+        }
+      });
+
+      return {
+        nodes,
+        links: nodes.filter((node) => node.parent).map((node) => ({
+          parent: node.parent,
+          child: node,
+          mutation: node.row[getMutationField(config)] || "No mutation supplied"
+        }))
+      };
+    }
+
+    function renderMap(model, config) {
+      const width = 1440;
+      const height = 730;
+      const center = { x: width / 2, y: height / 2 };
+      const innerRadius = 38;
+      const ringWidth = 46;
+      const outerRadius = innerRadius + SCALE_ORDER.length * ringWidth;
+      const sectorBarInnerRadius = outerRadius + 12;
+      const sectorBarOuterRadius = outerRadius + 32;
+      const sectorPadding = 8;
+      const sectors = calculateSectors(model.nodes, sectorPadding);
+      const ringRadii = SCALE_ORDER.map((scale, index) => innerRadius + (index + 1) * ringWidth);
+
+      assignNodePositions(model.nodes, sectors, center, innerRadius, ringWidth);
+      resolveSameAngleNodes(model.nodes, center, innerRadius, ringWidth);
+
+      svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+      svg.style.minWidth = `${width}px`;
+      svg.style.minHeight = `${height}px`;
+      svg.replaceChildren();
+
+      const sectorLayer = createSvg("g");
+      const ringLayer = createSvg("g");
+      const linkLayer = createSvg("g");
+      const nodeLayer = createSvg("g");
+      const terminalLayer = createSvg("g");
+      const defs = createSvg("defs");
+      svg.append(defs, sectorLayer, ringLayer, linkLayer, nodeLayer, terminalLayer);
+
+      drawSectors(sectorLayer, defs, sectors, center, sectorBarInnerRadius, sectorBarOuterRadius);
+      drawRings(ringLayer, defs, ringRadii, center);
+      drawLinks(linkLayer, model.links, center);
+      drawNodes(nodeLayer, model.nodes, config, center);
+      drawTerminalLabels(terminalLayer, model.nodes, center, sectorBarOuterRadius + 28);
+      updateReadout("Map loaded", `${model.nodes.length} projects / ${model.links.length} connections`);
+    }
+
+    function calculateSectors(nodes, padding) {
+      const counts = new Map(SCAFFOLD_ORDER.map((sector) => [sector, 0]));
+      nodes.forEach((node) => counts.set(node.sector, (counts.get(node.sector) || 0) + 1));
+      const presentTotal = SCAFFOLD_ORDER.reduce((total, sector) => total + Math.max(1, counts.get(sector) || 0), 0);
+      let cursor = -90;
+
+      return SCAFFOLD_ORDER.map((sector) => {
+        const weight = Math.max(1, counts.get(sector) || 0);
+        const span = (360 * weight) / presentTotal;
+        const result = {
+          name: sector,
+          className: slug(sector),
+          count: counts.get(sector) || 0,
+          start: cursor + padding / 2,
+          end: cursor + span - padding / 2,
+          mid: cursor + span / 2
+        };
+        cursor += span;
+        return result;
+      });
+    }
+
+    function assignNodePositions(nodes, sectors, center, innerRadius, ringWidth) {
+      const groups = new Map();
+      const lineagePositions = getLineageScalePositions(nodes);
+      const ancestryRanks = getAncestryRanks(nodes);
+
+      nodes.forEach((node) => {
+        const key = `${node.sector}::${node.scale}`;
+        const group = groups.get(key) || [];
+        group.push(node);
+        groups.set(key, group);
+      });
+
+      groups.forEach((group) => {
+        group.sort((a, b) => Number(a.id) - Number(b.id) || a.label.localeCompare(b.label));
+        const sector = sectors.find((candidate) => candidate.name === group[0].sector) || sectors[0];
+        const scaleIndex = Math.max(0, SCALE_ORDER.indexOf(group[0].scale));
+        const ringInner = innerRadius + scaleIndex * ringWidth;
+        const ringOuter = ringInner + ringWidth;
+        const availableStart = sector.start + 12;
+        const availableEnd = sector.end - 12;
+        const step = group.length > 1 ? (availableEnd - availableStart) / (group.length - 1) : 0;
+        const sectorDirection = Math.sin(degreesToRadians(sector.mid - 90)) >= 0 ? 1 : -1;
+
+        group.forEach((node, index) => {
+          const rankedIndex = getRankedIndex(node, group, ancestryRanks, sectorDirection);
+          const angle = group.length > 1 ? availableStart + step * rankedIndex : sector.mid;
+          const collisionOffset = getCollisionOffset(index, group.length);
+          const lineagePosition = lineagePositions.get(node) || { index: 0, count: 1 };
+          const lineageT = lineagePosition.count > 1
+            ? lineagePosition.index / (lineagePosition.count - 1)
+            : node.children.length ? 0.28 : 0.72;
+          node.angle = angle + collisionOffset.angle;
+          node.radius = clamp(
+            ringInner + 8 + lineageT * (ringWidth - 16) + collisionOffset.radius,
+            ringInner + 8,
+            ringOuter - 8
+          );
+          const point = polarToCartesian(center, node.radius, node.angle);
+          node.x = point.x;
+          node.y = point.y;
+        });
+      });
+    }
+
+    function getAncestryRanks(nodes) {
+      const ranks = new Map();
+      const visit = (node) => {
+        if (ranks.has(node)) return ranks.get(node);
+        const rank = node.parent ? visit(node.parent) + 1 : 0;
+        ranks.set(node, rank);
+        return rank;
+      };
+      nodes.forEach(visit);
+      return ranks;
+    }
+
+    function getRankedIndex(node, group, ancestryRanks, direction) {
+      const ordered = [...group].sort((a, b) => {
+        const rankDelta = (ancestryRanks.get(a) || 0) - (ancestryRanks.get(b) || 0);
+        if (rankDelta) return rankDelta * direction;
+        return Number(a.id) - Number(b.id) || a.label.localeCompare(b.label);
+      });
+      return ordered.indexOf(node);
+    }
+
+    function getCollisionOffset(index, count) {
+      if (count <= 1) return { radius: 0, angle: 0 };
+      const direction = index % 2 === 0 ? 1 : -1;
+      return {
+        radius: direction * Math.ceil(index / 2) * 3,
+        angle: direction * Math.ceil(index / 2) * 0.8
+      };
+    }
+
+    function getLineageScalePositions(nodes) {
+      const positions = new Map();
+
+      nodes.forEach((node) => {
+        const previous = node.parent;
+        const isRunStart = !previous || previous.scale !== node.scale;
+
+        if (!isRunStart) return;
+
+        const run = [];
+        let current = node;
+        while (current && current.scale === node.scale) {
+          run.push(current);
+          current = current.children.find((child) => child.scale === node.scale);
+        }
+
+        run.forEach((runNode, index) => {
+          positions.set(runNode, { index, count: run.length });
+        });
+      });
+
+      return positions;
+    }
+
+    function resolveSameAngleNodes(nodes, center, innerRadius, ringWidth) {
+      const sorted = [...nodes].sort((a, b) => a.angle - b.angle || a.radius - b.radius);
+      sorted.forEach((node, index) => {
+        const previous = sorted[index - 1];
+        if (!previous) return;
+        const angleGap = Math.abs(node.angle - previous.angle);
+        const radiusGap = Math.abs(node.radius - previous.radius);
+        if (angleGap < 8 && radiusGap < 96) {
+          node.angle += node.id === "013" ? 14 : 7;
+          node.radius = clampToScaleRing(node, innerRadius, ringWidth);
+          const point = polarToCartesian(center, node.radius, node.angle);
+          node.x = point.x;
+          node.y = point.y;
+        }
+      });
+    }
+
+    function clampToScaleRing(node, innerRadius, ringWidth) {
+      const scaleIndex = Math.max(0, SCALE_ORDER.indexOf(node.scale));
+      const ringInner = innerRadius + scaleIndex * ringWidth;
+      const ringOuter = ringInner + ringWidth;
+      return clamp(node.radius, ringInner + 8, ringOuter - 8);
+    }
+
+    function drawSectors(layer, defs, sectors, center, innerRadius, outerRadius) {
+      sectors.forEach((sector, index) => {
+        const path = createSvg("path");
+        path.classList.add("sector", sector.className);
+        path.setAttribute("d", describeSector(center, innerRadius, outerRadius, sector.start, sector.end));
+        layer.appendChild(path);
+
+        const labelPathId = `sector-label-path-${index}`;
+        const labelPath = createSvg("path");
+        labelPath.id = labelPathId;
+        labelPath.setAttribute("d", describeReadableArc(center, outerRadius + 16, sector.start + 8, sector.end - 8));
+        defs.appendChild(labelPath);
+
+        const label = createSvg("text");
+        const textPath = createSvg("textPath");
+        label.classList.add("sector-label");
+        textPath.setAttribute("href", `#${labelPathId}`);
+        textPath.setAttribute("startOffset", "50%");
+        textPath.setAttribute("text-anchor", "middle");
+        textPath.textContent = `Scaffold Type: ${sector.name}`;
+        label.appendChild(textPath);
+        layer.appendChild(label);
+      });
+    }
+
+    function drawRings(layer, defs, radii, center) {
+      radii.forEach((radius, index) => {
+        const ring = createSvg("circle");
+        ring.classList.add(index === radii.length - 1 ? "ring" : "ring-guide");
+        if (index === 0) ring.classList.add("ring-inner");
+        ring.setAttribute("cx", center.x);
+        ring.setAttribute("cy", center.y);
+        ring.setAttribute("r", radius);
+        layer.appendChild(ring);
+
+        const labelPathId = `scale-label-path-${index}`;
+        const labelPath = createSvg("path");
+        labelPath.id = labelPathId;
+        labelPath.setAttribute("d", describeReadableArc(center, radius - 10, -86, 82));
+        defs.appendChild(labelPath);
+
+        const label = createSvg("text");
+        const textPath = createSvg("textPath");
+        label.classList.add("scale-label");
+        textPath.setAttribute("href", `#${labelPathId}`);
+        textPath.setAttribute("startOffset", "50%");
+        textPath.setAttribute("text-anchor", "middle");
+        textPath.textContent = SCALE_ORDER[index];
+        label.appendChild(textPath);
+        layer.appendChild(label);
+      });
+    }
+
+    function drawLinks(layer, links, center) {
+      links.forEach((linkRecord) => {
+        const path = createSvg("path");
+        path.classList.add("link");
+        path.dataset.parentId = linkRecord.parent.id;
+        path.dataset.childId = linkRecord.child.id;
+        path.dataset.mutation = linkRecord.mutation;
+        path.setAttribute("d", getConnectionPath(linkRecord.parent, linkRecord.child, center));
+        path.addEventListener("mouseenter", () => activateConnection(linkRecord));
+        path.addEventListener("focus", () => activateConnection(linkRecord));
+        path.addEventListener("mouseleave", resetEmphasis);
+        path.setAttribute("tabindex", "0");
+        layer.appendChild(path);
+      });
+    }
+
+    function drawNodes(layer, nodes, config, center) {
+      nodes.forEach((node) => {
+        const group = createSvg("g");
+        const dot = createSvg("circle");
+
+        group.classList.add("node");
+        group.dataset.id = node.id;
+        group.dataset.state = node.state || "unknown";
+        group.setAttribute("tabindex", "0");
+        group.setAttribute("role", "button");
+        group.setAttribute("aria-label", node.label);
+        group.setAttribute("transform", `translate(${node.x} ${node.y})`);
+
+        dot.classList.add("node-dot");
+        dot.setAttribute("r", 6);
+
+        group.append(dot);
+        group.addEventListener("mouseenter", () => activateNode(node, config));
+        group.addEventListener("focus", () => activateNode(node, config));
+        group.addEventListener("click", () => openProjectView(node));
+        group.addEventListener("mouseleave", resetEmphasis);
+        layer.appendChild(group);
+      });
+    }
+
+    function drawTerminalLabels(layer, nodes, center, radius) {
+      nodes
+        .filter((node) => !node.children.length)
+        .forEach((node) => {
+          const point = polarToCartesian(center, radius, node.angle);
+          const label = createSvg("text");
+          const flip = point.x < center.x;
+          label.classList.add("terminal-label");
+          label.setAttribute("x", point.x);
+          label.setAttribute("y", point.y);
+          label.setAttribute("text-anchor", flip ? "end" : "start");
+          label.setAttribute(
+            "transform",
+            `rotate(${flip ? node.angle + 90 : node.angle - 90} ${point.x} ${point.y})`
+          );
+          appendWrappedSvgText(label, node.label, 30);
+          layer.appendChild(label);
+        });
+    }
+
+    function activateNode(node, config) {
+      const relatedIds = new Set([
+        node.id,
+        node.parent?.id,
+        ...node.children.map((child) => child.id)
+      ].filter(Boolean));
+
+      document.querySelectorAll(".node").forEach((element) => {
+        const isRelated = relatedIds.has(element.dataset.id);
+        element.classList.toggle("is-muted", !isRelated);
+        element.classList.toggle("is-active", element.dataset.id === node.id);
+      });
+
+      document.querySelectorAll(".link").forEach((element) => {
+        const isDirect =
+          element.dataset.parentId === node.id ||
+          element.dataset.childId === node.id;
+        element.classList.toggle("is-muted", !isDirect);
+        element.classList.toggle("is-active", isDirect);
+      });
+
+      updateReadout(node.label, `${node.sector} / ${node.scale} / ${node.row.State || "state not supplied"}`);
+      showHoverPanel(node);
+    }
+
+    function activateConnection(linkRecord) {
+      document.querySelectorAll(".node").forEach((element) => {
+        const isRelated =
+          element.dataset.id === linkRecord.parent.id ||
+          element.dataset.id === linkRecord.child.id;
+        element.classList.toggle("is-muted", !isRelated);
+        element.classList.toggle("is-active", isRelated);
+      });
+
+      document.querySelectorAll(".link").forEach((element) => {
+        const isActive =
+          element.dataset.parentId === linkRecord.parent.id &&
+          element.dataset.childId === linkRecord.child.id;
+        element.classList.toggle("is-muted", !isActive);
+        element.classList.toggle("is-active", isActive);
+      });
+
+      updateReadout(
+        `${linkRecord.parent.label} -> ${linkRecord.child.label}`,
+        `Mutation: ${linkRecord.mutation}`
+      );
+      hideHoverPanel();
+    }
+
+    function resetEmphasis() {
+      document.querySelectorAll(".node, .link").forEach((element) => {
+        element.classList.remove("is-muted", "is-active");
+      });
+      updateReadout("Hover over a project or connection", "Connections show mutation values on hover.");
+      hideHoverPanel();
+    }
+
+    function updateReadout(title, meta) {
+      readout.innerHTML = "";
+      const label = document.createElement("span");
+      const strong = document.createElement("strong");
+      const detail = document.createElement("span");
+      label.className = "panel-label";
+      label.textContent = "Inspect";
+      strong.textContent = title;
+      detail.textContent = meta;
+      readout.append(label, strong, detail);
+    }
+
+    function getConnectionPath(parent, child, center) {
+      if (Math.abs(parent.radius - child.radius) < 8) {
+        return describeArcBetween(center, parent.radius, parent.angle, child.angle);
+      }
+
+      const joint = polarToCartesian(center, parent.radius, child.angle);
+      return [
+        describeArcBetween(center, parent.radius, parent.angle, child.angle),
+        `L ${joint.x} ${joint.y}`,
+        `L ${child.x} ${child.y}`
+      ].join(" ");
+    }
+
+    function showHoverPanel(node) {
+      hoverPanel.replaceChildren();
+      const inner = document.createElement("div");
+      const title = document.createElement("h2");
+      const list = document.createElement("dl");
+      inner.className = "hover-panel-inner";
+      title.textContent = node.label;
+
+      [
+        ["State", node.row.State],
+        ["Scaffold", node.sector],
+        ["Scale", node.scale],
+        ["Mutation", node.row.Mutation],
+        ["Parent", node.row["Parent Project ID"]],
+        ["Discourse", node.row.Discourse],
+        ["System", node.row["System Condition"]],
+        ["Temporal", node.row["Temporal Character"]],
+        ["Relation", node.row["Relational Type"]],
+        ["Tags", node.row["Concept Tags"]],
+        ["Helped think", node.row["What it helped me think"]],
+        ["Question", node.row["What question it opened"]],
+        ["Next", node.row["Possible future mutation"]]
+      ].forEach(([label, value]) => addPanelRow(list, label, value || "Not supplied"));
+
+      inner.append(title, list);
+      hoverPanel.appendChild(inner);
+      hoverPanel.classList.add("is-visible");
+    }
+
+    function hideHoverPanel() {
+      hoverPanel.classList.remove("is-visible");
+    }
+
+    function addPanelRow(list, label, value) {
+      const term = document.createElement("dt");
+      const description = document.createElement("dd");
+      term.textContent = label;
+      description.textContent = value;
+      list.append(term, description);
+    }
+
+    function openProjectView(node) {
+      window.location.hash = `project=${encodeURIComponent(node.id)}`;
+    }
+
+    function handleRoute() {
+      if (!currentModel || !currentConfig) return;
+      const match = window.location.hash.match(/^#project=(.+)$/);
+      if (!match) {
+        document.body.classList.remove("is-project-view");
+        return;
+      }
+
+      const id = decodeURIComponent(match[1]);
+      const node = currentModel.nodes.find((candidate) => candidate.id === id);
+      if (node) renderProjectView(node);
+    }
+
+    function renderProjectView(node) {
+      const rows = [
+        ["ID", node.id],
+        ["State", node.row.State],
+        ["Scaffold", node.sector],
+        ["Scale", node.scale],
+        ["Mutation", node.row.Mutation],
+        ["Parent", node.row["Parent Project ID"]],
+        ["Question", node.row["What question it opened"]],
+        ["Possible next", node.row["Possible future mutation"]]
+      ];
+      document.body.innerHTML = `
+        <main class="project-view">
+          <header>
+            <div>
+              <p class="eyebrow">Project Branch / Conceptual Evolution Tree</p>
+              <h1>${escapeHtml(node.label)}</h1>
+            </div>
+            <button class="home-button" type="button">Home Page</button>
+          </header>
+          <dl>
+            ${rows.map(([label, value]) => `<dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value || "Not supplied")}</dd>`).join("")}
+          </dl>
+        </main>
+      `;
+      document.querySelector(".home-button").addEventListener("click", () => {
+        window.location.href = window.location.href.replace(/#.*$/, "");
+      });
+    }
+
+    function describeSector(center, innerRadius, outerRadius, startAngle, endAngle) {
+      const outerStart = polarToCartesian(center, outerRadius, startAngle);
+      const outerEnd = polarToCartesian(center, outerRadius, endAngle);
+      const innerEnd = polarToCartesian(center, innerRadius, endAngle);
+      const innerStart = polarToCartesian(center, innerRadius, startAngle);
+      const largeArc = endAngle - startAngle <= 180 ? 0 : 1;
+      return [
+        `M ${outerStart.x} ${outerStart.y}`,
+        `A ${outerRadius} ${outerRadius} 0 ${largeArc} 1 ${outerEnd.x} ${outerEnd.y}`,
+        `L ${innerEnd.x} ${innerEnd.y}`,
+        innerRadius > 0
+          ? `A ${innerRadius} ${innerRadius} 0 ${largeArc} 0 ${innerStart.x} ${innerStart.y}`
+          : `L ${center.x} ${center.y}`,
+        "Z"
+      ].join(" ");
+    }
+
+    function describeArc(center, radius, startAngle, endAngle) {
+      const start = polarToCartesian(center, radius, startAngle);
+      const end = polarToCartesian(center, radius, endAngle);
+      const largeArc = Math.abs(endAngle - startAngle) <= 180 ? 0 : 1;
+      const sweep = endAngle > startAngle ? 1 : 0;
+      return `M ${start.x} ${start.y} A ${radius} ${radius} 0 ${largeArc} ${sweep} ${end.x} ${end.y}`;
+    }
+
+    function describeReadableArc(center, radius, startAngle, endAngle) {
+      const mid = (startAngle + endAngle) / 2;
+      return mid > 90 && mid < 270
+        ? describeArc(center, radius, endAngle, startAngle)
+        : describeArc(center, radius, startAngle, endAngle);
+    }
+
+    function describeArcBetween(center, radius, startAngle, endAngle) {
+      const start = polarToCartesian(center, radius, startAngle);
+      const end = polarToCartesian(center, radius, endAngle);
+      const delta = Math.abs(endAngle - startAngle);
+      const largeArc = delta <= 180 ? 0 : 1;
+      const sweep = endAngle > startAngle ? 1 : 0;
+      return `M ${start.x} ${start.y} A ${radius} ${radius} 0 ${largeArc} ${sweep} ${end.x} ${end.y}`;
+    }
+
+    function polarToCartesian(center, radius, angleDegrees) {
+      const angle = (angleDegrees - 90) * (Math.PI / 180);
+      return {
+        x: center.x + radius * Math.cos(angle),
+        y: center.y + radius * Math.sin(angle)
+      };
+    }
+
+    function degreesToRadians(degrees) {
+      return degrees * (Math.PI / 180);
+    }
+
+    function clamp(value, min, max) {
+      return Math.min(Math.max(value, min), max);
+    }
+
+    function getSvgCenter() {
+      const viewBox = svg.getAttribute("viewBox");
+      if (!viewBox) return { x: 540, y: 450 };
+      const [, , width, height] = viewBox.split(" ").map(Number);
+      return { x: width / 2, y: height / 2 };
+    }
+
+    function normaliseScale(value) {
+      const clean = normaliseKey(value);
+      if (!clean) return "Materials";
+      return SCALE_NORMALISATION.get(clean) || toTitleCase(value);
+    }
+
+    function normaliseScaffold(value) {
+      const clean = normaliseKey(value);
+      return SCAFFOLD_ORDER.find((sector) => normaliseKey(sector) === clean) || "Digital";
+    }
+
+    function getSectorField(config) {
+      return config.visual_encoding?.sector_field || config.visual_encoding?.node_colour || "Scaffold Type Sectors";
+    }
+
+    function getScaleField(config) {
+      return config.visual_encoding?.scale_field || "Scale of Interaction";
+    }
+
+    function getMutationField(config) {
+      return config.visual_encoding?.branch_label || "Mutation";
+    }
+
+    function hasValue(value) {
+      const clean = normaliseKey(value);
+      return clean && clean !== "na" && clean !== "n/a";
+    }
+
+    function normaliseKey(value) {
+      return String(value || "").trim().toLowerCase();
+    }
+
+    function toTitleCase(value) {
+      return String(value || "")
+        .trim()
+        .toLowerCase()
+        .replace(/\b\w/g, (letter) => letter.toUpperCase());
+    }
+
+    function slug(value) {
+      return normaliseKey(value).replace(/\+/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    }
+
+    function truncate(value, maxLength) {
+      const text = String(value || "");
+      return text.length > maxLength ? `${text.slice(0, maxLength - 1)}...` : text;
+    }
+
+    function appendWrappedSvgText(textElement, value, maxChars) {
+      const words = String(value || "").split(/\s+/).filter(Boolean);
+      const lines = [];
+      let line = "";
+
+      words.forEach((word) => {
+        const nextLine = line ? `${line} ${word}` : word;
+        if (nextLine.length > maxChars && line) {
+          lines.push(line);
+          line = word;
+        } else {
+          line = nextLine;
+        }
+      });
+      if (line) lines.push(line);
+
+      lines.slice(0, 3).forEach((lineText, index) => {
+        const tspan = createSvg("tspan");
+        tspan.setAttribute("x", textElement.getAttribute("x"));
+        tspan.setAttribute("dy", index === 0 ? "0" : "1.15em");
+        tspan.textContent = index === 2 && lines.length > 3
+          ? `${truncate(lineText, maxChars - 1)}...`
+          : lineText;
+        textElement.appendChild(tspan);
+      });
+    }
+
+    function createSvg(tag) {
+      return document.createElementNS("http://www.w3.org/2000/svg", tag);
+    }
+
+    function escapeHtml(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function escapeAttribute(value) {
+      return escapeHtml(value).replace(/`/g, "&#096;");
+    }
+
+    function showError(error) {
+      svg.replaceChildren();
+      const text = createSvg("text");
+      text.classList.add("status");
+      text.setAttribute("x", 40);
+      text.setAttribute("y", 60);
+      text.textContent = "The conceptual evolution map could not load. Use a local web server so CSV and JSON files can be fetched.";
+      svg.appendChild(text);
+      console.error(error);
+    }
+
+    init();
+  </script>
+</body>
+</html>

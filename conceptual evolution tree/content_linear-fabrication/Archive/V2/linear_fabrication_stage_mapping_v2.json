@@ -1,0 +1,160 @@
+{
+  "schema_version": "2.0",
+  "mapping_id": "linear_fabrication_stage_mapping",
+  "last_updated": "2026-07-24",
+  "dataset_priority": [
+    "uk_linear_fabrication_flows_v2.csv",
+    "mit_sankey_test_flows.csv (renderer/test only)"
+  ],
+  "research_scope": {
+    "focus": "Designed/manufactured objects, products and structures",
+    "default_exclusions": [
+      "Food and drink",
+      "Agricultural produce",
+      "Primary biomass grown for food/feed",
+      "Food waste",
+      "Green/garden waste",
+      "Sewage/sludge"
+    ]
+  },
+  "primary_material_backbone": [
+    {
+      "id": "virgin_resources",
+      "label": "Virgin Resources",
+      "order": 0
+    },
+    {
+      "id": "extraction",
+      "label": "Extraction",
+      "order": 1
+    },
+    {
+      "id": "material_processing",
+      "label": "Material Processing",
+      "order": 2
+    },
+    {
+      "id": "fabrication_manufacture",
+      "label": "Fabrication / Manufacture",
+      "order": 3
+    },
+    {
+      "id": "use_consumption",
+      "label": "Use / Consumption",
+      "order": 4
+    },
+    {
+      "id": "end_of_use",
+      "label": "End of Use",
+      "order": 5
+    }
+  ],
+  "secondary_processes": [
+    {
+      "id": "energy",
+      "label": "Energy",
+      "role": "input_network",
+      "logic": "Separate quantitative family; never arithmetically added to material mass."
+    },
+    {
+      "id": "distribution_transport",
+      "label": "Distribution / Transport",
+      "role": "service_overlay",
+      "logic": "Not a primary material-transformation node. May act between multiple stage transitions; consumes energy and can output emissions.",
+      "potential_applies_between": [
+        "Virgin Resources \u2192 Extraction",
+        "Extraction \u2192 Material Processing",
+        "Material Processing \u2192 Fabrication / Manufacture",
+        "Fabrication / Manufacture \u2192 Use / Consumption",
+        "Use / Consumption \u2192 End of Use"
+      ],
+      "rule": "Do not use total transport energy/emissions as manufacturing distribution without freight/commodity attribution."
+    }
+  ],
+  "final_product_end_of_use_logic": {
+    "purpose": "Build Use / Consumption \u2192 End of Use from final-product discard/collection statistics.",
+    "qualifying_conditions": [
+      "flow_family == Material",
+      "is_final_product_end_of_use == true",
+      "product_class not excluded",
+      "quantity/unit/provenance available for quantitative rendering"
+    ],
+    "allowed_product_classes": [
+      "Textiles / Apparel",
+      "Electrical / Electronic Equipment",
+      "Furniture / Furnishings",
+      "Leisure / Recreation / Sport Products",
+      "Vehicles / Transport Products",
+      "Packaging (secondary)",
+      "Built Structures (demolition/end-of-life only)",
+      "Mixed Manufactured Products",
+      "Other Manufactured Products"
+    ],
+    "excluded_product_classes": [
+      "Food and drink",
+      "Agricultural produce",
+      "Food waste",
+      "Green/garden waste",
+      "Primary food/feed biomass",
+      "Sewage/sludge"
+    ],
+    "classification_rule": "A product-specific discard/collection statistic is evidence that manufactured matter passed through use and entered an end-of-use pathway.",
+    "critical_caution": "Do not sum different years/geographies/methodologies into a claimed total unless a valid shared balance_group explicitly permits it."
+  },
+  "distribution_decision": {
+    "remove_from_primary_backbone": true,
+    "retain_as_secondary_process": true,
+    "reason": "Distribution is primarily a transport/logistics service rather than a universal material transformation.",
+    "future_visual_logic": "Use freight/service ribbons, energy inputs and CO2 outputs when freight-specific data are available."
+  },
+  "emissions_mapping_logic": {
+    "source_family": "ONS GHG by SIC 2007 industry group",
+    "stage_examples": {
+      "Extraction": "Mining/quarrying-related SIC groups",
+      "Material Processing": "Primary refining/material industries",
+      "Fabrication / Manufacture": "Downstream manufacturing groups",
+      "Distribution / Transport": "Freight-specific transport only",
+      "Use / Consumption": "Product-specific operational emissions only where relevant",
+      "End of Use": "Waste collection/treatment activities"
+    },
+    "rule": "Independent stage CO2/CO2e ribbons only after documented SIC-stage mapping; avoid double counting."
+  },
+  "impact_outputs": [
+    {
+      "label": "Atmospheric Emissions",
+      "status": "quantitative_when_supported"
+    },
+    {
+      "label": "Land Disturbance",
+      "status": "future_quantitative"
+    },
+    {
+      "label": "Habitat Loss",
+      "status": "annotation_or_placeholder"
+    },
+    {
+      "label": "Species Loss",
+      "status": "annotation_or_placeholder"
+    }
+  ],
+  "balance_rules": {
+    "never_sum_across_unit_families": true,
+    "never_sum_across_balance_groups_by_default": true,
+    "node_balance_mode": "partial_evidence_unless_explicit_complete_balance_group",
+    "rule": "A ribbon may be quantitative while the overall stage remains incomplete."
+  },
+  "node_geometry": {
+    "shape": "rounded_rectangle",
+    "connection_faces": [
+      "left",
+      "right"
+    ],
+    "node_height_rule": "Geometric envelope from highest attached ribbon top to lowest attached ribbon bottom.",
+    "node_width_rule": "Narrow/consistent; wide enough to contain flat ribbon terminations."
+  },
+  "routing_rules": {
+    "normal_flows": "Smooth large-radius curves with elongated horizontal tangents at node entry/exit.",
+    "loops": "Route outside backbone; no hard kinks.",
+    "terminal_sinks": "Low-opacity coloured interaction zones + hatch overlay + expanded hover target."
+  }
+}

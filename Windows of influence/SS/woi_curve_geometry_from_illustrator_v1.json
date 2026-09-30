@@ -1,0 +1,1992 @@
+{
+  "schema": "woi_curve_geometry",
+  "version": "1.0.0",
+  "title": "Windows of Influence — Illustrator-derived relationship curve geometry",
+  "purpose": "Provide Codex with exact authored relationship-trajectory geometry from Curve Data(1).svg so it does not reconstruct curve shapes with Catmull–Rom or other interpolation.",
+  "provenance": {
+    "geometry_source_file": "Curve Data(1).svg",
+    "source_viewBox": [
+      0,
+      0,
+      1102.45,
+      336.43
+    ],
+    "relationship_count": 9,
+    "stimulus_count": 2,
+    "important": "The 9 relationship trajectories are SVG-derived. The 2 stimulus trajectories are NOT contained in this SVG and are included only as separate current-database references.",
+    "diagnostic_colours": "Illustrator source colours identify/reconstruct curves only; final webpage relationships should remain monochrome and stimuli blue.",
+    "source_geometry_integrity": "All relationship anchors and cubic Bézier control points are extracted directly from the Illustrator SVG. Multi-fragment dashed curves retain their original fragment geometry. CRV-04 is explicitly represented as one shared trunk with two branches."
+  },
+  "coordinate_system": {
+    "source_svg_plot": {
+      "x_min": 106.32,
+      "x_max": 1098.45,
+      "y_top": 4.0,
+      "y_baseline": 318.68,
+      "width": 992.13,
+      "height": 314.68
+    },
+    "normalised_domain": {
+      "time_x": [
+        0,
+        100
+      ],
+      "influence_y": [
+        0,
+        100
+      ]
+    },
+    "mapping": {
+      "svg_to_normalised_time": "time_x = (x - 106.32) / (1098.45 - 106.32) * 100",
+      "svg_to_normalised_influence": "influence_y = (318.68 - y) / (318.68 - 4.0) * 100",
+      "normalised_to_target_svg": "x = targetPlot.x + (time_x/100)*targetPlot.width; y = targetPlot.y + targetPlot.height - (influence_y/100)*targetPlot.height"
+    },
+    "baseline_tolerance_note": "Several Illustrator anchors sit at y=318.97 rather than the axis y=318.68. Preserve source SVG coordinates for exact reproduction; when using normalised event semantics, clamp tiny negative influence values to 0."
+  },
+  "rendering_contract_for_codex": [
+    "Use the authored cubic Bézier segments in this file directly. Do NOT regenerate relationship shapes from relationship-event points.",
+    "Do NOT run Catmull–Rom, cardinal spline, monotone spline, smoothing, peak-radius heuristics, or support-point generation over these relationship geometries.",
+    "Scale/translate the authored geometry affinely into the webpage plot. An affine transform preserves the Illustrator curvature exactly.",
+    "Keep relationship events as a separate semantic layer. Events may place markers, labels, derive Windows of Influence, and later drive animation, but they do not define the static path shape.",
+    "Render exactly CRV-01 through CRV-09 as the nine relationship trajectories. Do not add property curves as extra trajectories.",
+    "CRV-04 is one addressable relationship with a shared trunk and two branches, A and B. Do not count the branches as extra relationship trajectories.",
+    "CRV-02 contains an early piece and a later re-emergent piece separated by an intentionally inactive/zero interval. Do not connect the gap with an invented line.",
+    "Source diagnostic colours are not the final relationship colours. Use final_style / website CSS for monochrome relationship styling.",
+    "Keep STC-01 and STC-02 as two separate blue stimulus trajectories. They are not part of the nine relationship count.",
+    "Complete and approve the static graph before adding animation."
+  ],
+  "source_style_classes": {
+    "cls-1": {
+      "fill": "none",
+      "stroke": "#231f20",
+      "strokeWidth": 6,
+      "dashArray": [
+        11.91,
+        11.91
+      ],
+      "linecap": "round",
+      "linejoin": "round"
+    },
+    "cls-2": {
+      "fill": "none",
+      "stroke": "#f26522",
+      "strokeWidth": 6,
+      "dashArray": [
+        12.23,
+        12.23
+      ],
+      "linecap": "round",
+      "linejoin": "round"
+    },
+    "cls-3": {
+      "fill": "none",
+      "stroke": "#00a651",
+      "strokeWidth": 3,
+      "dashArray": null,
+      "linecap": "butt",
+      "linejoin": "miter"
+    },
+    "cls-4": {
+      "fill": "none",
+      "stroke": "#9e1f63",
+      "strokeWidth": 3,
+      "dashArray": null,
+      "linecap": "butt",
+      "linejoin": "miter"
+    },
+    "cls-5": {
+      "fill": "none",
+      "stroke": "#939598",
+      "strokeWidth": 6,
+      "dashArray": [
+        12,
+        10,
+        4,
+        10
+      ],
+      "linecap": "round",
+      "linejoin": "round"
+    },
+    "cls-6": {
+      "fill": "none",
+      "stroke": "#9e1f63",
+      "strokeWidth": 3,
+      "dashArray": [
+        3.94,
+        9.86,
+        11.83,
+        9.86
+      ],
+      "linecap": "butt",
+      "linejoin": "miter"
+    },
+    "cls-7": {
+      "fill": "none",
+      "stroke": "#9e1f63",
+      "strokeWidth": 3,
+      "dashArray": [
+        11.83,
+        9.86
+      ],
+      "linecap": "butt",
+      "linejoin": "miter"
+    },
+    "cls-8": {
+      "fill": "none",
+      "stroke": "#006838",
+      "strokeWidth": 3,
+      "dashArray": [
+        0,
+        12
+      ],
+      "linecap": "round",
+      "linejoin": "round"
+    },
+    "cls-9": {
+      "fill": "none",
+      "stroke": "#231f20",
+      "strokeWidth": 6,
+      "dashArray": [
+        0,
+        12
+      ],
+      "linecap": "round",
+      "linejoin": "round"
+    },
+    "cls-10": {
+      "fill": "none",
+      "stroke": "#f9ed32",
+      "strokeWidth": 3,
+      "dashArray": [
+        12,
+        10,
+        4,
+        10
+      ],
+      "linecap": "round",
+      "linejoin": "round"
+    },
+    "cls-11": {
+      "fill": "none",
+      "stroke": "#1c75bc",
+      "strokeWidth": 3,
+      "dashArray": null,
+      "linecap": "round",
+      "linejoin": "round"
+    },
+    "cls-12": {
+      "fill": "none",
+      "stroke": "#ec008c",
+      "strokeWidth": 3,
+      "dashArray": null,
+      "linecap": "round",
+      "linejoin": "round"
+    },
+    "cls-13": {
+      "fill": "none",
+      "stroke": "#f26522",
+      "strokeWidth": 6,
+      "dashArray": null,
+      "linecap": "round",
+      "linejoin": "round"
+    },
+    "cls-14": {
+      "fill": "none",
+      "stroke": "#231f20",
+      "strokeWidth": 6,
+      "dashArray": null,
+      "linecap": "round",
+      "linejoin": "round"
+    },
+    "cls-15": {
+      "fill": "#231f20",
+      "stroke": "#bcbec0",
+      "strokeWidth": 8,
+      "dashArray": null,
+      "linecap": "round",
+      "linejoin": "round"
+    }
+  },
+  "relationship_trajectories": [
+    {
+      "curve_id": "CRV-01",
+      "working_name": "Early strong direct-response relationship",
+      "role": "relationship",
+      "geometry_source": "Illustrator SVG exact cubic geometry",
+      "diagnostic_source_colour": "#ec008c",
+      "final_style": {
+        "stroke": "#4d4d4d",
+        "strokeWidth": 3.5,
+        "dashArray": null,
+        "linecap": "round",
+        "linejoin": "round"
+      },
+      "topology": "single continuous early trajectory ending at zero",
+      "pieces": [
+        {
+          "piece_id": "CRV-01-early",
+          "fragments": [
+            {
+              "sourceElement": "path[8]",
+              "sourceClass": "cls-12",
+              "rawD": "M643.25,318.97c-144.83,0-159.57-259.29-235.58-259.29-107.22,0-94.88,259.29-159.61,259.29",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#ec008c",
+                "strokeWidth": 3,
+                "dashArray": null,
+                "linecap": "round",
+                "linejoin": "round"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      248.06,
+                      318.97
+                    ],
+                    "normalised": {
+                      "time_x": 14.286434,
+                      "influence_y_raw": -0.092157,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      407.67,
+                      59.68
+                    ],
+                    "normalised": {
+                      "time_x": 30.374044,
+                      "influence_y_raw": 82.305834,
+                      "influence_y_clamped": 82.305834
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      312.79,
+                      318.97
+                    ],
+                    "normalised": {
+                      "time_x": 20.810781,
+                      "influence_y_raw": -0.092157,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      300.45,
+                      59.68
+                    ],
+                    "normalised": {
+                      "time_x": 19.566992,
+                      "influence_y_raw": 82.305834,
+                      "influence_y_clamped": 82.305834
+                    }
+                  }
+                },
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      407.67,
+                      59.68
+                    ],
+                    "normalised": {
+                      "time_x": 30.374044,
+                      "influence_y_raw": 82.305834,
+                      "influence_y_clamped": 82.305834
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      643.25,
+                      318.97
+                    ],
+                    "normalised": {
+                      "time_x": 54.118916,
+                      "influence_y_raw": -0.092157,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      483.68,
+                      59.68
+                    ],
+                    "normalised": {
+                      "time_x": 38.035338,
+                      "influence_y_raw": 82.305834,
+                      "influence_y_clamped": 82.305834
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      498.42,
+                      318.97
+                    ],
+                    "normalised": {
+                      "time_x": 39.521031,
+                      "influence_y_raw": -0.092157,
+                      "influence_y_clamped": 0
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curve_id": "CRV-02",
+      "working_name": "Strong coupled relationship with later re-emergence",
+      "role": "relationship",
+      "geometry_source": "Illustrator SVG exact cubic geometry",
+      "diagnostic_source_colour": "#231f20",
+      "final_style": {
+        "stroke": "#111111",
+        "strokeWidth": 7,
+        "dashArray": [
+          17,
+          10
+        ],
+        "linecap": "round",
+        "linejoin": "round"
+      },
+      "topology": "two separated visible pieces; zero/inactive interval is intentionally not connected",
+      "pieces": [
+        {
+          "piece_id": "CRV-02-early",
+          "fragments": [
+            {
+              "sourceElement": "path[9]",
+              "sourceClass": "cls-9",
+              "rawD": "M632.53,318.68c-144.83,0-157.42-232.18-248.13-232.18-107.22,0-71.61,232.46-136.34,232.46",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#231f20",
+                "strokeWidth": 6,
+                "dashArray": [
+                  0,
+                  12
+                ],
+                "linecap": "round",
+                "linejoin": "round"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      248.06,
+                      318.96
+                    ],
+                    "normalised": {
+                      "time_x": 14.286434,
+                      "influence_y_raw": -0.088979,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      384.4,
+                      86.5
+                    ],
+                    "normalised": {
+                      "time_x": 28.028585,
+                      "influence_y_raw": 73.782891,
+                      "influence_y_clamped": 73.782891
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      312.79,
+                      318.96
+                    ],
+                    "normalised": {
+                      "time_x": 20.810781,
+                      "influence_y_raw": -0.088979,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      277.18,
+                      86.5
+                    ],
+                    "normalised": {
+                      "time_x": 17.221533,
+                      "influence_y_raw": 73.782891,
+                      "influence_y_clamped": 73.782891
+                    }
+                  }
+                },
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      384.4,
+                      86.5
+                    ],
+                    "normalised": {
+                      "time_x": 28.028585,
+                      "influence_y_raw": 73.782891,
+                      "influence_y_clamped": 73.782891
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      632.53,
+                      318.68
+                    ],
+                    "normalised": {
+                      "time_x": 53.038412,
+                      "influence_y_raw": 0.0,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      475.11,
+                      86.5
+                    ],
+                    "normalised": {
+                      "time_x": 37.17154,
+                      "influence_y_raw": 73.782891,
+                      "influence_y_clamped": 73.782891
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      487.7,
+                      318.68
+                    ],
+                    "normalised": {
+                      "time_x": 38.440527,
+                      "influence_y_raw": 0.0,
+                      "influence_y_clamped": 0
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "piece_id": "CRV-02-re-emergent",
+          "fragments": [
+            {
+              "sourceElement": "path[16]",
+              "sourceClass": "cls-14",
+              "rawD": "M662.3,318.59c-1.96,.06-3.96,.1-6,.1",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#231f20",
+                "strokeWidth": 6,
+                "dashArray": null,
+                "linecap": "round",
+                "linejoin": "round"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      656.3,
+                      318.69
+                    ],
+                    "normalised": {
+                      "time_x": 55.434268,
+                      "influence_y_raw": -0.003178,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      662.3,
+                      318.59
+                    ],
+                    "normalised": {
+                      "time_x": 56.039027,
+                      "influence_y_raw": 0.0286,
+                      "influence_y_clamped": 0.0286
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      658.34,
+                      318.69
+                    ],
+                    "normalised": {
+                      "time_x": 55.639886,
+                      "influence_y_raw": -0.003178,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      660.34,
+                      318.65
+                    ],
+                    "normalised": {
+                      "time_x": 55.841472,
+                      "influence_y_raw": 0.009533,
+                      "influence_y_clamped": 0.009533
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "sourceElement": "path[15]",
+              "sourceClass": "cls-1",
+              "rawD": "M1080.54,266.82h-260.93c-61.71,0-80.55,46.68-151.37,51.47",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#231f20",
+                "strokeWidth": 6,
+                "dashArray": [
+                  11.91,
+                  11.91
+                ],
+                "linecap": "round",
+                "linejoin": "round"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      668.24,
+                      318.29
+                    ],
+                    "normalised": {
+                      "time_x": 56.637739,
+                      "influence_y_raw": 0.123935,
+                      "influence_y_clamped": 0.123935
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      819.61,
+                      266.82
+                    ],
+                    "normalised": {
+                      "time_x": 71.894812,
+                      "influence_y_raw": 16.480234,
+                      "influence_y_clamped": 16.480234
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      739.06,
+                      313.5
+                    ],
+                    "normalised": {
+                      "time_x": 63.775916,
+                      "influence_y_raw": 1.646117,
+                      "influence_y_clamped": 1.646117
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      757.9,
+                      266.82
+                    ],
+                    "normalised": {
+                      "time_x": 65.674861,
+                      "influence_y_raw": 16.480234,
+                      "influence_y_clamped": 16.480234
+                    }
+                  }
+                },
+                {
+                  "type": "line",
+                  "p0": {
+                    "svg": [
+                      819.61,
+                      266.82
+                    ],
+                    "normalised": {
+                      "time_x": 71.894812,
+                      "influence_y_raw": 16.480234,
+                      "influence_y_clamped": 16.480234
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      1080.54,
+                      266.82
+                    ],
+                    "normalised": {
+                      "time_x": 98.194793,
+                      "influence_y_raw": 16.480234,
+                      "influence_y_clamped": 16.480234
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "sourceElement": "line.black-late-end-cap",
+              "sourceClass": "cls-14",
+              "rawLine": {
+                "x1": 1098.45,
+                "y1": 266.82,
+                "x2": 1092.45,
+                "y2": 266.82
+              },
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#231f20",
+                "strokeWidth": 6,
+                "dashArray": null,
+                "linecap": "round",
+                "linejoin": "round"
+              },
+              "renderDirection": "left-to-right",
+              "segments": [
+                {
+                  "type": "line",
+                  "p0": {
+                    "svg": [
+                      1092.45,
+                      266.82
+                    ],
+                    "normalised": {
+                      "time_x": 99.395241,
+                      "influence_y_raw": 16.480234,
+                      "influence_y_clamped": 16.480234
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      1098.45,
+                      266.82
+                    ],
+                    "normalised": {
+                      "time_x": 100.0,
+                      "influence_y_raw": 16.480234,
+                      "influence_y_clamped": 16.480234
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curve_id": "CRV-03",
+      "working_name": "Early coupled secondary relationship",
+      "role": "relationship",
+      "geometry_source": "Illustrator SVG exact cubic geometry",
+      "diagnostic_source_colour": "#f26522",
+      "final_style": {
+        "stroke": "#555555",
+        "strokeWidth": 5,
+        "dashArray": [
+          22,
+          10
+        ],
+        "linecap": "round",
+        "linejoin": "round"
+      },
+      "topology": "single early trajectory represented by three source fragments because Illustrator preserved dashed end caps separately",
+      "pieces": [
+        {
+          "piece_id": "CRV-03-early",
+          "fragments": [
+            {
+              "sourceElement": "path[5]",
+              "sourceClass": "cls-13",
+              "rawD": "M266.2,317.95c-1.9,.38-3.88,.58-5.96,.58",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#f26522",
+                "strokeWidth": 6,
+                "dashArray": null,
+                "linecap": "round",
+                "linejoin": "round"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      260.24,
+                      318.53
+                    ],
+                    "normalised": {
+                      "time_x": 15.514096,
+                      "influence_y_raw": 0.047667,
+                      "influence_y_clamped": 0.047667
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      266.2,
+                      317.95
+                    ],
+                    "normalised": {
+                      "time_x": 16.114824,
+                      "influence_y_raw": 0.231982,
+                      "influence_y_clamped": 0.231982
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      262.32,
+                      318.53
+                    ],
+                    "normalised": {
+                      "time_x": 15.723746,
+                      "influence_y_raw": 0.047667,
+                      "influence_y_clamped": 0.047667
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      264.3,
+                      318.33
+                    ],
+                    "normalised": {
+                      "time_x": 15.923317,
+                      "influence_y_raw": 0.111224,
+                      "influence_y_clamped": 0.111224
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "sourceElement": "path[4]",
+              "sourceClass": "cls-2",
+              "rawD": "M572.83,315.68c-74.85-27.5-128.27-218.35-188.43-218.35-84.41,0-58.41,194.65-112.37,218.75",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#f26522",
+                "strokeWidth": 6,
+                "dashArray": [
+                  12.23,
+                  12.23
+                ],
+                "linecap": "round",
+                "linejoin": "round"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      272.03,
+                      316.08
+                    ],
+                    "normalised": {
+                      "time_x": 16.702448,
+                      "influence_y_raw": 0.826236,
+                      "influence_y_clamped": 0.826236
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      384.4,
+                      97.33
+                    ],
+                    "normalised": {
+                      "time_x": 28.028585,
+                      "influence_y_raw": 70.341299,
+                      "influence_y_clamped": 70.341299
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      325.99,
+                      291.98
+                    ],
+                    "normalised": {
+                      "time_x": 22.141252,
+                      "influence_y_raw": 8.48481,
+                      "influence_y_clamped": 8.48481
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      299.99,
+                      97.33
+                    ],
+                    "normalised": {
+                      "time_x": 19.520627,
+                      "influence_y_raw": 70.341299,
+                      "influence_y_clamped": 70.341299
+                    }
+                  }
+                },
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      384.4,
+                      97.33
+                    ],
+                    "normalised": {
+                      "time_x": 28.028585,
+                      "influence_y_raw": 70.341299,
+                      "influence_y_clamped": 70.341299
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      572.83,
+                      315.68
+                    ],
+                    "normalised": {
+                      "time_x": 47.021056,
+                      "influence_y_raw": 0.953349,
+                      "influence_y_clamped": 0.953349
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      444.56,
+                      97.33
+                    ],
+                    "normalised": {
+                      "time_x": 34.092306,
+                      "influence_y_raw": 70.341299,
+                      "influence_y_clamped": 70.341299
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      497.98,
+                      288.18
+                    ],
+                    "normalised": {
+                      "time_x": 39.476681,
+                      "influence_y_raw": 9.692386,
+                      "influence_y_clamped": 9.692386
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "sourceElement": "path[3]",
+              "sourceClass": "cls-13",
+              "rawD": "M590.67,318.97c-2.01,0-4-.13-5.98-.37",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#f26522",
+                "strokeWidth": 6,
+                "dashArray": null,
+                "linecap": "round",
+                "linejoin": "round"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      584.69,
+                      318.6
+                    ],
+                    "normalised": {
+                      "time_x": 48.216464,
+                      "influence_y_raw": 0.025423,
+                      "influence_y_clamped": 0.025423
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      590.67,
+                      318.97
+                    ],
+                    "normalised": {
+                      "time_x": 48.819207,
+                      "influence_y_raw": -0.092157,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      586.67,
+                      318.84
+                    ],
+                    "normalised": {
+                      "time_x": 48.416034,
+                      "influence_y_raw": -0.050845,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      588.66,
+                      318.97
+                    ],
+                    "normalised": {
+                      "time_x": 48.616613,
+                      "influence_y_raw": -0.092157,
+                      "influence_y_clamped": 0
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curve_id": "CRV-04",
+      "working_name": "Persistent / bifurcating secondary relationship",
+      "role": "relationship",
+      "geometry_source": "Illustrator SVG exact cubic geometry",
+      "diagnostic_source_colour": "#939598",
+      "final_style": {
+        "stroke": "#999999",
+        "strokeWidth": 6,
+        "dashArray": [
+          18,
+          11
+        ],
+        "linecap": "round",
+        "linejoin": "round"
+      },
+      "topology": "shared trunk followed by explicit bifurcation into branch A persistent plateau and branch B decline to zero",
+      "bifurcation": {
+        "source_svg_point": {
+          "svg": [
+            819.61,
+            189.32
+          ],
+          "normalised": {
+            "time_x": 71.894812,
+            "influence_y_raw": 41.108428,
+            "influence_y_clamped": 41.108428
+          }
+        },
+        "shared_trunk_segments": [
+          {
+            "type": "cubic",
+            "p0": {
+              "svg": [
+                380.58,
+                86.5
+              ],
+              "normalised": {
+                "time_x": 27.643555,
+                "influence_y_raw": 73.782891,
+                "influence_y_clamped": 73.782891
+              }
+            },
+            "p1": {
+              "svg": [
+                819.61,
+                189.32
+              ],
+              "normalised": {
+                "time_x": 71.894812,
+                "influence_y_raw": 41.108428,
+                "influence_y_clamped": 41.108428
+              }
+            },
+            "c1": {
+              "svg": [
+                471.29,
+                86.5
+              ],
+              "normalised": {
+                "time_x": 36.78651,
+                "influence_y_raw": 73.782891,
+                "influence_y_clamped": 73.782891
+              }
+            },
+            "c2": {
+              "svg": [
+                597.77,
+                189.32
+              ],
+              "normalised": {
+                "time_x": 49.534839,
+                "influence_y_raw": 41.108428,
+                "influence_y_clamped": 41.108428
+              }
+            }
+          }
+        ],
+        "branches": {
+          "A": {
+            "meaning": "persistent middle-level branch",
+            "segments": [
+              {
+                "type": "line",
+                "p0": {
+                  "svg": [
+                    819.61,
+                    189.32
+                  ],
+                  "normalised": {
+                    "time_x": 71.894812,
+                    "influence_y_raw": 41.108428,
+                    "influence_y_clamped": 41.108428
+                  }
+                },
+                "p1": {
+                  "svg": [
+                    1098.45,
+                    189.32
+                  ],
+                  "normalised": {
+                    "time_x": 100.0,
+                    "influence_y_raw": 41.108428,
+                    "influence_y_clamped": 41.108428
+                  }
+                }
+              }
+            ]
+          },
+          "B": {
+            "meaning": "diminishing branch to zero",
+            "fragments": [
+              {
+                "sourceElement": "path[2]",
+                "sourceClass": "cls-5",
+                "rawD": "M1098.45,318.68c-148.6,0-186.68-129.36-277.39-129.36",
+                "sourceStyle": {
+                  "fill": "none",
+                  "stroke": "#939598",
+                  "strokeWidth": 6,
+                  "dashArray": [
+                    12,
+                    10,
+                    4,
+                    10
+                  ],
+                  "linecap": "round",
+                  "linejoin": "round"
+                },
+                "renderDirection": "reversed-to-left-to-right",
+                "segments": [
+                  {
+                    "type": "cubic",
+                    "p0": {
+                      "svg": [
+                        821.06,
+                        189.32
+                      ],
+                      "normalised": {
+                        "time_x": 72.040962,
+                        "influence_y_raw": 41.108428,
+                        "influence_y_clamped": 41.108428
+                      }
+                    },
+                    "p1": {
+                      "svg": [
+                        1098.45,
+                        318.68
+                      ],
+                      "normalised": {
+                        "time_x": 100.0,
+                        "influence_y_raw": 0.0,
+                        "influence_y_clamped": 0
+                      }
+                    },
+                    "c1": {
+                      "svg": [
+                        911.77,
+                        189.32
+                      ],
+                      "normalised": {
+                        "time_x": 81.183917,
+                        "influence_y_raw": 41.108428,
+                        "influence_y_clamped": 41.108428
+                      }
+                    },
+                    "c2": {
+                      "svg": [
+                        949.85,
+                        318.68
+                      ],
+                      "normalised": {
+                        "time_x": 85.022124,
+                        "influence_y_raw": 0.0,
+                        "influence_y_clamped": 0
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "source_elements": [
+        {
+          "sourceElement": "path[1]",
+          "sourceClass": "cls-5",
+          "rawD": "M1098.45,189.32h-278.84c-221.84,0-348.32-102.82-439.03-102.82",
+          "role": "shared trunk + branch A persistent plateau"
+        },
+        {
+          "sourceElement": "path[2]",
+          "sourceClass": "cls-5",
+          "rawD": "M1098.45,318.68c-148.6,0-186.68-129.36-277.39-129.36",
+          "role": "branch B decline to zero"
+        }
+      ]
+    },
+    {
+      "curve_id": "CRV-05",
+      "working_name": "Diminishing indirect relationship with low persistence",
+      "role": "relationship",
+      "geometry_source": "Illustrator SVG exact cubic geometry",
+      "diagnostic_source_colour": "#f9ed32",
+      "final_style": {
+        "stroke": "#b5b5b5",
+        "strokeWidth": 2,
+        "dashArray": [
+          9,
+          7
+        ],
+        "linecap": "round",
+        "linejoin": "round"
+      },
+      "topology": "single diminishing trajectory entering during early decline and persisting at low influence",
+      "pieces": [
+        {
+          "piece_id": "CRV-05-main",
+          "fragments": [
+            {
+              "sourceElement": "path[0]",
+              "sourceClass": "cls-10",
+              "rawD": "M1098.45,256.29h-278.84c-94.48,0-319.67-14.19-361.73-118.57",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#f9ed32",
+                "strokeWidth": 3,
+                "dashArray": [
+                  12,
+                  10,
+                  4,
+                  10
+                ],
+                "linecap": "round",
+                "linejoin": "round"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      457.88,
+                      137.72
+                    ],
+                    "normalised": {
+                      "time_x": 35.434872,
+                      "influence_y_raw": 57.506038,
+                      "influence_y_clamped": 57.506038
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      819.61,
+                      256.29
+                    ],
+                    "normalised": {
+                      "time_x": 71.894812,
+                      "influence_y_raw": 19.82649,
+                      "influence_y_clamped": 19.82649
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      499.94,
+                      242.1
+                    ],
+                    "normalised": {
+                      "time_x": 39.674236,
+                      "influence_y_raw": 24.335833,
+                      "influence_y_clamped": 24.335833
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      725.13,
+                      256.29
+                    ],
+                    "normalised": {
+                      "time_x": 62.371867,
+                      "influence_y_raw": 19.82649,
+                      "influence_y_clamped": 19.82649
+                    }
+                  }
+                },
+                {
+                  "type": "line",
+                  "p0": {
+                    "svg": [
+                      819.61,
+                      256.29
+                    ],
+                    "normalised": {
+                      "time_x": 71.894812,
+                      "influence_y_raw": 19.82649,
+                      "influence_y_clamped": 19.82649
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      1098.45,
+                      256.29
+                    ],
+                    "normalised": {
+                      "time_x": 100.0,
+                      "influence_y_raw": 19.82649,
+                      "influence_y_clamped": 19.82649
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curve_id": "CRV-06",
+      "working_name": "Late predominant captured relationship",
+      "role": "relationship",
+      "geometry_source": "Illustrator SVG exact cubic geometry",
+      "diagnostic_source_colour": "#1c75bc",
+      "final_style": {
+        "stroke": "#333333",
+        "strokeWidth": 4,
+        "dashArray": null,
+        "linecap": "round",
+        "linejoin": "round"
+      },
+      "topology": "late strong rise into high captured plateau",
+      "pieces": [
+        {
+          "piece_id": "CRV-06-main",
+          "fragments": [
+            {
+              "sourceElement": "path[7]",
+              "sourceClass": "cls-11",
+              "rawD": "M1098.45,4h-278.84c-145.88,0-39.84,314.97-275.53,314.97",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#1c75bc",
+                "strokeWidth": 3,
+                "dashArray": null,
+                "linecap": "round",
+                "linejoin": "round"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      544.08,
+                      318.97
+                    ],
+                    "normalised": {
+                      "time_x": 44.12325,
+                      "influence_y_raw": -0.092157,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      819.61,
+                      4.0
+                    ],
+                    "normalised": {
+                      "time_x": 71.894812,
+                      "influence_y_raw": 100.0,
+                      "influence_y_clamped": 100
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      779.77,
+                      318.97
+                    ],
+                    "normalised": {
+                      "time_x": 67.879209,
+                      "influence_y_raw": -0.092157,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      673.73,
+                      4.0
+                    ],
+                    "normalised": {
+                      "time_x": 57.191094,
+                      "influence_y_raw": 100.0,
+                      "influence_y_clamped": 100
+                    }
+                  }
+                },
+                {
+                  "type": "line",
+                  "p0": {
+                    "svg": [
+                      819.61,
+                      4.0
+                    ],
+                    "normalised": {
+                      "time_x": 71.894812,
+                      "influence_y_raw": 100.0,
+                      "influence_y_clamped": 100
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      1098.45,
+                      4.0
+                    ],
+                    "normalised": {
+                      "time_x": 100.0,
+                      "influence_y_raw": 100.0,
+                      "influence_y_clamped": 100
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curve_id": "CRV-07",
+      "working_name": "Late predominant then diminishing relationship",
+      "role": "relationship",
+      "geometry_source": "Illustrator SVG exact cubic geometry",
+      "diagnostic_source_colour": "#006838",
+      "final_style": {
+        "stroke": "#666666",
+        "strokeWidth": 3.5,
+        "dashArray": [
+          15,
+          10
+        ],
+        "linecap": "round",
+        "linejoin": "round"
+      },
+      "topology": "late rise to high influence then gradual decline while remaining present",
+      "pieces": [
+        {
+          "piece_id": "CRV-07-main",
+          "fragments": [
+            {
+              "sourceElement": "path[6]",
+              "sourceClass": "cls-8",
+              "rawD": "M1098.45,114.95c-131.03,0-196.9-101.62-278.84-101.62-125.71,0-27.59,305.63-263.7,305.63",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#006838",
+                "strokeWidth": 3,
+                "dashArray": [
+                  0,
+                  12
+                ],
+                "linecap": "round",
+                "linejoin": "round"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      555.91,
+                      318.96
+                    ],
+                    "normalised": {
+                      "time_x": 45.315634,
+                      "influence_y_raw": -0.088979,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      819.61,
+                      13.33
+                    ],
+                    "normalised": {
+                      "time_x": 71.894812,
+                      "influence_y_raw": 97.035083,
+                      "influence_y_clamped": 97.035083
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      792.02,
+                      318.96
+                    ],
+                    "normalised": {
+                      "time_x": 69.113927,
+                      "influence_y_raw": -0.088979,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      693.9,
+                      13.33
+                    ],
+                    "normalised": {
+                      "time_x": 59.224094,
+                      "influence_y_raw": 97.035083,
+                      "influence_y_clamped": 97.035083
+                    }
+                  }
+                },
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      819.61,
+                      13.33
+                    ],
+                    "normalised": {
+                      "time_x": 71.894812,
+                      "influence_y_raw": 97.035083,
+                      "influence_y_clamped": 97.035083
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      1098.45,
+                      114.95
+                    ],
+                    "normalised": {
+                      "time_x": 100.0,
+                      "influence_y_raw": 64.74196,
+                      "influence_y_clamped": 64.74196
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      901.55,
+                      13.33
+                    ],
+                    "normalised": {
+                      "time_x": 80.15381,
+                      "influence_y_raw": 97.035083,
+                      "influence_y_clamped": 97.035083
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      967.42,
+                      114.95
+                    ],
+                    "normalised": {
+                      "time_x": 86.793061,
+                      "influence_y_raw": 64.74196,
+                      "influence_y_clamped": 64.74196
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curve_id": "CRV-08",
+      "working_name": "High persistent / residual relationship",
+      "role": "relationship",
+      "geometry_source": "Illustrator SVG exact cubic geometry",
+      "diagnostic_source_colour": "#9e1f63",
+      "final_style": {
+        "stroke": "#a5a5a5",
+        "strokeWidth": 2.5,
+        "dashArray": [
+          14,
+          7,
+          3,
+          7
+        ],
+        "linecap": "round",
+        "linejoin": "round"
+      },
+      "topology": "high persistent relationship; Illustrator source contains four separate dash fragments",
+      "pieces": [
+        {
+          "piece_id": "CRV-08-main",
+          "fragments": [
+            {
+              "sourceElement": "path[14]",
+              "sourceClass": "cls-4",
+              "rawD": "M821.61,4c-.66,0-1.33,0-2,0",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#9e1f63",
+                "strokeWidth": 3,
+                "dashArray": null,
+                "linecap": "butt",
+                "linejoin": "miter"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      819.61,
+                      4.0
+                    ],
+                    "normalised": {
+                      "time_x": 71.894812,
+                      "influence_y_raw": 100.0,
+                      "influence_y_clamped": 100
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      821.61,
+                      4.0
+                    ],
+                    "normalised": {
+                      "time_x": 72.096399,
+                      "influence_y_raw": 100.0,
+                      "influence_y_clamped": 100
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      820.28,
+                      4.0
+                    ],
+                    "normalised": {
+                      "time_x": 71.962344,
+                      "influence_y_raw": 100.0,
+                      "influence_y_clamped": 100
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      820.95,
+                      4.0
+                    ],
+                    "normalised": {
+                      "time_x": 72.029875,
+                      "influence_y_raw": 100.0,
+                      "influence_y_clamped": 100
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "sourceElement": "path[13]",
+              "sourceClass": "cls-6",
+              "rawD": "M1063.38,49.91c-165.02-4.67-106.1-44.53-236.84-45.88",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#9e1f63",
+                "strokeWidth": 3,
+                "dashArray": [
+                  3.94,
+                  9.86,
+                  11.83,
+                  9.86
+                ],
+                "linecap": "butt",
+                "linejoin": "miter"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      826.54,
+                      4.03
+                    ],
+                    "normalised": {
+                      "time_x": 72.593309,
+                      "influence_y_raw": 99.990467,
+                      "influence_y_clamped": 99.990467
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      1063.38,
+                      49.91
+                    ],
+                    "normalised": {
+                      "time_x": 96.465181,
+                      "influence_y_raw": 85.410576,
+                      "influence_y_clamped": 85.410576
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      957.28,
+                      5.38
+                    ],
+                    "normalised": {
+                      "time_x": 85.771018,
+                      "influence_y_raw": 99.561459,
+                      "influence_y_clamped": 99.561459
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      898.36,
+                      45.24
+                    ],
+                    "normalised": {
+                      "time_x": 79.83228,
+                      "influence_y_raw": 86.894623,
+                      "influence_y_clamped": 86.894623
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "sourceElement": "path[12]",
+              "sourceClass": "cls-7",
+              "rawD": "M1085.07,50.31c-5.82-.05-11.41-.14-16.76-.27",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#9e1f63",
+                "strokeWidth": 3,
+                "dashArray": [
+                  11.83,
+                  9.86
+                ],
+                "linecap": "butt",
+                "linejoin": "miter"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      1068.31,
+                      50.04
+                    ],
+                    "normalised": {
+                      "time_x": 96.962092,
+                      "influence_y_raw": 85.369264,
+                      "influence_y_clamped": 85.369264
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      1085.07,
+                      50.31
+                    ],
+                    "normalised": {
+                      "time_x": 98.651386,
+                      "influence_y_raw": 85.283463,
+                      "influence_y_clamped": 85.283463
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      1073.66,
+                      50.17
+                    ],
+                    "normalised": {
+                      "time_x": 97.501336,
+                      "influence_y_raw": 85.327952,
+                      "influence_y_clamped": 85.327952
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      1079.25,
+                      50.26
+                    ],
+                    "normalised": {
+                      "time_x": 98.06477,
+                      "influence_y_raw": 85.299352,
+                      "influence_y_clamped": 85.299352
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "sourceElement": "path[11]",
+              "sourceClass": "cls-4",
+              "rawD": "M1096.93,50.36c-.67,0-1.34,0-2,0",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#9e1f63",
+                "strokeWidth": 3,
+                "dashArray": null,
+                "linecap": "butt",
+                "linejoin": "miter"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      1094.93,
+                      50.36
+                    ],
+                    "normalised": {
+                      "time_x": 99.645208,
+                      "influence_y_raw": 85.267573,
+                      "influence_y_clamped": 85.267573
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      1096.93,
+                      50.36
+                    ],
+                    "normalised": {
+                      "time_x": 99.846794,
+                      "influence_y_raw": 85.267573,
+                      "influence_y_clamped": 85.267573
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      1095.59,
+                      50.36
+                    ],
+                    "normalised": {
+                      "time_x": 99.711731,
+                      "influence_y_raw": 85.267573,
+                      "influence_y_clamped": 85.267573
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      1096.26,
+                      50.36
+                    ],
+                    "normalised": {
+                      "time_x": 99.779263,
+                      "influence_y_raw": 85.267573,
+                      "influence_y_clamped": 85.267573
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curve_id": "CRV-09",
+      "working_name": "Late re-emerging relationship",
+      "role": "relationship",
+      "geometry_source": "Illustrator SVG exact cubic geometry",
+      "diagnostic_source_colour": "#00a651",
+      "final_style": {
+        "stroke": "#777777",
+        "strokeWidth": 3,
+        "dashArray": null,
+        "linecap": "round",
+        "linejoin": "round"
+      },
+      "topology": "late re-emerging solid relationship rising from zero to high plateau",
+      "pieces": [
+        {
+          "piece_id": "CRV-09-main",
+          "fragments": [
+            {
+              "sourceElement": "path[10]",
+              "sourceClass": "cls-3",
+              "rawD": "M1098.27,50.35c-210,0-130.34,268.61-278.66,268.61",
+              "sourceStyle": {
+                "fill": "none",
+                "stroke": "#00a651",
+                "strokeWidth": 3,
+                "dashArray": null,
+                "linecap": "butt",
+                "linejoin": "miter"
+              },
+              "renderDirection": "reversed-to-left-to-right",
+              "segments": [
+                {
+                  "type": "cubic",
+                  "p0": {
+                    "svg": [
+                      819.61,
+                      318.96
+                    ],
+                    "normalised": {
+                      "time_x": 71.894812,
+                      "influence_y_raw": -0.088979,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "p1": {
+                    "svg": [
+                      1098.27,
+                      50.35
+                    ],
+                    "normalised": {
+                      "time_x": 99.981857,
+                      "influence_y_raw": 85.270751,
+                      "influence_y_clamped": 85.270751
+                    }
+                  },
+                  "c1": {
+                    "svg": [
+                      967.93,
+                      318.96
+                    ],
+                    "normalised": {
+                      "time_x": 86.844466,
+                      "influence_y_raw": -0.088979,
+                      "influence_y_clamped": 0
+                    }
+                  },
+                  "c2": {
+                    "svg": [
+                      888.27,
+                      50.35
+                    ],
+                    "normalised": {
+                      "time_x": 78.815276,
+                      "influence_y_raw": 85.270751,
+                      "influence_y_clamped": 85.270751
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stimulus_trajectories": [
+    {
+      "stimulus_curve_id": "STC-01",
+      "display_label": "Locally Induced Magnetic Stimulus Impact",
+      "role": "stimulus",
+      "visual_style": {
+        "strokeFamily": "blue",
+        "dashArray": null,
+        "linecap": "round",
+        "linejoin": "round"
+      },
+      "geometry_source": "NOT PRESENT IN Curve Data(1).svg; retain as separate stimulus layer",
+      "event_points_from_current_WoI_database": [
+        {
+          "event_id": "STC01-E01",
+          "event_type": "origin",
+          "time_x": 15,
+          "influence_y": 0
+        },
+        {
+          "event_id": "STC01-E02",
+          "event_type": "early peak",
+          "time_x": 30,
+          "influence_y": 100
+        },
+        {
+          "event_id": "STC01-E03",
+          "event_type": "trough",
+          "time_x": 53,
+          "influence_y": 0
+        },
+        {
+          "event_id": "STC01-E04",
+          "event_type": "re-emergence",
+          "time_x": 69,
+          "influence_y": 0
+        },
+        {
+          "event_id": "STC01-E05",
+          "event_type": "late peak",
+          "time_x": 78,
+          "influence_y": 100
+        },
+        {
+          "event_id": "STC01-E06",
+          "event_type": "end",
+          "time_x": 100,
+          "influence_y": 0
+        }
+      ],
+      "codex_rule": "Do not infer this geometry from the relationship SVG. Keep the existing stimulus implementation until separately replaced by authored stimulus Béziers."
+    },
+    {
+      "stimulus_curve_id": "STC-02",
+      "display_label": "Global Gravity Stimulus Impact",
+      "role": "stimulus",
+      "visual_style": {
+        "strokeFamily": "blue",
+        "dashArray": "dashed",
+        "linecap": "round",
+        "linejoin": "round"
+      },
+      "geometry_source": "NOT PRESENT IN Curve Data(1).svg; retain as separate stimulus layer",
+      "event_points_from_current_WoI_database": [
+        {
+          "event_id": "STC02-E01",
+          "event_type": "background",
+          "time_x": 0,
+          "influence_y": 2
+        },
+        {
+          "event_id": "STC02-E02",
+          "event_type": "rise",
+          "time_x": 38,
+          "influence_y": 18
+        },
+        {
+          "event_id": "STC02-E03",
+          "event_type": "peak",
+          "time_x": 54,
+          "influence_y": 100
+        },
+        {
+          "event_id": "STC02-E04",
+          "event_type": "decline",
+          "time_x": 74,
+          "influence_y": 24
+        },
+        {
+          "event_id": "STC02-E05",
+          "event_type": "end",
+          "time_x": 100,
+          "influence_y": 0
+        }
+      ],
+      "codex_rule": "Do not infer this geometry from the relationship SVG. Keep the existing stimulus implementation until separately replaced by authored stimulus Béziers."
+    }
+  ],
+  "event_geometry_separation": {
+    "geometry_answers": "What does the authored trajectory look like?",
+    "events_answer": "What happens to that relationship through time?",
+    "windows_answer": "Which event/segment bounds establish each Window of Influence?",
+    "rule": "Geometry is authored; events are semantic. Do not make either layer replace the other."
+  }
+}

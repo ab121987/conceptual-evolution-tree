@@ -1,0 +1,32 @@
+﻿ID Number,Project,Webpage Reference,Image,Text
+000,Linear Manufacturing,000 - Linear Manufacturing,,
+001,Mineral Accretion,001 - Mineral Accretion,,
+002,Mineral Accretion: Variable Properties,002 - Mineral Accretion: Variable Properties,,
+003,Mineral Accretion: Data Informed Variable Properties,003 - Mineral Accretion: Data Informed Variable Properties,,
+004,Mineral Accretion: Feedback,004 - Mineral Accretion: Feedback,,
+005,2D Paint Patterns,005 - 2D Paint Patterns,,
+006,Scaffold Interactions,006 - Scaffold Interactions,,
+007,3D Paint Patterns,007 - 3D Paint Patterns,,
+008,Magnetised Wax,008 - Magnetised Wax,,
+009,Magnetised Thermoplastics: Material Samples,009 - Magnetised Thermoplastics: Material Samples,,
+010,Magnetised Thermoplastics: Sensor Interactions,010 - Magnetised Thermoplastics: Sensor Interactions,001_tui_connections_material_properties,"Tangible User Interface components, connections and relationships with material properties mapped/predefined. "
+,,,002_Sensor_Interaction_P2_14_50_50,"Timelapse images showing pressure sensor interactions with material P2 14 50:50. The pressure sensors informed material volumes and gradient patterns up to a point, along with other undefined properties. The proposed application was for bespoke, tuneable medical prosthetics"
+,,,003_Sensor_Interaction_P2_80_50_50,"Timelapse images showing pressure sensor interactions with material P2 80 50:50. The flex sensors informed material volumes and surface texture patterns up to a point, along with other undefined properties. The proposed application was for track cycling skin suits"
+,,,004_Material_Results,Final images of solidified 2D material samples retaining multiple material properties informed directly and indirectly from the sensor interactions.
+011,Magnetised Thermoplastics: Speculative Prosthetics,011 - Magnetised Thermoplastics: Speculative Prosthetics,001_2D net process,2D net process used as temporary formwork to melt the magnetised thermoplastic and induce properties where required.
+,,,002_P2-14_50_50_Full Front Side,"Solidified P2 14 50:50; 2D sample demonstrating variable volumes, textures, patterns and rigidities"
+,,,003_P2-14_50_50_Front_Macro,"Solidified P2 14 50:50; 2D close demonstrating variable volumes, textures, patterns and rigidities"
+,,,004_P2-14_50_50_Prosthetic Formed Close up,"Speculate prosthetic created using sample P2 14 50:50; the variable volumes, textures, patterns and rigidities were overridden by the shape-change interactions."
+,,,005_P2-14_50_50_and_P2_80_50_50_Close up.JPG,Speculate prosthetic created using sample P2 14 50:50 & P2 80 50:50
+012,Windows of Influence,,,
+013,Phased Scaffolding,,001_Bounded_Control_Bounded_Circularity,"Diagram contrasting a bounded control system with bounded circularity. Internal loops of extraction, manufacture, use and recovery are shown operating within a closed system boundary, while energy inputs, material loss, emissions and degraded outputs cross the boundary. The figure highlights that internal circularity does not necessarily produce ecological reciprocity when wider exchanges and affected agents remain outside the model."
+,,,002_Phased_Scaffolding_Life_Cycles,"Diagram showing phased scaffolding as overlapping physical and digital life cycles. Organic entities arranged around a circular field pass through phases of initial scaffold, growth, stabilisation, decline, death, decay and re-emergence. A parallel digital layer shows parameters and modules being introduced, monitored, renegotiated, deprecated and reborn. Cross-links identify reciprocity, resource exchange, sensing, care and parameter evolution."
+014,Hierarchical States,,001_Hierarchical_States_Permissions,"Diagram showing a sequence of material states as permission structures for interaction. Distinct states such as solid, plastic-like, liquid and additional speculative intermediate states selectively permit, inhibit or condition activities including global shape change, local property variation, healing, texture formation and exchange. The figure emphasises that a material state governs which relationships can act, and helps prevent one interaction from overriding the rest."
+015,Ecoloical Twinning,,,
+016,Tuneable Environments,016 - Tuneable Environments,001_Tunable_Environments,"Diagram dipicting the relationships enabled between design, fabrication and materials enabled by mechanisms that facilitate discourse."
+017,,,,
+018,,,,
+019,,,,
+020,,,,
+021,,,,
+022,,,,

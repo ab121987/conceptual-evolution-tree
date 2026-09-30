@@ -1,0 +1,52 @@
+body {
+  font-family: "Droid Sans", Calibri, sans-serif
+}
+
+text {
+  font-size: 12px;
+}
+
+.node text {
+  fill: #000;
+  stroke: #fff;
+  stroke-width: 2.5px;
+  stroke-opacity: .5;
+  paint-order: stroke;
+}
+
+.link {
+  fill: #000;
+  stroke: #000;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+
+.group {
+  opacity: .0;
+}
+
+rect {
+  fill: #000;
+  fill-opacity: .5;
+}
+
+.fade {
+  opacity: 0.1;
+}
+
+.tooltip {
+  position: absolute;
+  display: none;
+  border: solid #000 1px;
+  background: #fff;
+  pointer-events: none;
+  padding: 3px;
+}
+
+.tooltip h4 {
+  margin: 0;
+}
+
+.link.hover {
+  opacity: .5;
+}

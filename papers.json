@@ -1,0 +1,1772 @@
+[
+  {
+    "id": "Papadopoulou et al., 2017",
+    "title": "From self-assemblies to evolutionary structures",
+    "authors": "Papadopoulou, A.; Laucks, J.; Tibbits, S.",
+    "year": 2017,
+    "source": "Architectural Design 87(4)",
+    "pages": "pp.28–37",
+    "doi_or_url": "https://doi.org/10.1002/ad.2192",
+    "summary": "The Self‐Assembly Lab at Massachusetts Institute of Technology is at the forefront of the move towards evolutionary construction processes. Three of the Lab's members – doctoral researcher Athina Papadopoulou, co‐director Jared Laucks and co‐founder Skylar Tibbits – report on its recent experiments in macro‐scale fabrication that relies on the reactions of specially designed material components, both among themselves and with their environment.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "",
+    "scale": "",
+    "assessments": [
+      {
+        "assessment_id": "papadopoulou-et-al-2017-adam-blaney-17-06-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "17/06/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 1,
+          "q3": 1,
+          "q4": 0,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Assembly behaviour is encoded in material units and activated by supplied energy without an ongoing digital feedback loop. Local interactions permit autonomous organisation, but the system remains bounded and does not include wider contextual exchange, material return, or ecological replenishment."
+      }
+    ]
+  },
+  {
+    "id": "Raviv et al., 2014",
+    "title": "Active printed materials for complex self-evolving deformations",
+    "authors": "Raviv, D.; Zhao, W.; McKnelly, C.; Papadopoulou, A.; Kadambi, A.; Shi, B.; Hirsch, S.; Dikovsky, D.; Zyracki, M.; Olguin, C.; Raskar, R.; Tibbits, S.",
+    "year": 2014,
+    "source": "Scientific Reports 4",
+    "pages": "pp.7422",
+    "doi_or_url": "https://www.nature.com/articles/srep07422",
+    "summary": "We propose a new design of complex self-evolving structures that vary over time due to environmental interaction. In conventional 3D printing systems, materials are meant to be stable rather than active and fabricated models are designed and printed as static objects. Here, we introduce a novel approach for simulating and fabricating self-evolving structures that transform into a predetermined shape, changing property and function after fabrication. The new locally coordinated bending primitives combine into a single system, allowing for a global deformation which can stretch, fold and bend given environmental stimulus.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "",
+    "scale": "",
+    "assessments": [
+      {
+        "assessment_id": "raviv-et-al-2014-adam-blaney-17-06-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "17/06/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 0,
+          "q3": 0,
+          "q4": 0,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Transformation is physically programmed during fabrication and triggered by water; no operational digital feedback loop updates the material. Target deformation and stimulus–response relations are predefined within the fabricated object, with no wider contextual or renewal mechanism."
+      }
+    ]
+  },
+  {
+    "id": "Tibbits, 2014",
+    "title": "Fluid Crystallization: Hierarchical Self-Organization",
+    "authors": "Tibbits, S.",
+    "year": 2014,
+    "source": "FABRICATE 2014: Negotiating Design & Making. F. Gramazio, M. Kohler and S. Langenberg, UCL Press",
+    "pages": "pp.296–303",
+    "doi_or_url": "https://www.jstor.org/content/pdf/oa_chapter_edited/j.ctt1tp3c5w.40?acceptTC=true&coverpage=false&addFooter=false",
+    "summary": "New self-assembly technologies and programmable material possibilities are emerging across length-scales and disciplinary boundaries, offering shape-changing and intelligent biological, chemical, and material assemblies. This paper proposes the study of chemical interactions and material phase-change between crystalline solids, liquids and gases as a scalable approach for macro-scale assemblies of programmable materials. The Fluid Crystallisation project is highlighted as the first physical example of macro-scale self-organisation of non-deterministic and hierarchical structures. Offering a vision towards the future of fabrication and manufacturing, this project expands the palette of techniques outside of traditional additive or subtractive methodologies into fluid realms of programmable assembly and adaptive material behaviour.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "",
+    "scale": "",
+    "assessments": [
+      {
+        "assessment_id": "tibbits-2014-adam-blaney-17-06-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "17/06/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 1,
+          "q3": 1,
+          "q4": 0,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Self-organisation emerges from material interactions under supplied energy, but no explicit digital feedback loop operates during assembly. The experiment is bounded; local interactions create variable configurations while ecological exchange and renewal are not addressed."
+      }
+    ]
+  },
+  {
+    "id": "Cohen, Z et al, 2020",
+    "title": "Superjammed: Tunable and morphable spanning structures through granular jamming.",
+    "authors": "Cohen, Z., Elberfeld, N., Moorman, A., Laucks, J., Kernizan, S., Holmes, D. and Tibbits, S., 2020.",
+    "year": 2020,
+    "source": "Technology| Architecture+ Design, 4(2)",
+    "pages": "pp.211-220",
+    "doi_or_url": "https://doi.org/10.1080/24751448.2020.1804765",
+    "summary": "This paper introduces a method of post-tensioning granular jammed structures to achieve horizontal spans that can be tuned and morphed, as well as withstand significant vertical loads. The paper begins by discussing recent research into jammed structures. The methods section details the development of the fabrication system that led to post-tensioned, jammed—or “superjammed”—structures. The ability to structurally tune, geometrically morph, and instantly reverse superjammed structures is discussed. The performative possibilities of superjammed structures are demonstrated through the prototyping of large-scale spanning typologies. The results of abrasion testing on a superjammed structure are also briefly presented. The outlook section summarizes the benefits of superjammed structures and outlines further research into their limitations, including load capacity, scalability, and weather resistance.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "",
+    "scale": "",
+    "assessments": [
+      {
+        "assessment_id": "cohen-z-et-al-2020-adam-blaney-17-06-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "17/06/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 0,
+          "q3": 1,
+          "q4": 0,
+          "q5": 1
+        },
+        "confidence": "Medium",
+        "rationale": "Granular jamming enables reversible changes in form and stiffness through controlled confinement. Reconfiguration occurs within a bounded material platform without ongoing digital sensing or contextual exchange; reversibility supports limited reuse but not ecological renewal."
+      }
+    ]
+  },
+  {
+    "id": "MIT Self Assembly Lab,",
+    "title": "Growing Islands",
+    "authors": "Zesk, W., Pearl, N., Abliadzhyieva, A., Chen, Y. A., Moustafa, F., Chhabra, T., Dong, A., Mahmoud, A., Su, S., Fadel, M. D., Kaiser, K., Chen, J., Kim, C., Song, A., Bilotti, J., Zilberman, N., Nelson, H., Maya Koneval, M., Lei, Y., Jusiega, V., Theriault-Shay, E. C., Wong, A., Teichner, N., Yao, O., Colar, S., Sparrman, B., Kernizan, S., Laucks, J., Tibbits, S., Amir, A., Maniku, I., Shiham, F., Maniku, M., Dole, S., Maniku, H.",
+    "year": "2017 - 2025",
+    "source": "Self Assembly Lab Website",
+    "pages": "NA",
+    "doi_or_url": "https://selfassemblylab.mit.edu/growingislands",
+    "summary": "What if we could harness the power of the ocean to grow islands, rebuild beaches and protect coastal communities from sea level rise? MIT’s Self Assembly Lab and Invena, an organization based out of the Maldives, are working together to create a system of underwater structures that use wave energy to promote sand accumulation in strategic locations. Over time, the goal is that the self-organization of sand will grow into new islands or help rebuild coastlines, creating an adaptable solution to protect coastal communities from rising sea levels.",
+    "paper_type": "Regenerative Design",
+    "timeframe": "",
+    "scale": "",
+    "assessments": [
+      {
+        "assessment_id": "mit-self-assembly-lab-adam-blaney-17-06-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "17/06/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 1,
+          "q3": 1,
+          "q4": 1,
+          "q5": 2
+        },
+        "confidence": "Low",
+        "rationale": "Low-density structures operate in an open marine context where wave energy, sediment movement and vegetation contribute to continuing accretion and stabilisation. Digital feedback is not central, but contextual exchange, material accumulation and ecological renewal are explicit features of the system."
+      }
+    ]
+  },
+  {
+    "id": "Tibbits, S. 2021",
+    "title": "Things Fall Together: A guide to the new materials revolution. [Chapter 6: Designing From The Bottom Up]",
+    "authors": "Tibbits, S.",
+    "year": 2021,
+    "source": "Princeton University Press.",
+    "pages": "pp.81-89",
+    "doi_or_url": "",
+    "summary": "In this book, Tibbits proposes a future where artificial intelligence is not an end in itself but an embodied feature of the products that we make. It is a future that is more humane precisely because of the shared tactility and materiality of stuff. There is no doubt in my mind that the future of materials science lies in the development of the types of animate matter described in this book.” Mark Miodownik, author of Stuff Matters.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "",
+    "scale": "",
+    "assessments": [
+      {
+        "assessment_id": "tibbits-s-2021-adam-blaney-17-06-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "17/06/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 0,
+          "q3": 1,
+          "q4": 1,
+          "q5": 0
+        },
+        "confidence": "Medium",
+        "rationale": "Material organisation is guided through designed unit interactions and energy conditions, with computational simulation supporting exploration rather than maintaining live feedback. Environmental deployment introduces contextual influence, while the core assembly relationships remain primarily designed in advance."
+      }
+    ]
+  },
+  {
+    "id": "Blaney, A. et al. 2022",
+    "title": "Parametric Matter: ‘Pushing’ Updates into Materials and the Implications of Legacy and Lag",
+    "authors": "Blaney, A., Ozkan, D., Pelit, E., Braga, M.F., Hardy, J. and Ashton, M., 2022, October. 'Parametric Matter': Pushing’Updates into Materials and theImplications of Legacy and Lag.",
+    "year": 2022,
+    "source": "ACADIA 2022: Hybrids and Haecceities [Proceedings of the 42nd Annual Conference of the Association of Computer Aided Design in Architecture (ACADIA) ISBN 979-8-9860805-8-1]. University of Pennsylvania Stuart Weitzman School of Design. 27-29 October 2022. edited by M. Akbarzadeh, D. Aviv, H. Jamelle, and R. Stuart-Smith.",
+    "pages": "pp.208-203",
+    "doi_or_url": "https://doi.org/10.52842/conf.acadia.2022.1.208",
+    "summary": "This paper discusses an ongoing interdisciplinary research project that develops a design and fabrication approach termed; tunable environments. This is an explorative approach, which enables updates from a digital parametric interface to be ‘pushed' into a 2D, 18 x 18 cm material sample, by modulating stimuli, so multiple properties can be updated/tuned at high resolutions. Our prototype explores how iterative updates can be achieved, which can be temporarily frozen in time. This opens up the idea of creating Parametric Matter/circular mate- rials, which could reduce waste that can be attributed to typical linear processes. Additionally, highly bespoke, ‘time-based’ structures could be achieved",
+    "paper_type": "Design / Architecture",
+    "timeframe": "Repeated update cycles",
+    "scale": "2D material sample",
+    "assessments": [
+      {
+        "assessment_id": "blaney-a-et-al-2022-adam-blaney-17-06-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "17/06/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 0,
+          "q3": 0,
+          "q4": 0,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "A digital interface repeatedly pushes parametric updates into a bounded magnetised-thermoplastic sample, but the material does not directly update the digital model. Lag and material legacy expose mismatches between predefined digital relationships and realised physical states."
+      }
+    ]
+  },
+  {
+    "id": "Blaney, A. 2021",
+    "title": "Material Units - Uploading information into matter via stimuli and the challenges of determining feedback",
+    "authors": "Blaney, A.",
+    "year": 2021,
+    "source": "Stojakovic, V and Tepavcevic, B (eds.), Towards a new, configurable architecture - Proceedings of the 39th eCAADe Conference - Volume 2, University of Novi Sad, Novi Sad, Serbia, 8-10 September 2021, pp.",
+    "pages": "pp. 431-442",
+    "doi_or_url": "https://doi.org/10.52842/conf.ecaade.2021.2.431",
+    "summary": "Associative and generative design processes are capable of creating complex digital models, which can have their digital material properties (size, aesthetics, performance) infinitely adapted or radically transformed, relative to design demands, if they remain in their digital environments. Imagine, if physical materials and structures had these abilities, where design updates could be uploaded into a structure's physical material makeup at molecular resolutions. This could begin to enable a physical structure's matter to be reprogrammed so they can adapt across their length scales with high sensitivities and multi-material properties. To leverage these abilities, novel design and fabrication processes need to be developed, which enable interrelationships between design parameters, assembly mechanisms and material properties. This paper presents key findings and implications of two final prototypes, from a series, which developed a design and fabrication approach termed tuneable environments that enables interrelationships and design information to be uploaded into matter at granular resolutions.",
+    "paper_type": "Design / Architecture",
+    "timeframe": "Growth / sensing cycle",
+    "scale": "Material unit → material system",
+    "assessments": [
+      {
+        "assessment_id": "blaney-a-2021-adam-blaney-17-06-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "17/06/2026",
+        "scores": {
+          "q1": 2,
+          "q2": 0,
+          "q3": 1,
+          "q4": 0,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Sensed changes and controlled dosing support material growth, while electrical changes provide indirect feedback about accretion. Digital–material discourse is therefore strong within a bounded laboratory system, although input–response associations remain only partly adaptive."
+      }
+    ]
+  },
+  {
+    "id": "Ayres, 2012",
+    "title": "Persistent Modelling: Extending the Role of Architectural Representation",
+    "authors": "Ayres, P. (ed.)",
+    "year": 2012,
+    "source": "Routledge, 1st edition",
+    "pages": "204 pp.",
+    "doi_or_url": "https://adk.elsevierpure.com/en/publications/persistent-modelling-extending-the-role-of-architectural-represen/",
+    "summary": "The relationship between representation and the represented is examined through persistent modelling: continued active and iterative engagement, extended duration of representational influence, changing media and methods, and an expanded understanding of what is represented.",
+    "paper_type": "Design / Architecture",
+    "timeframe": "Design, construction and operational duration",
+    "scale": "Representation ↔ architectural artefact/system",
+    "assessments": [
+      {
+        "assessment_id": "ayres-2012-adam-blaney-31-07-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "31/07/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 1,
+          "q3": 1,
+          "q4": 0,
+          "q5": 0
+        },
+        "confidence": "Medium",
+        "rationale": "Representation and artefact remain in a continuing and iterative relation, so digital–physical discourse and changing relations are present but not fully continuous in one implemented material-feedback system. Ecological exchange, return and replenishment are not central to the modelling framework."
+      }
+    ]
+  },
+  {
+    "id": "Hamann et al., 2017",
+    "title": "Flora robotica — An Architectural System Combining Living Natural Plants and Distributed Robots",
+    "authors": "Hamann, H.; Divband Soorati, M.; Heinrich, M. K.; Hofstadler, D. N.; Kuksin, I.; Veenstra, F.; Wahby, M.; Nielsen, S. A.; Risi, S.; Skrzypczak, T.; Zahadat, P.; Wojtaszek, P.; Støy, K.; Schmickl, T.; Kernbach, S.; Ayres, P.",
+    "year": 2017,
+    "source": "Proceedings of ECAL 2017: 14th European Conference on Artificial Life",
+    "pages": "16 pp.",
+    "doi_or_url": "https://doi.org/10.48550/arXiv.1709.04291",
+    "summary": "Key to our project flora robotica is the idea of creating a bio-hybrid system of tightly coupled natural plants and distributed robots to grow architectural artifacts and spaces. Our motivation with this ground research project is to lay a principled foundation towards the design and implementation of living architectural systems that provide functionalities beyond those of orthodox building practice, such as selfrepair, material accumulation and self-organization. Plants and robots work together to create a living organism that is inhabited by human beings. User-defined design objectives help to steer the directional growth of the plants, but also the system’s interactions with its inhabitants determine locations where growth is prohibited or desired (e.g., partitions, windows, occupiable space). We report our plant species selection process and aspects of living architecture. A leitmotif of our project is the rich concept of braiding: braids are produced by robots from continuous material and serve as both scaffolds and initial architectural artifacts before plants take over and grow the desired architecture. We use light and hormones as attraction stimuli and far-red light as repelling stimulus to influence the plants. Applied sensors range from simple proximity sensing to detect the presence of plants to sophisticated sensing technology, such as electrophysiology and measurements of sap flow. We conclude by discussing our anticipated final demonstrator that integrates key features of flora robotica, such as the continuous growth process of architectural artifacts and self-repair of living architecture.",
+    "paper_type": "Artificial Life",
+    "timeframe": "Continuous growth / long life cycle",
+    "scale": "Plant physiology → robotic nodes → architectural system / inhabitants",
+    "assessments": [
+      {
+        "assessment_id": "hamann-et-al-2017-adam-blaney-31-07-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "31/07/2026",
+        "scores": {
+          "q1": 2,
+          "q2": 1,
+          "q3": 1,
+          "q4": 1,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Distributed sensing and robotic stimuli create explicit ongoing feedback with living plants. Plant growth is adaptive and history-dependent, but it is steered towards defined architectural objectives inside a designed bio-hybrid system; wider contextual exchange and renewal are present only partially."
+      }
+    ]
+  },
+  {
+    "id": "Ayres et al., 2019",
+    "title": "Living Weaves: Steps Towards the Persistent Modelling of Bio-Hybrid Architectural Systems",
+    "authors": "Ayres, P.; Buchwald, E. F.; Gatz, S.; Bornaz, S.",
+    "year": 2019,
+    "source": "Impact: Design With All Senses — Design Modelling Symposium 2019",
+    "pages": "pp. 446–459",
+    "doi_or_url": "https://doi.org/10.1007/978-3-030-29829-6_35",
+    "summary": "Living Weaves proposes steering climbing-plant growth into an interlaced structural Kagome weave. Its feasibility is investigated through autonomous plant steering and analytical identification of structurally advantageous growth routes.",
+    "paper_type": "Bio-design",
+    "timeframe": "Plant growth career / structural development",
+    "scale": "Plant filament → diagrid scaffold → structural weave",
+    "assessments": [
+      {
+        "assessment_id": "ayres-et-al-2019-adam-blaney-31-07-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "31/07/2026",
+        "scores": {
+          "q1": 2,
+          "q2": 1,
+          "q3": 1,
+          "q4": 0,
+          "q5": 1
+        },
+        "confidence": "Medium",
+        "rationale": "Autonomous sensing and stimulus provision maintain strong feedback with growing plants. Living material development changes through time, while steering remains directed towards structurally advantageous growth routes; contextual relations beyond the bio-hybrid artefact are limited."
+      }
+    ]
+  },
+  {
+    "id": "Ayres, 2021",
+    "title": "From Mimicry to Coupling: Some Differences, Challenges and Opportunities of Bio-Hybrid Architectures",
+    "authors": "Ayres, P.",
+    "year": 2021,
+    "source": "Architectural Design 91(3)",
+    "pages": "pp. 96–101",
+    "doi_or_url": "https://doi.org/10.1002/ad.2698",
+    "summary": "The article contrasts biological mimicry with direct coupling of living biological complexes and artificial elements. It identifies continual growth, adaptation, lifecycle feedback, changing architectural objectives, multispecies co-habitation, fungal computation, remediation and ecological succession as challenges and opportunities for bio-hybrid architecture.",
+    "paper_type": "Bio-design",
+    "timeframe": "Full architectural and ecological life cycle",
+    "scale": "Biological complex → architecture → site / ecology",
+    "assessments": [
+      {
+        "assessment_id": "ayres-2021-adam-blaney-31-07-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "31/07/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 2,
+          "q3": 2,
+          "q4": 2,
+          "q5": 2
+        },
+        "confidence": "High",
+        "rationale": "The work is a conceptual synthesis rather than a single implemented digital-feedback loop, so explicit digital–material discourse is partial. Symbiotic coupling, continual lifecycle feedback, changing objectives, multispecies relations, remediation, succession and biodiversity are treated as core conditions of bio-hybrid architecture."
+      }
+    ]
+  },
+  {
+    "id": "Adamatzky et al., 2021",
+    "title": "Adaptive Fungal Architectures",
+    "authors": "Adamatzky, A.; Gandia, A.; Ayres, P.; Wösten, H.; Tegelaar, M.",
+    "year": 2021,
+    "source": "LINKs-series 5–6, article 10",
+    "pages": "pp. 66–77",
+    "doi_or_url": "http://links-series.com/wp-content/revues/5-6-Proust/10-Adamatsky-Gandia-Ayresetal-Adaptive_fungal_architectures-LINKs_serie_5_6.pdf",
+    "summary": "The paper outlines first steps towards a living and computational fungal architecture, drawing on mycelial sensing, long-distance communication, decision-making, biofabrication and fungal computing.",
+    "paper_type": "Artificial Life",
+    "timeframe": "Living growth, sensing and changing material states",
+    "scale": "Hyphae / mycelial network → composite → architectural system",
+    "assessments": [
+      {
+        "assessment_id": "adamatzky-et-al-2021-adam-blaney-31-07-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "31/07/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 1,
+          "q3": 1,
+          "q4": 1,
+          "q5": 1
+        },
+        "confidence": "Medium",
+        "rationale": "Fungal networks are treated as living, sensing and potentially computational substrates, but the work presents early architectural implementation rather than a demonstrated closed-loop digital system. Ecological intelligence, growth and changing material states are acknowledged while the architectural objective remains substantially bounded."
+      }
+    ]
+  },
+  {
+    "id": "Ayres et al., 2022",
+    "title": "Investigating a Design and Construction Approach for Fungal Architectures",
+    "authors": "Ayres, P.; Rigobello, A.; You-Wen, J.; Colmo, C.; Young, J.; Sørensen, K.-J.",
+    "year": 2022,
+    "source": "Design Modelling Symposium 2022: Towards Radical Regeneration",
+    "pages": "pp. 571–583",
+    "doi_or_url": "https://doi.org/10.1007/978-3-031-13249-0_45",
+    "summary": "The paper develops mycelium composites grown within stay-in-place Kagome-woven scaffolds. Speculative design generates testable hypotheses, empirical findings redirect the design inquiry and its digital tools, and reciprocal pathways are developed between material, tectonic and spatial exploration.",
+    "paper_type": "Bio-design",
+    "timeframe": "Growth and iterative design-development phases",
+    "scale": "Mycelium composite → woven scaffold → building element",
+    "assessments": [
+      {
+        "assessment_id": "ayres-et-al-2022-adam-blaney-31-07-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "31/07/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 1,
+          "q3": 1,
+          "q4": 0,
+          "q5": 1
+        },
+        "confidence": "Medium",
+        "rationale": "Material findings recursively inform design development and digital tools, but no live operational feedback loop is demonstrated. Mycelial growth and reciprocal design iteration create partial adaptability and renewal, while the focus remains primarily on the architectural material and construction system."
+      }
+    ]
+  },
+  {
+    "id": "Ayres, P.",
+    "title": "Microstructure, macrostructure and the steering of material proclivities",
+    "authors": "Ayres, P.",
+    "year": 2012,
+    "source": "In Manufacturing the Bespoke: Making and Prototyping Architecture",
+    "pages": "pp. 220-237",
+    "doi_or_url": "https://www.researchgate.net/publication/313772460_Microstructure_Macrostructure_and_the_Steering_of_Material_Proclivities",
+    "summary": "Ayres investigates free internal-pressure forming of steel as a materially non-deterministic fabrication process. Hydroforming exposes complex interactions between microstructural and macrostructural levels that produce irreversible material and performance transformations that can be steered but not completely prescribed through geometry. Because inflation can be arrested and resumed, Ayres proposes extending forming beyond a discrete fabrication phase and develops the Persistent Model as a circular digital–physical relationship in which the physical artefact re-informs its representation through feedback over time.",
+    "paper_type": "Design / Architecture",
+    "timeframe": "sequential forming / extended design–fabrication–use",
+    "scale": "atomic lattice → grain → component → aggregate → representation",
+    "assessments": [
+      {
+        "assessment_id": "ayres-p-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 2,
+          "q2": 0,
+          "q3": 1,
+          "q4": 0,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Persistent Model #1 links physical pressure and realised material behaviour back to the representation through error-regulated feedback. Material behaviour is nonlinear and history-dependent, but the implemented system remains bounded to the hydroformed assembly and does not include wider ecological exchange or renewal."
+      }
+    ]
+  },
+  {
+    "id": "Korhonen et al., 2018a",
+    "title": "Circular Economy: The Concept and its Limitations",
+    "authors": "Korhonen, J.; Honkasalo, A.; Seppälä, J.",
+    "year": 2018,
+    "source": "Ecological Economics 143",
+    "pages": "pp. 37–46",
+    "doi_or_url": "https://doi.org/10.1016/j.ecolecon.2017.06.041",
+    "summary": "A critical analysis of circular economy identifies limitations including thermodynamics and system boundaries, and argues that circular systems are embedded in complex social–ecological systems whose material flows exceed human-defined boundaries.",
+    "paper_type": "Circular Economy / Industrial Ecology",
+    "timeframe": "Multiple production-consumption cycles / global sustainability",
+    "scale": "Product / industrial system → social–ecological system",
+    "assessments": [
+      {
+        "assessment_id": "korhonen-et-al-2018a-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 2,
+          "q3": 1,
+          "q4": 2,
+          "q5": 2
+        },
+        "confidence": "High",
+        "rationale": "No digital feedback system is implemented. Circularity is analysed as a social–ecological systems problem in which thermodynamic limits, rebound effects and system boundaries complicate complete control; wider contextual relations, material return and renewal are therefore treated explicitly."
+      }
+    ]
+  },
+  {
+    "id": "Cullen, 2017",
+    "title": "Circular Economy: Theoretical Benchmark or Perpetual Motion Machine?",
+    "authors": "Cullen, J. M.",
+    "year": 2017,
+    "source": "Journal of Industrial Ecology 21(3)",
+    "pages": "pp. 483–486",
+    "doi_or_url": "https://doi.org/10.1111/jiec.12599",
+    "summary": "A thermodynamic critique of perfect material closure that treats a fully circular economy as a theoretical benchmark rather than a physically achievable state, foregrounding material quality losses, energy requirements and dissipation.",
+    "paper_type": "Circular Economy / Industrial Ecology",
+    "timeframe": "Repeated material cycles",
+    "scale": "Material / industrial economy",
+    "assessments": [
+      {
+        "assessment_id": "cullen-2017-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 1,
+          "q3": 0,
+          "q4": 1,
+          "q5": 2
+        },
+        "confidence": "High",
+        "rationale": "No digital feedback system is implemented. Thermodynamic losses make perfect material closure impossible, so repeated circulation is treated as a constrained material-flow process rather than a fully closed loop; contextual relations are discussed at industrial-system scale rather than as adaptive ecological exchange."
+      }
+    ]
+  },
+  {
+    "id": "Korhonen et al., 2018b",
+    "title": "Circular economy as an essentially contested concept",
+    "authors": "Korhonen, J.; Nuur, C.; Feldmann, A.; Birkie, S. E.",
+    "year": 2018,
+    "source": "Journal of Cleaner Production 175",
+    "pages": "pp. 544–552",
+    "doi_or_url": "https://doi.org/10.1016/j.jclepro.2017.12.111",
+    "summary": "The paper argues that circular-economy research has been concentrated on practical and technical material and energy flows, metrics, tools and computations, while underlying values, social structures, worldviews and paradigmatic questions remain comparatively underexplored.",
+    "paper_type": "Circular Economy / Industrial Ecology",
+    "timeframe": "Production-consumption systems",
+    "scale": "Product / firm / economy → societal system",
+    "assessments": [
+      {
+        "assessment_id": "korhonen-et-al-2018b-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 1,
+          "q3": 0,
+          "q4": 1,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "No digital feedback system is implemented. Circular-economy relations are treated as socially and materially contested rather than fully stabilised, but the analysis remains centred on production-consumption systems; ecological exchange and renewal are present only partially."
+      }
+    ]
+  },
+  {
+    "id": "Reed, 2007",
+    "title": "Shifting from ‘sustainability’ to regeneration",
+    "authors": "Reed, B.",
+    "year": 2007,
+    "source": "Building Research & Information 35(6)",
+    "pages": "pp. 674–680",
+    "doi_or_url": "https://doi.org/10.1080/09613210701475753",
+    "summary": "Reed critiques sustainability practice centred on efficiency and doing less environmental harm, proposing instead participation with living systems and a whole-systems understanding of ecological interrelationships grounded in place.",
+    "paper_type": "Regenerative Design",
+    "timeframe": "Long-term place development / ecological renewal",
+    "scale": "Building / project → place / living system",
+    "assessments": [
+      {
+        "assessment_id": "reed-2007-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 2,
+          "q3": 1,
+          "q4": 2,
+          "q5": 2
+        },
+        "confidence": "High",
+        "rationale": "No digital feedback system is implemented. Regeneration is framed as long-term participation in living systems rather than efficiency optimisation, with projects expected to develop reciprocal relationships with place, support ecological renewal and adapt as conditions change."
+      }
+    ]
+  },
+  {
+    "id": "Cole, 2012",
+    "title": "Transitioning from green to regenerative design",
+    "authors": "Cole, R. J.",
+    "year": 2012,
+    "source": "Building Research & Information 40(1)",
+    "pages": "pp. 39–53",
+    "doi_or_url": "https://doi.org/10.1080/09613218.2011.610608",
+    "summary": "The paper contrasts reductive green-building approaches with regenerative design, which emphasises a co-evolutionary partnered relationship between humans and natural systems and explicitly acknowledges uncertainty in long-term design outcomes.",
+    "paper_type": "Regenerative Design",
+    "timeframe": "Building life cycle / long-term co-evolution",
+    "scale": "Building → human-natural system / place",
+    "assessments": [
+      {
+        "assessment_id": "cole-2012-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 2,
+          "q3": 2,
+          "q4": 2,
+          "q5": 2
+        },
+        "confidence": "High",
+        "rationale": "No digital feedback system is implemented. Regenerative design is framed as a co-evolutionary partnership between human and natural systems, explicitly accepting uncertainty and changing relationships over the building life cycle while seeking net-positive ecological contribution."
+      }
+    ]
+  },
+  {
+    "id": "Benne & Mang, 2015",
+    "title": "Working regeneratively across scales—insights from nature applied to the built environment",
+    "authors": "Benne, B.; Mang, P.",
+    "year": 2015,
+    "source": "Journal of Cleaner Production 109",
+    "pages": "pp. 42–52",
+    "doi_or_url": "https://doi.org/10.1016/j.jclepro.2015.02.037",
+    "summary": "Regenerative design is framed as a shift from mechanistic to ecological or living-systems thinking, with projects understood as socio-ecological systems nested across scales and capable of contributing to the vitality and renewal of larger systems.",
+    "paper_type": "Regenerative Design",
+    "timeframe": "Nested temporal processes across project and place",
+    "scale": "Material / building / place / socio-ecological system",
+    "assessments": [
+      {
+        "assessment_id": "benne-mang-2015-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 2,
+          "q3": 2,
+          "q4": 2,
+          "q5": 2
+        },
+        "confidence": "High",
+        "rationale": "No digital feedback system is implemented. Projects are framed as nested socio-ecological systems whose relationships operate across scales and change through time, with design directed towards the vitality, renewal and regenerative capacity of larger living systems."
+      }
+    ]
+  },
+  {
+    "id": "Beesley, 2022",
+    "title": "GROVE: Open Systems for Living Architecture",
+    "authors": "Beesley, P.",
+    "year": 2022,
+    "source": "Co-Corporeality of Humans, Machines, & Microbes",
+    "pages": "pp. 154–169",
+    "doi_or_url": "https://doi.org/10.1515/9783035625882-015",
+    "summary": "The chapter explicitly argues for buildings as open systems, critiques architectural and computational traditions that privilege rigid boundaries and stable forms, and develops living architecture through porous, dissipative and exchange-oriented relationships.",
+    "paper_type": "Design / Architecture",
+    "timeframe": "Responsive occupation / environmental change",
+    "scale": "Component / building envelope → atmosphere / occupants / milieu",
+    "assessments": [
+      {
+        "assessment_id": "beesley-2022-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 2,
+          "q3": 2,
+          "q4": 2,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Interactive and sensing systems provide partial digital–physical feedback, while the architecture is explicitly framed as porous and open to exchange with occupants, atmosphere and living processes. Relationships are expected to remain adaptive, although decay and material replenishment are less central than permeability and responsiveness."
+      }
+    ]
+  },
+  {
+    "id": "Groutars et al., 2024",
+    "title": "Designing Living Artefacts for Multispecies Interactions: An Ecological Approach",
+    "authors": "Groutars, E. G.; Kim, R.; Karana, E.",
+    "year": 2024,
+    "source": "International Journal of Design 18(2)",
+    "pages": "pp. 59–78",
+    "doi_or_url": "https://doi.org/10.57698/v18i2.04",
+    "summary": "The paper proposes an ecological approach to living artefacts based on multiplicity, connectivity and reciprocity among humans, living entities and computers, explicitly situating artefacts within wider multispecies interaction webs rather than as isolated human-centred systems.",
+    "paper_type": "Multispecies",
+    "timeframe": "Living artefact life / multispecies interaction",
+    "scale": "Living artefact → multispecies web / ecosystem",
+    "assessments": [
+      {
+        "assessment_id": "groutars-et-al-2024-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 2,
+          "q3": 2,
+          "q4": 2,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Digital mediation is present but not the sole organising mechanism. Living artefacts are situated within multispecies interaction webs where connectivity, reciprocity and changing relations are expected; ecological context is explicit, while material return and replenishment are addressed only partially."
+      }
+    ]
+  },
+  {
+    "id": "Lin et al., 2025",
+    "title": "A Systematic Review on the Research and Development of Adaptive Buildings",
+    "authors": "Lin, Y.; Xu, L.; Yang, W.; Tian, L.; Chan, M.",
+    "year": 2025,
+    "source": "Buildings 15(10)",
+    "pages": "Article 1593",
+    "doi_or_url": "https://doi.org/10.3390/buildings15101593",
+    "summary": "A systematic review of adaptive buildings that characterises adaptive behaviour through sensing, analysis and response, with intelligent control used to adjust envelopes and mechanical systems to changing indoor and outdoor conditions for energy and comfort performance.",
+    "paper_type": "Engineering / Materials Science",
+    "timeframe": "Real-time building operation",
+    "scale": "Envelope / mechanical system → building performance / occupants",
+    "assessments": [
+      {
+        "assessment_id": "lin-et-al-2025-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 2,
+          "q2": 0,
+          "q3": 0,
+          "q4": 1,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Adaptive-building systems commonly use sensing, control and actuation to maintain explicit digital–physical feedback. The dominant objective is regulation of defined building-performance variables within bounded systems; environmental context is considered operationally, while ecological exchange and renewal are largely absent."
+      }
+    ]
+  },
+  {
+    "id": "Kręt-Grześkowiak & Baborska-Narożny, 2023",
+    "title": "Guidelines for disassembly and adaptation in architectural design compared to circular economy goals—A literature review",
+    "authors": "Kręt-Grześkowiak, A.; Baborska-Narożny, M.",
+    "year": 2023,
+    "source": "Sustainable Production and Consumption 39",
+    "pages": "pp. 1–12",
+    "doi_or_url": "https://doi.org/10.1016/j.spc.2023.04.020",
+    "summary": "A review of architectural Design for Disassembly and Design for Adaptability against circular-economy goals, showing that many guidelines only provide environmental benefits under particular contextual assumptions and that circularity assessment can produce divergent conclusions.",
+    "paper_type": "Circular Economy / Built Environment",
+    "timeframe": "Building life cycle / reuse and recovery",
+    "scale": "Building component → building life cycle / recovery system",
+    "assessments": [
+      {
+        "assessment_id": "kr-t-grze-kowiak-baborska-naro-ny-2023-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 1,
+          "q3": 0,
+          "q4": 1,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "No digital feedback system is implemented. Design for adaptability and disassembly extends component and building lifecycles and enables reuse or recovery, but relationships remain predominantly predefined around building systems rather than evolving through wider ecological exchange."
+      }
+    ]
+  },
+  {
+    "id": "Wang, L. et al",
+    "title": "Autonomous codesign and fabrication of multistimuli-responsive material systems",
+    "authors": "Wang, L.; Evenchik, A. L.; Yang, J. M.; Truby, R. L.; Chen, W.",
+    "year": 2025,
+    "source": "Science Advances, 11(37)",
+    "pages": "pp. 1-15",
+    "doi_or_url": "https://doi.org/10.1126/sciadv.adx4409",
+    "summary": "The paper introduces an autonomous inverse-design framework that simultaneously optimises structure, materials, manufacturing and stimuli. Multimaterial liquid-crystal-elastomer structures are fabricated to morph into different target forms under heat and light, demonstrating computational design of genuinely multistimuli-responsive material systems.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "Repeated heat/light morphing cycles",
+    "scale": "Material distribution → network/structure → morphing system",
+    "assessments": [
+      {
+        "assessment_id": "wang-l-et-al-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 0,
+          "q3": 0,
+          "q4": 0,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "The computational framework co-designs structure, material distribution, manufacturing and stimuli to achieve specified morphing outcomes under heat and light. Digital computation is intensive during design, but the fabricated system does not maintain an operational feedback loop; stimulus–response relationships remain optimised and predefined."
+      }
+    ]
+  },
+  {
+    "id": "Correa et al.",
+    "title": "3D-Printed Wood: Programming Hygroscopic Material Transformations",
+    "authors": "Correa, D.; Papadopoulou, A.; Guberan, C.; Jhaveri, N.; Reichert, S.; Menges, A.; Tibbits, S.",
+    "year": 2015,
+    "source": "3D Printing and Additive Manufacturing, 2(3)",
+    "pages": "pp. 106–116",
+    "doi_or_url": "https://doi.org/10.1089/3dp.2015.0022",
+    "summary": "The paper physically programmes anisotropic hygroscopic behaviour through differentiated and multimaterial 3D printing, allowing synthetic wood structures to sense environmental moisture and self-transform without an active digital controller after fabrication. The material–stimulus relationship is encoded through printed material organisation and produces tunable but predetermined transformations.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "Repeated hygroscopic transformation cycles",
+    "scale": "Printed fibre/material composition → specimen/element",
+    "assessments": [
+      {
+        "assessment_id": "correa-et-al-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 0,
+          "q3": 0,
+          "q4": 1,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Digital fabrication programs hygroscopic transformation into anisotropic multimaterial structures, after which environmental moisture triggers the response autonomously. No operational digital feedback loop updates the material; the humidity–transformation relationship remains deliberately encoded, with limited environmental context and no renewal cycle."
+      }
+    ]
+  },
+  {
+    "id": "Menges, A.; Reichert, S.",
+    "title": "Performative Wood: Physically Programming the Responsive Architecture of the HygroScope and HygroSkin Projects",
+    "authors": "Menges, A.; Reichert, S.",
+    "year": 2015,
+    "source": "Architectural Design, 85(5)",
+    "pages": "pp. 66–73",
+    "doi_or_url": "https://doi.org/10.1002/ad.1956",
+    "summary": "HygroScope and HygroSkin exploit the moisture sensitivity of wood so that individual elements combine sensing, actuation and response without motors, electronics or external operational energy. Ambient humidity therefore directly activates architectural change through materially embedded behaviour.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "Daily/seasonal humidity-responsive operation",
+    "scale": "Wood element → aperture → architectural skin/environment",
+    "assessments": [
+      {
+        "assessment_id": "menges-a-reichert-s-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 0,
+          "q3": 0,
+          "q4": 1,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Computational design configures moisture-responsive wood elements that subsequently sense and actuate through their intrinsic material behaviour. Operational digital feedback is absent; the environmental humidity relationship is direct but predefined, and ecological exchange is limited to passive use of ambient energy and moisture."
+      }
+    ]
+  },
+  {
+    "id": "Doursat et al., 2012",
+    "title": "Morphogenetic Engineering: Reconciling Self-Organization and Architecture",
+    "authors": "Doursat, R.; Sayama, H.; Michel, O.",
+    "year": 2012,
+    "source": "Morphogenetic Engineering: Toward Programmable Complex Systems (Springer)",
+    "pages": "pp. 1–24",
+    "doi_or_url": "https://doi.org/10.1007/978-3-642-33902-8_1",
+    "summary": "Morphogenetic engineering frames programmable complex systems as an attempt to reconcile architectural organisation with decentralised self-organisation. Biological morphogenesis provides models for systems that construct, adapt and repair themselves through local interactions while maintaining coherent global form.",
+    "paper_type": "Artificial Life",
+    "timeframe": "Developmental / evolutionary system formation",
+    "scale": "Local agents or cells → global morphology",
+    "assessments": [
+      {
+        "assessment_id": "doursat-et-al-2012-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 1,
+          "q3": 2,
+          "q4": 0,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "The contribution is computational and conceptual rather than a demonstrated digital–material feedback loop. Local interactions are expected to reorganise and evolve, giving strong relational adaptability, while the systems remain primarily artificial and only partially address renewal through self-repair rather than ecological exchange."
+      }
+    ]
+  },
+  {
+    "id": "Ozkan et al., 2022",
+    "title": "Are Mushrooms Parametric?",
+    "authors": "Ozkan, D.; Morrow, R.; Zhang, M.; Dade-Robertson, M.",
+    "year": 2022,
+    "source": "Biomimetics, 7(2)",
+    "pages": "Article 60",
+    "doi_or_url": "https://doi.org/10.3390/biomimetics7020060",
+    "summary": "Fungi are used as a biomaterial probe to test whether living systems can be approached through parametric design thinking. Experiments examine how environmental variables relate to fungal growth, plasticity, linearity and non-linearity, and whether biological development can be tuned through growth conditions.",
+    "paper_type": "Bio-design",
+    "timeframe": "Biological growth and developmental cycles",
+    "scale": "Environmental parameters → fungal morphology → material system",
+    "assessments": [
+      {
+        "assessment_id": "ozkan-et-al-2022-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 1,
+          "q3": 2,
+          "q4": 1,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "No operational digital feedback loop is implemented. Living growth is sensitive, plastic and non-linear, so input–response associations are not fully stabilised; environmental context influences development, while wider ecological exchange and explicit replenishment remain limited."
+      }
+    ]
+  },
+  {
+    "id": "Scott, 2018",
+    "title": "Responsive Knit: the Evolution of a Programmable Material System",
+    "authors": "Scott, J.",
+    "year": 2018,
+    "source": "DRS International Conference 2018: Design as a Catalyst for Change",
+    "pages": "pp. 1800–1811",
+    "doi_or_url": "https://doi.org/10.21606/drs.2018.566",
+    "summary": "Programmable knitting is developed as a humidity-responsive material system in which fibre, yarn and fabric hierarchies are engineered to produce shape change. Biomimetic principles from hygromorphic plant actuation are translated into textile structures that respond directly to environmental moisture without electronic control.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "Repeated humidity-response cycles",
+    "scale": "Fibre → yarn → textile surface → responsive environment",
+    "assessments": [
+      {
+        "assessment_id": "scott-2018-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 0,
+          "q3": 0,
+          "q4": 1,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "The material response is computationally designed but operates without an ongoing digital feedback loop. Humidity directly triggers a physically programmed deformation, so the relation is predefined; environmental context is operationally relevant, but ecological exchange and renewal are not part of the system."
+      }
+    ]
+  },
+  {
+    "id": "Scott et al., 2022",
+    "title": "Knitted cultivation: Textiling a multi-kingdom bio architecture",
+    "authors": "Scott, J.; Kaiser, R.; Ozkan, D.; Hoenerloh, A.; Agraviador, A.; Vanden Elsacker, E.; Bridgens, B.",
+    "year": 2022,
+    "source": "Structures and Architecture: A Viable Urban Perspective?",
+    "pages": "pp. 1–8",
+    "doi_or_url": "https://doi.org/10.1201/9781003023555-1",
+    "summary": "BioKnit combines knitted fabric, mycelium and bacterial cellulose in a free-standing architectural prototype. A Living Textiles strategy links biological experimentation, parametric modelling and knit programming so permanent textile formwork can act simultaneously as mould, scaffold and interface for biomaterial growth.",
+    "paper_type": "Bio-design",
+    "timeframe": "Fabrication and biological growth phases",
+    "scale": "Knitted scaffold → mycelial/bacterial growth → architectural prototype",
+    "assessments": [
+      {
+        "assessment_id": "scott-et-al-2022-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 1,
+          "q3": 1,
+          "q4": 0,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Parametric modelling and knit programming shape the physical conditions for biological growth, but live material behaviour does not directly update the digital model. Growth introduces partial adaptability and renewal within a bounded biohybrid artefact; wider ecological exchange is not central."
+      }
+    ]
+  },
+  {
+    "id": "Scott et al., 2024",
+    "title": "BioKnit Arch: Precision Knit Mycelium BioFabrication",
+    "authors": "Scott, J.; Agraviador, A.; Bridgens, B.; Kaiser, R.; Perry, O.; Ozkan, D.",
+    "year": 2024,
+    "source": "ACADIA 2024: Designing Change, Vol. 1",
+    "pages": "pp. 419–429",
+    "doi_or_url": "https://researchportal.northumbria.ac.uk/en/publications/bioknit-arch-precision-knit-mycelium-biofabrication/",
+    "summary": "Mycelium biofabrication is integrated with parametric modelling and 3D knitting to create lightweight architectural components using permanent knitted formwork and mycocrete. The workflow exploits textile shaping and biological growth to move beyond rigid moulds and repeatable units toward complex large-scale biofabrication.",
+    "paper_type": "Bio-design",
+    "timeframe": "Design–fabrication–growth sequence",
+    "scale": "Parametric model → knitted formwork → mycelium composite → architectural component",
+    "assessments": [
+      {
+        "assessment_id": "scott-et-al-2024-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 1,
+          "q3": 1,
+          "q4": 0,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Digital modelling and knitting define a growth scaffold and fabrication workflow, producing partial digital–material discourse without a live feedback loop. Biological growth adds material variability and renewal, but the process remains focused on a designed architectural component rather than wider ecological exchange."
+      }
+    ]
+  },
+  {
+    "id": "Smith et al., 2020",
+    "title": "Hybrid Living Materials: Digital Design and Fabrication of 3D Multimaterial Structures with Programmable Biohybrid Surfaces",
+    "authors": "Smith, R. S. H.; Bader, C.; Sharma, S.; Kolb, D.; Tang, T.-C.; Hosny, A.; Moser, F.; Weaver, J. C.; Voigt, C. A.; Oxman, N.",
+    "year": 2020,
+    "source": "Advanced Functional Materials, 30(7)",
+    "pages": "Article 1907401",
+    "doi_or_url": "https://doi.org/10.1002/adfm.201907401",
+    "summary": "A hybrid living-material platform combines computational design, multimaterial additive manufacturing and synthetic biology. Spatially programmed chemical signals in printed structures control the localisation and behaviour of engineered bacteria, enabling fabricated objects with programmable biohybrid surface activity.",
+    "paper_type": "Bio-design",
+    "timeframe": "Fabrication followed by living surface activity",
+    "scale": "Digital model → multimaterial structure → engineered cells / biohybrid surface",
+    "assessments": [
+      {
+        "assessment_id": "smith-et-al-2020-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 1,
+          "q3": 1,
+          "q4": 0,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Digital fabrication programs spatial and chemical conditions that guide living cells, but operational material behaviour does not continuously update the digital representation. Biological activity introduces partial adaptability within a bounded fabricated object; wider ecological exchange and replenishment are limited."
+      }
+    ]
+  },
+  {
+    "id": "Dade-Robertson, 2022",
+    "title": "Can we grow a building and why would we want to?",
+    "authors": "Dade-Robertson, M.",
+    "year": 2022,
+    "source": "Research Directions: Biotechnology Design, 1",
+    "pages": "e1, pp. 1–2",
+    "doi_or_url": "https://doi.org/10.1017/btd.2022.2",
+    "summary": "Biotechnologies are considered as routes to grow construction materials and potentially self-assemble complex structures through biological processes. The discussion connects engineered living materials, microbial mineralisation and mycelium to broader questions about how living fabrication could change construction.",
+    "paper_type": "Bio-design",
+    "timeframe": "Material growth and building development",
+    "scale": "Living cell/material → building component → construction system",
+    "assessments": [
+      {
+        "assessment_id": "dade-robertson-2022-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 1,
+          "q3": 1,
+          "q4": 1,
+          "q5": 1
+        },
+        "confidence": "Medium",
+        "rationale": "The contribution is conceptual rather than an implemented digital-feedback system. Living growth and self-assembly introduce adaptive material agency and limited renewal, while wider contextual and ecological implications are recognised but not resolved in one operational system."
+      }
+    ]
+  },
+  {
+    "id": "Dade-Robertson et al., 2023",
+    "title": "How do we design with materials that have their own agency?",
+    "authors": "Dade-Robertson, M.; Levin, M.; Davies, J.",
+    "year": 2023,
+    "source": "Research Directions: Biotechnology Design, 1",
+    "pages": "e7, pp. 1–2",
+    "doi_or_url": "https://doi.org/10.1017/btd.2023.1",
+    "summary": "Living cells are framed as constructional matter whose agency differs fundamentally from inert or conventionally stimuli-responsive materials. The question redirects design from controlling passive substrates toward working with systems that possess their own goals, behaviours and capacities for adaptation.",
+    "paper_type": "Bio-design",
+    "timeframe": "Living development and adaptation",
+    "scale": "Cellular agency → material system → designed artefact",
+    "assessments": [
+      {
+        "assessment_id": "dade-robertson-et-al-2023-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 1,
+          "q3": 2,
+          "q4": 1,
+          "q5": 1
+        },
+        "confidence": "Medium",
+        "rationale": "No implemented digital feedback loop is presented. Agency is treated as intrinsic to living matter, so relationships between intervention and response are expected to remain negotiable and adaptive; ecological context and renewal are acknowledged but not operationalised as full exchange systems."
+      }
+    ]
+  },
+  {
+    "id": "Dade-Robertson et al., 2024",
+    "title": "Living Manufacture",
+    "authors": "Dade-Robertson, M.; Arnardottir, T.; Lee, S.; Loh, J.; Gilmour, K.; Zhang, M.",
+    "year": 2024,
+    "source": "FABRICATE 2024: Creating Resourceful Futures",
+    "pages": "pp. 56–63",
+    "doi_or_url": "https://doi.org/10.2307/jj.11374766.11",
+    "summary": "Living Manufacture develops an Engineered Living Fabrication system that combines biological growth with digital fabrication to make functionally graded materials and objects. The approach integrates wetware, hardware and software, using controlled biopolymer production and digital manufacturing infrastructure as parts of one fabrication system.",
+    "paper_type": "Bio-design",
+    "timeframe": "Biological production and fabrication cycles",
+    "scale": "Genetic/cellular process → bioreactor → digital fabrication → material object",
+    "assessments": [
+      {
+        "assessment_id": "dade-robertson-et-al-2024-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 1,
+          "q3": 1,
+          "q4": 1,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Digital infrastructure and controlled biological production are deliberately integrated, creating partial digital–living-material discourse. Growth makes material formation adaptive, but the fabrication environment remains substantially controlled; ecological exchange and replenishment beyond production are only partial."
+      }
+    ]
+  },
+  {
+    "id": "Arnardottir et al., 2020",
+    "title": "Turbulent Casting: Bacterial Expression in Mineralized Structures",
+    "authors": "Arnardottir, T. H.; Dade-Robertson, M.; Mitrani, H.; Zhang, M.; Christgen, B.",
+    "year": 2020,
+    "source": "ACADIA 2020: Distributed Proximities, Vol. 1",
+    "pages": "pp. 300–309",
+    "doi_or_url": "https://doi.org/10.52842/conf.acadia.2020.1.300",
+    "summary": "Bacterially induced biomineralisation is explored as a construction process in which living bacteria act as co-designers. Experiments use turbulent material conditions to produce mineralised structures whose form emerges from biological activity, fluid dynamics and casting rather than from a rigidly imposed mould geometry.",
+    "paper_type": "Bio-design",
+    "timeframe": "Biomineralisation / casting process",
+    "scale": "Bacteria + fluid/material conditions → mineral deposition → structure",
+    "assessments": [
+      {
+        "assessment_id": "arnardottir-et-al-2020-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 1,
+          "q3": 2,
+          "q4": 0,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "No live digital feedback loop is demonstrated. Material formation depends on living bacterial activity and turbulent conditions, so form is not completely predefined; the system remains laboratory-bounded, with biological growth providing partial renewal rather than wider ecological exchange."
+      }
+    ]
+  },
+  {
+    "id": "Arnardottir, 2023",
+    "title": "Bacterial Sculpting: Customising Biofabrication Techniques for Biomineralisation",
+    "authors": "Arnardottir, T.",
+    "year": 2023,
+    "source": "Bioprotopia: Designing the Built Environment with Living Organisms",
+    "pages": "pp. 150–155",
+    "doi_or_url": "https://doi.org/10.1515/9783035625806-015",
+    "summary": "Bacterial Sculpting investigates biomineralisation as a processual fabrication strategy in which microbial activity contributes directly to material formation. Rather than treating living matter as a passive casting medium, the approach customises conditions so biological processes participate in shaping mineralised outcomes.",
+    "paper_type": "Bio-design",
+    "timeframe": "Microbial growth and mineralisation",
+    "scale": "Microbe → mineral deposition → fabricated material",
+    "assessments": [
+      {
+        "assessment_id": "arnardottir-2023-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 1,
+          "q3": 2,
+          "q4": 0,
+          "q5": 1
+        },
+        "confidence": "Medium",
+        "rationale": "No operational digital feedback loop is central to the work. Microbial agency makes material outcomes process-dependent and partly emergent, but the experiments remain bounded to fabrication; renewal is present through biological production rather than through wider ecological cycles."
+      }
+    ]
+  },
+  {
+    "id": "Toffoli & Margolus, 1991",
+    "title": "Programmable matter: Concepts and realization",
+    "authors": "Toffoli, T.; Margolus, N.",
+    "year": 1991,
+    "source": "Physica D: Nonlinear Phenomena, 47(1–2)",
+    "pages": "pp. 263–272",
+    "doi_or_url": "https://doi.org/10.1016/0167-2789(91)90296-L",
+    "summary": "Programmable matter is introduced as a computational concept in which physical substance is composed of locally programmable units capable of implementing general behaviours. The article functions as a manifesto, tutorial and call for experiments connecting computation and physical matter.",
+    "paper_type": "Computer Science",
+    "timeframe": "Conceptual / computational operation",
+    "scale": "Computational unit → programmable material aggregate",
+    "assessments": [
+      {
+        "assessment_id": "toffoli-margolus-1991-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 0,
+          "q3": 0,
+          "q4": 0,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "The contribution defines a computational paradigm rather than an implemented digital–material feedback system. Behaviour is conceived as programmable within an artificial material substrate; ecological exchange, evolving relational definitions and material renewal are outside its scope."
+      }
+    ]
+  },
+  {
+    "id": "Gilpin et al., 2010",
+    "title": "Robot Pebbles: One Centimeter Modules for Programmable Matter through Self-Disassembly",
+    "authors": "Gilpin, K.; Knaian, A.; Rus, D.",
+    "year": 2010,
+    "source": "2010 IEEE International Conference on Robotics and Automation (ICRA)",
+    "pages": "pp. 2485–2492",
+    "doi_or_url": "https://doi.org/10.1109/ROBOT.2010.5509817",
+    "summary": "A programmable-matter system is built from autonomous one-centimetre modules that bond, communicate and share power using electropermanent magnets. Distributed data and local coordination allow an initial block of modules to create two-dimensional target shapes by selectively detaching unnecessary units.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "Distributed computation and reconfiguration cycle",
+    "scale": "Autonomous module → communicating aggregate → target shape",
+    "assessments": [
+      {
+        "assessment_id": "gilpin-et-al-2010-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 2,
+          "q2": 0,
+          "q3": 0,
+          "q4": 0,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Embedded communication and distributed computation maintain strong information exchange among physical material modules. Shape formation is nevertheless directed towards predefined targets in a bounded robotic system; detachable modules support reuse, but wider ecological exchange and replenishment are absent."
+      }
+    ]
+  },
+  {
+    "id": "Hiller & Lipson, 2009",
+    "title": "Design and analysis of digital materials for physical 3D voxel printing",
+    "authors": "Hiller, J.; Lipson, H.",
+    "year": 2009,
+    "source": "Rapid Prototyping Journal, 15(2)",
+    "pages": "pp. 137–149",
+    "doi_or_url": "https://doi.org/10.1108/13552540910943441",
+    "summary": "Physical voxels are proposed as discrete material building blocks for a massively parallel additive-manufacturing process in which matter is digital. Material behaviour and manufacturability are analysed through assemblies of pre-existing units rather than continuous deposition.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "Fabrication / assembly sequence",
+    "scale": "Voxel → lattice → fabricated object",
+    "assessments": [
+      {
+        "assessment_id": "hiller-lipson-2009-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 0,
+          "q3": 0,
+          "q4": 0,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Digital representation and physical discretisation are closely aligned, but no operational feedback loop updates the digital model from material behaviour. Material properties and connectivity are designed within a bounded fabrication system, without contextual exchange or renewal mechanisms."
+      }
+    ]
+  },
+  {
+    "id": "MacCurdy et al., 2014",
+    "title": "Bitblox: Printable digital materials for electromechanical machines",
+    "authors": "MacCurdy, R.; McNicoll, A.; Lipson, H.",
+    "year": 2014,
+    "source": "The International Journal of Robotics Research, 33(10)",
+    "pages": "pp. 1342–1360",
+    "doi_or_url": "https://doi.org/10.1177/0278364914532149",
+    "summary": "Bitblox are modular interconnecting blocks that embed electromechanical connectivity and function. The unique combination and spatial arrangement of blocks determine the mechanical and electrical properties of an assembly, allowing electromechanical machines to be constructed from discrete material units.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "Assembly and electromechanical operation",
+    "scale": "Functional block → assembly → electromechanical machine",
+    "assessments": [
+      {
+        "assessment_id": "maccurdy-et-al-2014-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 0,
+          "q3": 0,
+          "q4": 0,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Physical modules contain computational/electromechanical functionality, giving partial digital–material discourse, but assembly relationships are predefined and the system remains bounded. No wider contextual exchange, evolving relationship logic, or material replenishment is implemented."
+      }
+    ]
+  },
+  {
+    "id": "Hilbertz, 1979",
+    "title": "Electrodeposition of Minerals in Sea Water: Experiments and Applications",
+    "authors": "Hilbertz, W. H.",
+    "year": 1979,
+    "source": "IEEE Journal of Oceanic Engineering, 4(3)",
+    "pages": "pp. 94–113",
+    "doi_or_url": "https://doi.org/10.1109/JOE.1979.1145428",
+    "summary": "Direct electrical current between electrodes in seawater precipitates calcium carbonate and magnesium hydroxide onto cathodes. Experiments demonstrate mineral accretion as a building process for marine structures and artificial reefs, using dissolved seawater constituents as the material source.",
+    "paper_type": "Regenerative Design",
+    "timeframe": "Continuous mineral accretion over extended deployment",
+    "scale": "Electrode → mineral accretion → marine structure / habitat",
+    "assessments": [
+      {
+        "assessment_id": "hilbertz-1979-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 2,
+          "q3": 1,
+          "q4": 2,
+          "q5": 2
+        },
+        "confidence": "High",
+        "rationale": "Electrical input directly regulates physical mineral growth, but no sensing-based digital feedback loop is demonstrated. Material formation depends on open seawater chemistry and continues through environmental resource flows; marine-habitat applications create explicit contextual exchange and replenishment."
+      }
+    ]
+  },
+  {
+    "id": "Swackhamer et al., 2022",
+    "title": "Nurse Pod - A Critical Examination of the Role of Decay in Architecture",
+    "authors": "Swackhamer, M.; Satterfield, B.; Buma, B.; Rhodes, H.; et al.",
+    "year": 2022,
+    "source": "ACADIA 2022: Hybrids and Haecceities [Projects Catalog]",
+    "pages": "pp. 112–117",
+    "doi_or_url": "https://doi.org/10.52842/conf.acadia.2022.2.112",
+    "summary": "Nurse Pod applies design and digital fabrication to sacrificial structures that support tree seedlings during forest recovery. Inspired by nurse logs, biodegradable vessels protect and nurture young trees, then decay so their material contributes to the developing ecological system.",
+    "paper_type": "Regenerative Design",
+    "timeframe": "Seedling establishment → scaffold decay → forest recovery",
+    "scale": "Fabricated pod → tree seedling → forest succession",
+    "assessments": [
+      {
+        "assessment_id": "swackhamer-et-al-2022-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 2,
+          "q3": 2,
+          "q4": 2,
+          "q5": 2
+        },
+        "confidence": "High",
+        "rationale": "Digital design is used in fabrication rather than as a live feedback system. The architecture is intentionally temporary and embedded in forest recovery; material decay, changing ecological roles, succession and nutrient return are explicit parts of the design logic."
+      }
+    ]
+  },
+  {
+    "id": "Satterfield & Swackhamer, 2021",
+    "title": "Material Custodies: Embracing Loss, Failure, and Death as Opportunities in Wood Construction",
+    "authors": "Satterfield, B.; Swackhamer, M.",
+    "year": 2021,
+    "source": "Journal of Architectural Education, 75(1)",
+    "pages": "pp. 121–128",
+    "doi_or_url": "https://doi.org/10.1080/10464883.2021.1859896",
+    "summary": "Wood construction is reframed as a temporary custody within a larger material and ecological lifecycle. Architectural use is treated as a fleeting sequestration between prior and future states, allowing loss, failure, decomposition and return to become design conditions rather than endpoints.",
+    "paper_type": "Regenerative Design",
+    "timeframe": "Material life cycle from growth through use and return",
+    "scale": "Wood resource → architecture → decay / future ecosystem",
+    "assessments": [
+      {
+        "assessment_id": "satterfield-swackhamer-2021-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 2,
+          "q3": 2,
+          "q4": 2,
+          "q5": 2
+        },
+        "confidence": "High",
+        "rationale": "No digital feedback loop is implemented. Material relationships are explicitly lifecycle-based and expected to change through use, failure and decay; architecture is situated within ecological material flows and return to future resources is central."
+      }
+    ]
+  },
+  {
+    "id": "O'Donoghue et al., 2024",
+    "title": "Digital Regenerative Agriculture",
+    "authors": "O’Donoghue, T.; Minasny, B.; McBratney, A.",
+    "year": 2024,
+    "source": "npj Sustainable Agriculture, 2",
+    "pages": "Article 5",
+    "doi_or_url": "https://doi.org/10.1038/s44264-024-00012-6",
+    "summary": "Precision, digital and smart-agriculture tools are reframed from productivity and efficiency objectives towards ecological renewal. The perspective considers how sensing, spatial data and digital assessment can quantify and guide regenerative contributions made by farmscapes.",
+    "paper_type": "Agriculture / Agroecology",
+    "timeframe": "Seasonal to multi-year agricultural and soil cycles",
+    "scale": "Soil / field sensing → farm management → farmscape / ecosystem",
+    "assessments": [
+      {
+        "assessment_id": "o-donoghue-et-al-2024-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 2,
+          "q3": 2,
+          "q4": 2,
+          "q5": 2
+        },
+        "confidence": "High",
+        "rationale": "Digital tools provide monitoring and decision support, creating partial feedback with physical agricultural systems rather than a single automated control loop. Regenerative management depends on changing ecological conditions and explicitly targets soil, landscape and ecosystem renewal."
+      }
+    ]
+  },
+  {
+    "id": "Liu et al., 2025",
+    "title": "Development and application of a digital twin model for Net zero energy building operation and maintenance utilizing BIM-IoT integration",
+    "authors": "Liu, Z.; Li, M.; Ji, W.",
+    "year": 2025,
+    "source": "Energy and Buildings, 328",
+    "pages": "Article 115170",
+    "doi_or_url": "https://doi.org/10.1016/j.enbuild.2024.115170",
+    "summary": "A BIM-IoT digital twin integrates operational building data through collection, model construction, simulation, validation and automated feedback control. The system is designed to improve operation and maintenance efficiency for net-zero-energy buildings through continuous sensing and digital representation.",
+    "paper_type": "Digital Twins / Cyber-Physical Systems",
+    "timeframe": "Real-time building operation and maintenance",
+    "scale": "Sensor / equipment → BIM-IoT twin → building-control system",
+    "assessments": [
+      {
+        "assessment_id": "liu-et-al-2025-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 2,
+          "q2": 0,
+          "q3": 1,
+          "q4": 1,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Continuous sensing and automated feedback establish strong digital–physical discourse. The twin remains focused on a defined building and performance objectives; models can update with operational data, but control relationships and optimisation goals are substantially predefined and ecological renewal is outside scope."
+      }
+    ]
+  },
+  {
+    "id": "Oxman & Rosenberg, 2007",
+    "title": "Material-based Design Computation: An Inquiry into Digital Simulation of Physical Material Properties as Design Generators",
+    "authors": "Oxman, N.; Rosenberg, J. L.",
+    "year": 2007,
+    "source": "International Journal of Architectural Computing, 5(1)",
+    "pages": "",
+    "doi_or_url": "https://doi.org/10.1260/147807707780912985",
+    "summary": "Physical material properties are translated into geometrical functions so elastic membrane behaviour can become a form-generating design input. A Processing-based digital tool simulates material behaviour and predicts deformation under specified environmental conditions.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "Design simulation and fabrication sequence",
+    "scale": "Material property → digital simulation → geometric form",
+    "assessments": [
+      {
+        "assessment_id": "oxman-rosenberg-2007-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 0,
+          "q3": 0,
+          "q4": 0,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Material behaviour informs computation, but the physical artefact does not maintain an operational feedback relationship with the digital representation. Simulation assumes defined material and environmental conditions; wider context, evolving relations and renewal are not addressed."
+      }
+    ]
+  },
+  {
+    "id": "Oxman, 2010",
+    "title": "Structuring Materiality: Design Fabrication of Heterogeneous Materials",
+    "authors": "Oxman, N.",
+    "year": 2010,
+    "source": "Architectural Design, 80(4)",
+    "pages": "pp. 78–85",
+    "doi_or_url": "https://doi.org/10.1002/ad.1110",
+    "summary": "Variable Property Design treats materiality as a generative design driver by modelling, simulating and fabricating assemblies with spatially varying properties. Material distributions are configured to respond to multiple and continuously shifting functional constraints through heterogeneous fabrication.",
+    "paper_type": "Programmable Matter / 4D Printing / Material Computation",
+    "timeframe": "Design optimisation and fabrication",
+    "scale": "Functional constraints → variable property model → heterogeneous material",
+    "assessments": [
+      {
+        "assessment_id": "oxman-2010-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 0,
+          "q3": 1,
+          "q4": 0,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Digital computation varies material properties in response to multiple design constraints, but the fabricated material does not update the digital model during operation. Constraint relationships can change during design, while the final material system remains bounded and does not include ecological exchange or renewal."
+      }
+    ]
+  },
+  {
+    "id": "Oxman et al., 2014",
+    "title": "Silk Pavilion: A Case Study in Fiber-based Digital Fabrication",
+    "authors": "Oxman, N.; Laucks, J.; Kayser, M.; Duro-Royo, J.; Gonzalez Uribe, C. D.",
+    "year": 2014,
+    "source": "FABRICATE 2014",
+    "pages": "pp. 248–255",
+    "doi_or_url": "https://www.media.mit.edu/publications/silk-pavilion-a-case-study-in-fiber-based-digital-fabrication/",
+    "summary": "The Silk Pavilion combines computational fibre placement with biological fabrication by silkworms. Algorithmic thread-density gradients respond to environmental constraints, while thousands of silkworms deposit secondary fibres across a CNC-fabricated scaffold, linking digital geometry, material behaviour and biological production.",
+    "paper_type": "Bio-design",
+    "timeframe": "Digital scaffold fabrication followed by biological deposition",
+    "scale": "Environmental constraints → computational scaffold → silkworm deposition → pavilion",
+    "assessments": [
+      {
+        "assessment_id": "oxman-et-al-2014-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 1,
+          "q3": 1,
+          "q4": 1,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Digital design establishes a scaffold and environmental conditions that influence biological fabrication, creating partial digital–biological discourse without continuous feedback from the living process to the model. Biological agency and environmental factors affect material formation, but the system remains a designed pavilion rather than a wider ecological exchange network."
+      }
+    ]
+  },
+  {
+    "id": "Crawford et al., 2022",
+    "title": "Clay 3D printing as a bio-design research tool: development of photosynthetic living building components",
+    "authors": "Crawford, A.; In-na, P.; Caldwell, G.; Armstrong, R.; Bridgens, B.",
+    "year": 2022,
+    "source": "Architectural Science Review, 65(3)",
+    "pages": "pp. 185–195",
+    "doi_or_url": "https://doi.org/10.1080/00038628.2022.2058908",
+    "summary": "Adam Blaney",
+    "paper_type": "Bio-design",
+    "timeframe": "Fabrication followed by sustained biological activity",
+    "scale": "Digital geometry → clay substrate → microalgae / photosynthetic component",
+    "assessments": [
+      {
+        "assessment_id": "crawford-et-al-2022-46261-00-01-1900",
+        "reviewer_name": "46261",
+        "reviewer_type": "human",
+        "submitted_at": "00/01/1900",
+        "scores": {
+          "q1": 1,
+          "q2": 1,
+          "q3": 1,
+          "q4": 1,
+          "q5": 0
+        },
+        "confidence": "High",
+        "rationale": "Digital fabrication shapes the habitat but no live digital feedback loop responds to organism behaviour. Biological performance depends on substrate and environmental conditions, giving partial adaptability and contextual relation; living activity provides limited renewal without a broader ecological material cycle."
+      }
+    ]
+  },
+  {
+    "id": "Ilgun et al., 2021",
+    "title": "Bio-Hybrid Systems for Ecosystem Level Effects",
+    "authors": "Ilgun, A.; Angelov, K.; Stefanec, M.; Schönwetter-Fuchs, S.; et al.",
+    "year": 2021,
+    "source": "Proceedings of the 2021 Conference on Artificial Life",
+    "pages": "",
+    "doi_or_url": "https://doi.org/10.1162/isal_a_00396",
+    "summary": "HIVEOPOLIS is presented as a bio-hybrid system linking computational, robotic and biological processes around honeybee colonies. Robotic devices and sensing are considered as means to interact with colony behaviour and extend intervention from individual hives toward ecosystem-level effects.",
+    "paper_type": "Artificial Life",
+    "timeframe": "Continuous colony behaviour and seasonal ecological cycles",
+    "scale": "Robotic/computational system ↔ bee colony → surrounding ecosystem",
+    "assessments": [
+      {
+        "assessment_id": "ilgun-et-al-2021-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 2,
+          "q2": 2,
+          "q3": 2,
+          "q4": 2,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Bio-hybrid robotics and sensing establish strong digital–biological feedback, while bee behaviour and ecological conditions remain dynamic rather than fixed. The system is explicitly positioned toward ecosystem-level effects; renewal is present through biological/ecological processes but material return is not its primary focus."
+      }
+    ]
+  },
+  {
+    "id": "Parker et al., 2023",
+    "title": "I.N.S.E.C.T. Wall Twin: Designing for and with Insects, Fungi, and Humans",
+    "authors": "Parker, D.; Ilgun, Z. A.; Lim, A. C. S.; Vasatko, H.; Vu, D. V.; Piórecka, N.; Keune, S.",
+    "year": 2023,
+    "source": "Temes de Disseny, 39",
+    "pages": "pp. 228–247",
+    "doi_or_url": "https://doi.org/10.46467/TdD39.2023.228-247",
+    "summary": "An architectural installation is developed to support coexistence among local insects, fungi and humans. Bio-digital manufacturing, mycelium, textiles and 3D printing are combined with interspecies design methods that recognise nonhuman stakeholders and habitat relations as part of the design process.",
+    "paper_type": "Multispecies",
+    "timeframe": "Habitat occupation and multispecies interaction",
+    "scale": "Fabricated habitat → fungi/insects/humans → local ecological relations",
+    "assessments": [
+      {
+        "assessment_id": "parker-et-al-2023-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 2,
+          "q3": 2,
+          "q4": 2,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Digital fabrication is used to construct the habitat but no live digital feedback loop is central. The artefact is explicitly situated within multispecies relations whose participants and interactions can change; ecological context is central, while renewal and material return are present only partially."
+      }
+    ]
+  },
+  {
+    "id": "Sicher, 2026",
+    "title": "“How can SCOBY be grown from scratch?”: Growing materials from situated ecologies",
+    "authors": "Sicher, E.",
+    "year": 2026,
+    "source": "Biotechnology Design, 4",
+    "pages": "e17",
+    "doi_or_url": "https://doi.org/10.1017/S2977905726100225",
+    "summary": "SCOBY cultivation is reframed from reliance on standardised cultures toward material growth emerging from situated plants, microbes and vernacular fermentation practices. Fieldwork in Thailand and Germany informs an open-source method and a Situated Growing Design approach grounded in bioregional ecological relationships.",
+    "paper_type": "Regenerative Design",
+    "timeframe": "Fermentation, cultivation and bioregional material cycles",
+    "scale": "Local plants/microbes → SCOBY growth → situated material practice / bioregion",
+    "assessments": [
+      {
+        "assessment_id": "sicher-2026-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 2,
+          "q3": 2,
+          "q4": 2,
+          "q5": 2
+        },
+        "confidence": "High",
+        "rationale": "No digital feedback system is implemented. Material formation depends explicitly on situated ecological relations, microbial adaptation and local resource conditions; relationships are expected to vary with context, and regeneration, provenance and bioregional renewal are central."
+      }
+    ]
+  },
+  {
+    "id": "Mitterberger & Derme, 2020",
+    "title": "Digital soil: Robotically 3D-printed granular bio-composites",
+    "authors": "Mitterberger, D.; Derme, T.",
+    "year": 2020,
+    "source": "International Journal of Architectural Computing, 18(2)",
+    "pages": "pp. 194–211",
+    "doi_or_url": "https://doi.org/10.1177/1478077120924996",
+    "summary": "A robotic additive-manufacturing framework uses organic granular soil-based composites as an alternative to homogeneous, non-biodegradable fabrication materials. The work treats soil's volatility and environmental sensitivity as design parameters and investigates water-based robotic deposition for biodegradable structures.",
+    "paper_type": "Design / Architecture",
+    "timeframe": "Robotic fabrication followed by environmental/material change",
+    "scale": "Organic granular material → robotic deposition → biodegradable structure / environment",
+    "assessments": [
+      {
+        "assessment_id": "mitterberger-derme-2020-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 0,
+          "q2": 1,
+          "q3": 1,
+          "q4": 1,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Robotic fabrication is computationally controlled but no live material-to-digital feedback loop is demonstrated. Soil variability and environmental factors are acknowledged as active design conditions; biodegradability provides partial lifecycle return, while wider ecological exchange remains limited."
+      }
+    ]
+  },
+  {
+    "id": "Derme & Mitterberger, 2022",
+    "title": "The Synchronous Garden (SynG): New Perspectives between Architecture and Ecology",
+    "authors": "Derme, T.; Mitterberger, D.",
+    "year": 2022,
+    "source": "Nonlinear Urbanism: Towards Multiple Urban Futures",
+    "pages": "pp. 14–27",
+    "doi_or_url": "https://doi.org/10.1515/9783035624410-004",
+    "summary": "The Synchronous Garden reframes architecture and ecology as dynamic, technologically mediated relations rather than separate or static domains. Living materials, signals, multiple scales and temporalities are used to consider architecture as capable of continual adaptation, evolution, change and finite lifespans.",
+    "paper_type": "Design / Architecture",
+    "timeframe": "Continuous adaptation across biological and architectural timescales",
+    "scale": "Signals / living materials → architectural environment → ecological relations",
+    "assessments": [
+      {
+        "assessment_id": "derme-mitterberger-2022-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 2,
+          "q3": 2,
+          "q4": 2,
+          "q5": 1
+        },
+        "confidence": "Medium",
+        "rationale": "Digital and sensing technologies are positioned as mediators of living architectural processes rather than as a single demonstrated control loop. Relationships are explicitly dynamic and temporally variable, with architecture situated within ecological relations; material return and replenishment are acknowledged but not developed as a complete cycle."
+      }
+    ]
+  },
+  {
+    "id": "Derme & Mitterberger, Sylva 2023",
+    "title": "Sylva: An Autonomous Hydroponic Garden Cared for by Two Robots",
+    "authors": "Derme, T.; Mitterberger, D.",
+    "year": 2023,
+    "source": "ACADIA 2023",
+    "pages": "pp. 116–121",
+    "doi_or_url": "https://www.researchgate.net/publication/384680935_Sylva_An_Autonomous_Hydroponic_Garden_Cared_for_by_Two_Robots",
+    "summary": "Sylva is an autonomous hydroponic garden maintained by two robots that water, distribute seeds and monitor plant growth. External data, data prediction and real-time interactions influence the geometry and development of the garden, combining botany, computer vision, robotics and architectural design.",
+    "paper_type": "Artificial Life",
+    "timeframe": "Continuous robotic maintenance and plant growth",
+    "scale": "Data / robots ↔ hydroponic plants → constructed garden",
+    "assessments": [
+      {
+        "assessment_id": "derme-mitterberger-sylva-2023-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 2,
+          "q2": 1,
+          "q3": 1,
+          "q4": 1,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Monitoring and robotic care create strong digital–physical/biological feedback. Plant growth and data update system operation, but the garden remains a designed indoor habitat with bounded resources; ecological context and renewal are present through living growth rather than open material exchange."
+      }
+    ]
+  },
+  {
+    "id": "Derme et al., 2026",
+    "title": "Braided mycelium composites: an integrated robotic design-to-fabrication method for bio-based fibrous building components",
+    "authors": "Derme, T.; Battal, A.; Boscoboinik, N.; Schwarze, F. W. M. R.; Dillenburger, B.",
+    "year": 2026,
+    "source": "Architectural Intelligence, 5",
+    "pages": "Article 20",
+    "doi_or_url": "https://doi.org/10.1007/s44223-026-00126-6",
+    "summary": "An integrated robotic workflow combines braided fibrous reinforcement with mycelium-based composites to produce customised bio-based building components. Computational design and robotic fabrication address continuity, repeatability and scaling while retaining biological growth as part of material production.",
+    "paper_type": "Bio-design",
+    "timeframe": "Robotic fabrication and mycelial growth",
+    "scale": "Computational design → braided reinforcement → mycelium growth → component",
+    "assessments": [
+      {
+        "assessment_id": "derme-et-al-2026-adam-blaney-27-08-2026",
+        "reviewer_name": "Adam Blaney",
+        "reviewer_type": "human",
+        "submitted_at": "27/08/2026",
+        "scores": {
+          "q1": 1,
+          "q2": 1,
+          "q3": 1,
+          "q4": 0,
+          "q5": 1
+        },
+        "confidence": "High",
+        "rationale": "Digital design and robotic fabrication are tightly integrated with biological material production, but the living process does not continuously update the digital model. Growth introduces material variability and partial renewal within a bounded fabrication system; wider ecological exchange is not central."
+      }
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "CRV-01": {
+    "type": "relationship",
+    "title": "Direct magnetic influence -> volume",
+    "hover_summary": "Magnetic influence rapidly increases local volume, then fades as competing effects become stronger.",
+    "detail_description": "Once the PCL is liquid, the locally induced magnetic stimulus draws ferromagnetic particles towards the magnet and carries the surrounding PCL with them, producing a rapid local volume increase. This initially behaves as a strong direct relationship. As particles migrate through the material and gravity becomes more influential, the original direct relationship diminishes until it no longer meaningfully governs the response."
+  },
+  "CRV-02": {
+    "type": "relationship",
+    "title": "Volume-rigidity coupling and re-emergence",
+    "hover_summary": "Volume and rigidity initially couple; later volume re-emerges without restoring the original rigidity relationship.",
+    "detail_description": "The intended pressure-sensor relationship associated increased local volume with a subsequent increase in rigidity. This coupling is initially coherent but diminishes and eventually decouples. Continued particle accumulation later allows volume to re-emerge, but without the corresponding rigidity response. The material therefore retains the effects of earlier interaction while the original predefined relationship itself is no longer maintained."
+  },
+  "CRV-03": {
+    "type": "relationship",
+    "title": "Secondary surface-texture coupling",
+    "hover_summary": "An unintended texture response emerges with the early coupling, then diminishes and disappears.",
+    "detail_description": "Local magnetic manipulation produces an unintended secondary surface-texture response alongside the early volume and rigidity changes. While the initial magnetic interaction remains strong these properties temporarily coexist. As particles migrate and the material relaxes, this secondary coupling diminishes and ultimately becomes inactive rather than re-establishing the earlier relationship."
+  },
+  "CRV-04": {
+    "type": "relationship",
+    "title": "Persistent relationship and bifurcation",
+    "hover_summary": "A persistent secondary relationship later divides: one material effect remains while another disconnects.",
+    "detail_description": "This secondary relationship diminishes more slowly than the earlier direct couplings and retains influence for longer. At a later stage it bifurcates into different material outcomes: a residual-volume relationship persists as a material legacy, while an associated surface response continues to diminish and eventually disconnects. One earlier interaction therefore produces more than one later relational trajectory."
+  },
+  "CRV-05": {
+    "type": "relationship",
+    "title": "Delayed indirect surface responses",
+    "hover_summary": "Delayed surface and optical responses emerge as early couplings fade, then persist at low influence.",
+    "detail_description": "A family of indirect and delayed surface responses becomes visible while the original direct and coupled relationships are already weakening. These responses include changing surface and optical conditions rather than one simple intended material property. Their influence subsequently diminishes, but traces of the relationship can persist at a low level after the early interaction has lost predominance.",
+    "detail_note": "Working interpretation - property mapping remains under review."
+  },
+  "CRV-06": {
+    "type": "relationship",
+    "title": "Graduated-pattern accumulation and capture",
+    "hover_summary": "Accumulated particles create graduated patterns that become predominant and are later captured.",
+    "detail_description": "Continued accumulation of ferromagnetic particles produces increasingly pronounced graduated colour and pattern formations. What begins as an indirect, delayed material effect grows in relevance as earlier volume and texture relationships diminish. It can eventually become the predominant response and, through solidification, remain captured after the original magnetic interaction is removed."
+  },
+  "CRV-07": {
+    "type": "relationship",
+    "title": "Conditional late texture persistence",
+    "hover_summary": "A late texture relationship becomes highly influential, but its persistence depends on material and stimulus conditions.",
+    "detail_description": "A late-emerging surface-texture relationship becomes strongly influential under maintained magnetic conditions. Its persistence is conditional rather than guaranteed: material composition, viscosity, molecular weight and whether magnet positions are maintained during solidification affect how long the response remains coherent. The relationship subsequently diminishes as the system transitions towards the solid state."
+  },
+  "CRV-08": {
+    "type": "relationship",
+    "title": "Captured residual relationship",
+    "hover_summary": "Solidification preserves a high-level material response after its earlier stimulus associations have weakened.",
+    "detail_description": "This trajectory represents a material response that remains strongly present into the final state. Solidification captures effects generated through earlier interactions even though the relationships that originally produced them may already be diminished or disconnected. The retained property therefore embodies material history rather than simply reflecting the current stimulus."
+  },
+  "CRV-09": {
+    "type": "relationship",
+    "title": "Re-emergence through material history",
+    "hover_summary": "Residual volume and texture re-emerge through continued particle accumulation rather than the original direct coupling.",
+    "detail_description": "After earlier relationships have diminished, continued particle accumulation can cause volume and finer surface responses to re-emerge. Their renewed influence does not reproduce the original sensor-stimulus-property relationship; instead it arises from accumulated material history. This late response can increase substantially and may subsequently be captured as the material solidifies."
+  },
+  "STC-01": {
+    "type": "stimulus",
+    "title": "Locally induced magnetic stimulus",
+    "hover_summary": "Sensor-driven magnet proximity changes both the strength and spatial extent of local magnetic influence, reorganising particles and PCL through time.",
+    "detail_description": "Pressure and flex sensor values are used to control the vertical position of magnets beneath the molten magnetised PCL. Bringing a magnet closer increases the intensity of its influence within a local region, while lowering it dissipates that influence across a wider area. The stimulus therefore operates through graded and threshold conditions rather than as a simple binary on/off input.\n\nFerromagnetic particles migrate towards the magnetic field and initially carry the surrounding PCL with them. This can generate several associated material responses including local volume increase, changes in rigidity, surface texture and graduated patterns. As particles continue to migrate and accumulate, however, the material relationships produced by the same stimulus can diminish, decouple, re-emerge or become captured differently through time.",
+    "role": "Local, sensor-informed material stimulus",
+    "parameterisation": "Sensor values -> actuator position -> magnet proximity -> local magnetic influence",
+    "character": "Graded / thresholded rather than binary",
+    "temporal_role": "Available -> strong local influence -> diminishing -> accumulated influence -> later material effects -> constrained by solidification",
+    "detail_note": "The stimulus trajectory represents the changing extent of magnetic influence, while the grey/black trajectories represent the material relationships that become more or less influential under those conditions."
+  },
+  "STC-02": {
+    "type": "stimulus",
+    "title": "Global gravity stimulus",
+    "hover_summary": "Gravity remains continuously present but becomes more influential as local magnetic relationships weaken and the molten material relaxes.",
+    "detail_description": "Gravity acts as a persistent global condition throughout the interaction rather than as a locally switched stimulus. Early in the process its relative influence is limited because local magnetic attraction predominates and pulls particles and surrounding PCL towards the magnets.\n\nAs ferromagnetic particles migrate through the molten fibre-based PCL, the earlier volume and surface-texture relationships begin to weaken. The material then relaxes increasingly under gravity, allowing this global condition to become comparatively more influential and, for a period, predominant.\n\nWhen the material solidifies, gravity remains present but its capacity to reorganise the captured material properties becomes substantially constrained.",
+    "role": "Persistent global material condition",
+    "parameterisation": "Not directly actuator-controlled",
+    "character": "Continuous background influence whose relative significance changes through time",
+    "temporal_role": "Background -> competing -> predominant -> diminishing -> constrained by solidification"
+  }
+}

@@ -1,0 +1,10 @@
+﻿window_instance_id,window_id,instance_order,relationship_curve_ids,branch_ids,anchor_event_ids,geometry_method,x_padding,y_padding,min_y_override,max_y_override,full_plot_height,source_reference,confidence,enabled,user_notes
+WIN-01-A,WIN-01,1,,,EV-001;EV-002,state-span,1.5,0,0,100,yes,Original graph + cleaned window reference,high,yes,Broad full-height left window.
+WIN-02-A,WIN-02,1,CRV-01;CRV-02;CRV-03;CRV-04,main,CRV01-E01;CRV01-E03;CRV02-E02;CRV03-E02;CRV04-E02;CRV04-E03,segment-bounds,2.5,5,,,no,Original graph + cleaned window reference,high,yes,Early direct/coupled response window.
+WIN-03-A,WIN-03,1,CRV-01;CRV-02;CRV-03,main,CRV01-E05;CRV02-E04;CRV03-E04,event-cluster-bounds,2,3,0,10,no,Original graph + cleaned window reference,high,yes,Small localised window close to baseline.
+WIN-04-A,WIN-04,1,CRV-04;CRV-05,main,CRV04-E03;CRV04-E04;CRV05-E02;STC02-E03,event/segment-bounds,2.5,4,0,45,no,Original graph + cleaned window reference,medium,yes,Seed only; refine after relationship lines are rendered from coordinates.
+WIN-05-A,WIN-05,1,CRV-02;CRV-09,main,CRV02-E05;CRV02-E06;CRV09-E01,segment-bounds,2,4,0,24,no,Original graph + cleaned window reference,high,yes,Compact re-emergence window around rising/returning trajectories.
+WIN-06-A,WIN-06,1,CRV-06;CRV-07;CRV-08,main,CRV06-E03;CRV07-E02;CRV08-E01;CRV08-E02,segment-bounds,2,4,72,100,no,Original graph + cleaned window reference,high,yes,Upper possible-capture instance.
+WIN-06-B,WIN-06,2,CRV-04,A,CRV04-E04;CRV04-E05A;CRV04-E06A,segment-bounds,2,4,25,45,no,Original graph + cleaned window reference,medium,yes,Middle possible-capture instance around persistent branch.
+WIN-06-C,WIN-06,3,CRV-02;CRV-05,main,CRV02-E06;CRV05-E03;CRV02-E07;CRV05-E04,segment-bounds,2,4,8,22,no,Original graph + cleaned window reference,medium,yes,Lower possible-capture instance.
+WIN-07-A,WIN-07,1,CRV-02;CRV-04;CRV-05;CRV-06;CRV-07;CRV-08;CRV-09,main;A;B,EV-007,state-span,1.5,0,0,100,yes,Original graph + cleaned window reference,high,yes,Broad full-height final-state window.

@@ -1,0 +1,12 @@
+﻿stimulus_curve_id,event_id,event_order,event_type,time_x,influence_y,annotation,confidence,enabled
+STC-01,STC01-E01,1,origin,15,0,Local magnetic influence becomes available in the responsive state.,medium,yes
+STC-01,STC01-E02,2,early peak,30,100,First strong local magnetic influence window.,medium,yes
+STC-01,STC01-E03,3,trough,53,0,Local influence becomes minimal.,medium,yes
+STC-01,STC01-E04,4,re-emergence,69,0,Later local magnetic influence begins again.,medium,yes
+STC-01,STC01-E05,5,late peak,78,100,Maintained local stimulus strongly influences later response.,medium,yes
+STC-01,STC01-E06,6,end,100,0,Influence diminished in final state.,medium,yes
+STC-02,STC02-E01,1,background,0,2,Gravity is continuously present but initially low in relative influence.,medium,yes
+STC-02,STC02-E02,2,rise,38,18,Gravity begins to compete more strongly.,medium,yes
+STC-02,STC02-E03,3,peak,54,100,Global gravity becomes predominant.,medium,yes
+STC-02,STC02-E04,4,decline,74,24,Gravity influence diminishes as state changes/capture occurs.,medium,yes
+STC-02,STC02-E05,5,end,100,0,Solid state limits further reorganisation.,medium,yes

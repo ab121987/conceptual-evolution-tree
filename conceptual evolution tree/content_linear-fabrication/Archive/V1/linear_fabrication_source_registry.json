@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "uk_linear_fabrication_sources",
+  "last_reviewed": "2026-07-23",
+  "purpose": "Candidate authoritative sources for a future UK manufacturing evidence database.",
+  "sources": [
+    {
+      "source_id": "ONS_MATERIAL_FLOWS",
+      "publisher": "Office for National Statistics",
+      "title": "Material flow accounts",
+      "geography": "UK",
+      "useful_for": [
+        "domestic extraction",
+        "imports",
+        "exports",
+        "material categories"
+      ],
+      "update_mode": "annual_dataset_discovery",
+      "automation_candidate": true,
+      "dataset_page": "https://www.ons.gov.uk/economy/environmentalaccounts/datasets/ukenvironmentalaccountsmaterialflowsaccountunitedkingdom"
+    },
+    {
+      "source_id": "ONS_PEFA",
+      "publisher": "Office for National Statistics",
+      "title": "Physical energy flow accounts (PEFA)",
+      "geography": "UK",
+      "useful_for": [
+        "energy flows into, within and out of the economy"
+      ],
+      "update_mode": "annual_dataset_discovery",
+      "automation_candidate": true,
+      "dataset_page": "https://www.ons.gov.uk/economy/environmentalaccounts/datasets/physicalenergyflowaccountspefa"
+    },
+    {
+      "source_id": "DEFRA_UK_WASTE",
+      "publisher": "Defra",
+      "title": "UK statistics on waste",
+      "geography": "UK / nations by table",
+      "useful_for": [
+        "waste generation",
+        "treatment",
+        "recycling",
+        "recovery"
+      ],
+      "update_mode": "annual_dataset_discovery",
+      "automation_candidate": true,
+      "dataset_page": "https://www.gov.uk/government/statistics/uk-waste-data"
+    },
+    {
+      "source_id": "EA_WASTE_DATA_INTERROGATOR",
+      "publisher": "Environment Agency",
+      "title": "Waste Data Interrogator",
+      "geography": "England",
+      "useful_for": [
+        "waste received/removed at permitted sites",
+        "waste types",
+        "treatment flows"
+      ],
+      "update_mode": "annual_dataset_discovery",
+      "automation_candidate": true,
+      "dataset_page": "https://environment.data.gov.uk/"
+    },
+    {
+      "source_id": "DESNZ_ECUK",
+      "publisher": "DESNZ",
+      "title": "Energy Consumption in the UK (ECUK)",
+      "geography": "UK",
+      "useful_for": [
+        "industrial energy consumption",
+        "fuel breakdown",
+        "end uses"
+      ],
+      "update_mode": "annual_dataset_discovery",
+      "automation_candidate": true,
+      "dataset_page": "https://www.gov.uk/government/collections/energy-consumption-in-the-uk"
+    },
+    {
+      "source_id": "ONS_GHG_INDUSTRY",
+      "publisher": "Office for National Statistics",
+      "title": "Atmospheric emissions: greenhouse gases by industry and gas",
+      "geography": "UK",
+      "useful_for": [
+        "CO2 by industry",
+        "GHG by SIC 2007 industry"
+      ],
+      "update_mode": "annual_dataset_discovery",
+      "automation_candidate": true,
+      "dataset_page": "https://www.ons.gov.uk/economy/environmentalaccounts/datasets/ukenvironmentalaccountsatmosphericemissionsgreenhousegasemissionsbyeconomicsectorandgasunitedkingdom"
+    },
+    {
+      "source_id": "DESNZ_GHG_CONVERSION_FACTORS",
+      "publisher": "DESNZ",
+      "title": "UK Government greenhouse gas conversion factors",
+      "geography": "UK",
+      "useful_for": [
+        "derived emissions from fuel, electricity, transport, waste and recycling activity"
+      ],
+      "update_mode": "annual_dataset_discovery",
+      "automation_candidate": true,
+      "dataset_page": "https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting"
+    },
+    {
+      "source_id": "WRAP_MATERIAL_FLOW_REPORTS",
+      "publisher": "WRAP",
+      "title": "Material flow reports",
+      "geography": "UK",
+      "useful_for": [
+        "material-specific placed-on-market and recycling estimates"
+      ],
+      "update_mode": "periodic_report_discovery",
+      "automation_candidate": false,
+      "dataset_page": "https://www.wrap.ngo/"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1035.12 653.95">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-9, .cls-10, .cls-11, .cls-12 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-9, .cls-11, .cls-12 {
+        fill: none;
+        stroke: #1c75bc;
+      }
+
+      .cls-9, .cls-12 {
+        stroke-width: 2px;
+      }
+
+      .cls-10 {
+        fill: #231f20;
+        stroke: #bcbec0;
+        stroke-width: 8px;
+      }
+
+      .cls-13 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-14 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-15, .cls-11 {
+        opacity: .5;
+      }
+
+      .cls-16 {
+        letter-spacing: .02em;
+      }
+
+      .cls-11 {
+        stroke-width: 3px;
+      }
+
+      .cls-17 {
+        letter-spacing: 0em;
+      }
+
+      .cls-18 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-19 {
+        letter-spacing: 0em;
+      }
+
+      .cls-20 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-21 {
+        fill: #58595b;
+      }
+
+      .cls-21, .cls-22 {
+        font-family: Effra-Regular, Effra;
+        font-size: 16px;
+      }
+
+      .cls-22 {
+        fill: #6d6e71;
+      }
+
+      .cls-12 {
+        stroke-dasharray: 0 0 7.52 7.52;
+      }
+
+      .cls-23 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <line class="cls-10" x1="4" y1="113.57" x2="4" y2="428.26"/>
+  <line class="cls-10" x1="4.21" y1="428.26" x2="996.33" y2="428.26"/>
+  <g>
+    <text class="cls-21" transform="translate(774.98 566.17)"><tspan x="0" y="0">Wind</tspan><tspan class="cls-6" x="35.1" y="0">o</tspan><tspan x="44.02" y="0">w of </tspan><tspan x="-30.22" y="19.2">possible p</tspan><tspan class="cls-7" x="39.07" y="19.2">r</tspan><tspan x="44.5" y="19.2">ope</tspan><tspan class="cls-16" x="71.15" y="19.2">r</tspan><tspan x="77.3" y="19.2">ties </tspan><tspan x="-32.22" y="38.4">cap</tspan><tspan class="cls-1" x="-7.42" y="38.4">t</tspan><tspan x="-1.44" y="38.4">u</tspan><tspan class="cls-8" x="7.23" y="38.4">r</tspan><tspan x="12.66" y="38.4">ed if stimuli is </tspan><tspan x="-2.35" y="57.6">maintained</tspan></text>
+    <text class="cls-21" transform="translate(502.5 566.17)"><tspan x="0" y="0">Wind</tspan><tspan class="cls-6" x="35.1" y="0">o</tspan><tspan x="44.02" y="0">w of </tspan><tspan class="cls-7" x="1.46" y="19.2">ov</tspan><tspan x="17.85" y="19.2">erriding </tspan><tspan class="cls-7" x="-27.53" y="38.4">r</tspan><tspan x="-22.1" y="38.4">esponse(s) due </tspan><tspan class="cls-4" x="85.61" y="38.4">t</tspan><tspan x="91.27" y="38.4">o </tspan><tspan class="cls-14" x="-24.75" y="57.6">c</tspan><tspan class="cls-17" x="-17.31" y="57.6">onsis</tspan><tspan class="cls-5" x="19.2" y="57.6">t</tspan><tspan x="24.86" y="57.6">ent stimuli </tspan><tspan class="cls-1" x="4.19" y="76.8">e</tspan><tspan x="12.61" y="76.8">xposu</tspan><tspan class="cls-7" x="54.7" y="76.8">r</tspan><tspan x="60.13" y="76.8">e</tspan></text>
+    <text class="cls-21" transform="translate(639.6 566.17)"><tspan x="0" y="0">Wind</tspan><tspan class="cls-6" x="35.1" y="0">o</tspan><tspan x="44.02" y="0">w of </tspan><tspan class="cls-7" x="-7.03" y="19.2">r</tspan><tspan x="-1.61" y="19.2">e-eme</tspan><tspan class="cls-7" x="44.74" y="19.2">r</tspan><tspan x="50.17" y="19.2">ging </tspan><tspan x="-.04" y="38.4">p</tspan><tspan class="cls-7" x="8.89" y="38.4">r</tspan><tspan x="14.31" y="38.4">ope</tspan><tspan class="cls-16" x="40.97" y="38.4">r</tspan><tspan x="47.11" y="38.4">ties</tspan></text>
+    <text class="cls-21" transform="translate(186.25 566.17)"><tspan x="0" y="0">Wind</tspan><tspan class="cls-6" x="35.1" y="0">o</tspan><tspan x="44.02" y="0">w of </tspan><tspan x="-24.8" y="19.2">di</tspan><tspan class="cls-7" x="-12.45" y="19.2">r</tspan><tspan x="-7.02" y="19.2">ect association </tspan><tspan x="-5.22" y="38.4">and </tspan><tspan class="cls-14" x="23.16" y="38.4">c</tspan><tspan class="cls-17" x="30.6" y="38.4">oupled </tspan><tspan class="cls-7" x="-4.2" y="57.6">r</tspan><tspan x="1.22" y="57.6">esponse(s) </tspan></text>
+    <text class="cls-21" transform="translate(901.28 566.17)"><tspan x="0" y="0">Wind</tspan><tspan class="cls-6" x="35.1" y="0">o</tspan><tspan x="44.02" y="0" xml:space="preserve">w of  </tspan><tspan x="5.32" y="19.2">cap</tspan><tspan class="cls-1" x="30.12" y="19.2">t</tspan><tspan x="36.1" y="19.2">u</tspan><tspan class="cls-8" x="44.77" y="19.2">r</tspan><tspan x="50.2" y="19.2">ed </tspan><tspan x="-6.59" y="38.4">p</tspan><tspan class="cls-7" x="2.34" y="38.4">r</tspan><tspan x="7.76" y="38.4">ope</tspan><tspan class="cls-16" x="34.42" y="38.4">r</tspan><tspan x="40.56" y="38.4">ties &amp; </tspan><tspan x="-10.26" y="57.6">dis</tspan><tspan class="cls-14" x="9.65" y="57.6">c</tspan><tspan class="cls-17" x="17.09" y="57.6">onnec</tspan><tspan class="cls-5" x="60.11" y="57.6">t</tspan><tspan x="65.77" y="57.6">ed </tspan><tspan x="-6.94" y="76.8">associations</tspan></text>
+    <text class="cls-21" transform="translate(341.6 566.17)"><tspan x="0" y="0">Wind</tspan><tspan class="cls-6" x="35.1" y="0">o</tspan><tspan x="44.02" y="0">w of non </tspan><tspan class="cls-14" x="12.14" y="19.2">c</tspan><tspan class="cls-17" x="19.58" y="19.2">o-</tspan><tspan class="cls-19" x="35.75" y="19.2">e</tspan><tspan x="44.17" y="19.2">xisting </tspan><tspan class="cls-7" x="3.98" y="38.4">r</tspan><tspan x="9.4" y="38.4">esponse(s) &amp; </tspan><tspan x="11.67" y="57.6" xml:space="preserve">diminishing   </tspan><tspan x="7.79" y="76.8">associations </tspan></text>
+    <text class="cls-21" transform="translate(38.42 566.17)"><tspan x="0" y="0">Wind</tspan><tspan class="cls-6" x="35.1" y="0">o</tspan><tspan x="44.02" y="0">w of </tspan><tspan x="-34.12" y="19.2">healing and dormant </tspan><tspan x="-.04" y="38.4">p</tspan><tspan class="cls-7" x="8.89" y="38.4">r</tspan><tspan x="14.31" y="38.4">ope</tspan><tspan class="cls-16" x="40.97" y="38.4">r</tspan><tspan x="47.11" y="38.4">ties</tspan></text>
+  </g>
+  <g>
+    <text class="cls-22" transform="translate(127.89 13.34)"><tspan class="cls-20" x="0" y="0">S</tspan><tspan x="8.75" y="0">ta</tspan><tspan class="cls-4" x="22.88" y="0">t</tspan><tspan x="28.54" y="0">e </tspan><tspan x="-8.22" y="19.2">Change</tspan><tspan x="-7.54" y="38.4">[Liquid]</tspan></text>
+    <text class="cls-22" transform="translate(976.76 13.34)"><tspan class="cls-20" x="0" y="0">S</tspan><tspan x="8.75" y="0">ta</tspan><tspan class="cls-4" x="22.88" y="0">t</tspan><tspan x="28.54" y="0">e </tspan><tspan x="-8.22" y="19.2">Change</tspan><tspan x="-3.5" y="38.4">[</tspan><tspan class="cls-1" x="1.54" y="38.4">S</tspan><tspan class="cls-17" x="10.69" y="38.4">olid]</tspan></text>
+    <text class="cls-22" transform="translate(46.52 13.34)"><tspan x="0" y="0">Heat On</tspan><tspan x="-1.76" y="19.2">[</tspan><tspan class="cls-1" x="3.28" y="19.2">M</tspan><tspan x="15.71" y="19.2">elting]</tspan></text>
+    <text class="cls-22" transform="translate(688.2 13.34)"><tspan x="0" y="0">Heat Off</tspan><tspan x="-11.2" y="19.2">[</tspan><tspan class="cls-1" x="-6.16" y="19.2">S</tspan><tspan class="cls-17" x="2.99" y="19.2">olidifying]</tspan></text>
+    <text class="cls-22" transform="translate(275.64 13.34)"><tspan class="cls-3" x="0" y="0">L</tspan><tspan x="8.45" y="0">ocally Indu</tspan><tspan class="cls-13" x="81.33" y="0">c</tspan><tspan x="88.77" y="0">ed </tspan><tspan class="cls-1" x="-10.56" y="19.2">M</tspan><tspan class="cls-17" x="1.87" y="19.2">agnetic </tspan><tspan class="cls-23" x="56.37" y="19.2">S</tspan><tspan x="65.12" y="19.2">timulus</tspan><tspan x="28.82" y="38.4">Impact</tspan></text>
+    <text class="cls-22" transform="translate(472.17 13.34)"><tspan x="0" y="0">Global G</tspan><tspan class="cls-18" x="58.65" y="0">r</tspan><tspan class="cls-3" x="64.24" y="0">a</tspan><tspan class="cls-17" x="71.9" y="0">vi</tspan><tspan class="cls-2" x="83.49" y="0">t</tspan><tspan x="89.31" y="0">y</tspan><tspan class="cls-20" x="18.5" y="19.2">S</tspan><tspan x="27.26" y="19.2">timulus</tspan><tspan x="24.42" y="38.4">Impact</tspan></text>
+    <g class="cls-15">
+      <g>
+        <line class="cls-9" x1="498.04" y1="63.12" x2="502.04" y2="63.12"/>
+        <line class="cls-12" x1="509.56" y1="63.12" x2="535.88" y2="63.12"/>
+        <line class="cls-9" x1="539.64" y1="63.12" x2="543.64" y2="63.12"/>
+      </g>
+    </g>
+    <line class="cls-11" x1="306.06" y1="63.12" x2="351.66" y2="63.12"/>
+  </g>
+</svg>

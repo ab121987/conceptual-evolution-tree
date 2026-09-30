@@ -1,0 +1,3 @@
+﻿stimulus_curve_id,scenario_id,stimulus_entity_id,display_label,visual_style,description,enabled
+STC-01,closed_reference_figure12,ENT-005,Locally Induced Magnetic Stimulus Impact,solid blue,Qualitative extent of local magnetic influence through time; separate from the nine relationship curves.,yes
+STC-02,closed_reference_figure12,ENT-006,Global Gravity Stimulus Impact,dashed blue,Qualitative extent of gravity influence through time; separate from the nine relationship curves.,yes

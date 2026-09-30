@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1102.45 336.43">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-dasharray: 0 0 11.91 11.91;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-5, .cls-8, .cls-15, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2, .cls-5, .cls-9, .cls-13, .cls-14 {
+        stroke-width: 6px;
+      }
+
+      .cls-1, .cls-9, .cls-14 {
+        stroke: #231f20;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 0 0 12.23 12.23;
+      }
+
+      .cls-2, .cls-13 {
+        stroke: #f26522;
+      }
+
+      .cls-3 {
+        stroke: #00a651;
+      }
+
+      .cls-3, .cls-4, .cls-6, .cls-7 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-4, .cls-6, .cls-7, .cls-8, .cls-10, .cls-11, .cls-12 {
+        stroke-width: 3px;
+      }
+
+      .cls-4, .cls-6, .cls-7 {
+        stroke: #9e1f63;
+      }
+
+      .cls-5 {
+        stroke: #939598;
+      }
+
+      .cls-5, .cls-10 {
+        stroke-dasharray: 0 0 0 0 12 10 4 10;
+      }
+
+      .cls-16 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-6 {
+        stroke-dasharray: 0 0 0 0 3.94 9.86 11.83 9.86;
+      }
+
+      .cls-7 {
+        stroke-dasharray: 0 0 11.83 9.86;
+      }
+
+      .cls-8 {
+        stroke: #006838;
+      }
+
+      .cls-8, .cls-9 {
+        stroke-dasharray: 0 12;
+      }
+
+      .cls-15 {
+        fill: #231f20;
+        stroke: #bcbec0;
+        stroke-width: 8px;
+      }
+
+      .cls-10 {
+        stroke: #f9ed32;
+      }
+
+      .cls-17 {
+        fill: #6d6e71;
+        font-family: Effra-Regular, Effra;
+        font-size: 16px;
+      }
+
+      .cls-11 {
+        stroke: #1c75bc;
+      }
+
+      .cls-12 {
+        stroke: #ec008c;
+      }
+    </style>
+  </defs>
+  <text class="cls-17" transform="translate(4.49 325.45)"><tspan x="0" y="0">Time</tspan></text>
+  <text class="cls-17" transform="translate(13.34 158.68) rotate(-90)"><tspan x="0" y="0">Ex</tspan><tspan class="cls-16" x="16.82" y="0">t</tspan><tspan x="22.48" y="0">ent</tspan></text>
+  <line class="cls-15" x1="106.32" y1="318.68" x2="1098.45" y2="318.68"/>
+  <g>
+    <path class="cls-10" d="M1098.45,256.29h-278.84c-94.48,0-319.67-14.19-361.73-118.57"/>
+    <path class="cls-5" d="M1098.45,189.32h-278.84c-221.84,0-348.32-102.82-439.03-102.82"/>
+    <path class="cls-5" d="M1098.45,318.68c-148.6,0-186.68-129.36-277.39-129.36"/>
+    <g>
+      <path class="cls-13" d="M590.67,318.97c-2.01,0-4-.13-5.98-.37"/>
+      <path class="cls-2" d="M572.83,315.68c-74.85-27.5-128.27-218.35-188.43-218.35-84.41,0-58.41,194.65-112.37,218.75"/>
+      <path class="cls-13" d="M266.2,317.95c-1.9,.38-3.88,.58-5.96,.58"/>
+    </g>
+    <path class="cls-8" d="M1098.45,114.95c-131.03,0-196.9-101.62-278.84-101.62-125.71,0-27.59,305.63-263.7,305.63"/>
+    <path class="cls-11" d="M1098.45,4h-278.84c-145.88,0-39.84,314.97-275.53,314.97"/>
+    <path class="cls-12" d="M643.25,318.97c-144.83,0-159.57-259.29-235.58-259.29-107.22,0-94.88,259.29-159.61,259.29"/>
+    <path class="cls-9" d="M632.53,318.68c-144.83,0-157.42-232.18-248.13-232.18-107.22,0-71.61,232.46-136.34,232.46"/>
+    <path class="cls-3" d="M1098.27,50.35c-210,0-130.34,268.61-278.66,268.61"/>
+    <g>
+      <path class="cls-4" d="M1096.93,50.36c-.67,0-1.34,0-2,0"/>
+      <path class="cls-7" d="M1085.07,50.31c-5.82-.05-11.41-.14-16.76-.27"/>
+      <path class="cls-6" d="M1063.38,49.91c-165.02-4.67-106.1-44.53-236.84-45.88"/>
+      <path class="cls-4" d="M821.61,4c-.66,0-1.33,0-2,0"/>
+    </g>
+    <g>
+      <line class="cls-14" x1="1098.45" y1="266.82" x2="1092.45" y2="266.82"/>
+      <path class="cls-1" d="M1080.54,266.82h-260.93c-61.71,0-80.55,46.68-151.37,51.47"/>
+      <path class="cls-14" d="M662.3,318.59c-1.96,.06-3.96,.1-6,.1"/>
+    </g>
+    <line class="cls-15" x1="106.32" y1="318.68" x2="1098.45" y2="318.68"/>
+  </g>
+  <line class="cls-15" x1="106.32" y1="318.68" x2="106.32" y2="4"/>
+</svg>

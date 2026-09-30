@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-07-24",
+  "current_mode": "partial evidence model; not a complete national mass/energy balance",
+  "primary_backbone": [
+    "Virgin Resources",
+    "Extraction",
+    "Material Processing",
+    "Fabrication / Manufacture",
+    "Use / Consumption",
+    "End of Use"
+  ],
+  "secondary_processes": [
+    "Energy",
+    "Distribution / Transport"
+  ],
+  "supported_or_partial": [
+    {
+      "relationship": "Virgin Resources \u2192 Extraction",
+      "status": "partial_quantitative_support",
+      "evidence": "Selected ONS domestic extraction categories",
+      "gap": "imports + additional object/structure material categories"
+    },
+    {
+      "relationship": "Use / Consumption \u2192 End of Use",
+      "status": "product_specific_quantitative_support",
+      "evidence": "textiles, furniture proxy, WEEE/scrap proxy, selected dry-recycling product streams",
+      "gap": "no harmonised complete UK/year total"
+    },
+    {
+      "relationship": "End of Use \u2192 Material Processing",
+      "status": "partial_quantitative_support",
+      "evidence": "packaging recycling weak-loop example",
+      "gap": "broader product/material recovery routing"
+    }
+  ],
+  "unresolved_backbone": [
+    "Extraction \u2192 Material Processing",
+    "Material Processing \u2192 Fabrication / Manufacture",
+    "Fabrication / Manufacture \u2192 Use / Consumption"
+  ],
+  "distribution_transport": {
+    "decision": "remove from backbone; retain secondary overlay",
+    "data_status": "freight source exists; manufacturing attribution pending"
+  },
+  "energy": {
+    "data_status": "industry source exists; stage allocation pending"
+  },
+  "emissions": {
+    "data_status": "ONS SIC source exists; stage mapping pending"
+  },
+  "contextual_impacts": {
+    "land": "future quantitative candidate",
+    "habitat": "placeholder/annotation",
+    "species": "placeholder/annotation",
+    "labour_exploitation": "annotation/social layer unless metric selected"
+  },
+  "default_scope_exclusions": [
+    "Food and drink",
+    "Agriculture",
+    "Food waste",
+    "Green/garden waste",
+    "Primary food/feed biomass"
+  ],
+  "critical_rule": "Do not sum across different years/geographies/methodologies/balance_groups into a claimed total."
+}

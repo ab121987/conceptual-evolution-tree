@@ -1,0 +1,89 @@
+{
+  "title": "Material Systems Research Matrix",
+  "subtitle": "A heuristic map of digital–physical discourse and system openness in material systems research",
+  "framing": "This matrix is a heuristic and interpretive map, not a fixed taxonomy. It positions research by the degree of digital–physical discourse it establishes and the degree to which the material system is treated as closed and bounded or open and ecologically entangled. The map is intended to make visible where research clusters, where gaps remain, and how different projects frame material interaction, control, and exchange. i.e. a designerly orientation map for locating gaps, tendencies, and possible research territories.",
+  "axes": {
+    "x": {
+      "name": "Digital–physical discourse",
+      "start_label": "Low / absent discourse",
+      "end_label": "High / explicit discourse",
+      "description": "How explicitly and continuously digital systems maintain feedback, update, or coupling relationships with material behaviour."
+    },
+    "y": {
+      "name": "System openness",
+      "start_label": "Closed / bounded system",
+      "end_label": "Open / evolvable system",
+      "description": "How far the material system is treated as bounded and controllable versus open to exchange, ecological entanglement, and ongoing transformation."
+    }
+  },
+  "quadrants": {
+    "bottom_left": {
+      "title": "Closed systems with low discourse",
+      "description": "Material systems treated as bounded artefacts with little or no meaningful digital–material coupling."
+    },
+    "bottom_right": {
+      "title": "Closed systems with high discourse",
+      "description": "Material systems with strong digital–material interaction, but organised within bounded and predefined conditions to guide or control a desired output."
+    },
+    "top_left": {
+      "title": "Open systems with low discourse",
+      "description": "Systems embedded in wider contextual or ecological exchange, but with limited or no explicit digital participation."
+    },
+    "top_right": {
+      "title": "Open systems with high discourse",
+      "description": "Systems in which digital tools participate meaningfully in evolving, context-dependent, and ecologically entangled material processes."
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Does the digital system maintain explicit feedback or update relationships with the material system?",
+      "axis": "x",
+      "scale": {
+        "0": "No meaningful discourse",
+        "1": "Partial discourse",
+        "2": "Strong discourse"
+      }
+    },
+    {
+      "id": "q2",
+      "text": "Is the material system treated as bounded and controllable, or as evolving and ecologically entangled?",
+      "axis": "y",
+      "scale": {
+        "0": "Defined artefact / output",
+        "1": "Mixed",
+        "2": "Exchange-oriented"
+      }
+    },
+    {
+      "id": "q3",
+      "text": "Are the relationships between input, stimulus, and response predefined and stabilised, or expected to change over time?",
+      "axis": "x",
+      "scale": {
+        "0": "Fixed and predefined",
+        "1": "Partially adaptive",
+        "2": "Expected to evolve / be renegotiated"
+      }
+    },
+    {
+      "id": "q4",
+      "text": "Does the research focus on the designed artefact alone, or on its wider relations with context, landscape, or ecology?",
+      "axis": "y",
+      "scale": {
+        "0": "Artefact only",
+        "1": "Limited contextual relation",
+        "2": "Wider contextual / ecological exchange"
+      }
+    },
+    {
+      "id": "q5",
+      "text": "Does the system support return, decay, renewal, or replenishment, or does it primarily optimise a desired response?",
+      "axis": "y",
+      "scale": {
+        "0": "Optimisation only",
+        "1": "Partial renewal logic",
+        "2": "Explicit return / renewal / replenishment"
+      }
+    }
+  ]
+}

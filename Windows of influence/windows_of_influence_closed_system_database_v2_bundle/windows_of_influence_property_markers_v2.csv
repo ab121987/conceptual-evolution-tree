@@ -1,0 +1,15 @@
+﻿marker_id,scenario_id,property_entity_id,time_x,influence_y,relationship_curve_ids,marker_role,offset_x,offset_y,confidence,enabled,user_notes
+MK-001,closed_reference_figure12,ENT-010,28,78,CRV-01;CRV-02,early direct-response marker,0,0,medium,yes,Seeded from cleaned reference; refine visually.
+MK-002,closed_reference_figure12,ENT-012,31,86,CRV-01;CRV-04,early texture marker,0,0,medium,yes,Seeded from cleaned reference; refine visually.
+MK-003,closed_reference_figure12,ENT-011,29,60,CRV-02;CRV-03,coupled rigidity marker,0,0,medium,yes,Seeded from cleaned reference; refine visually.
+MK-004,closed_reference_figure12,ENT-013,50,51,CRV-04,residual-volume marker,0,0,medium,yes,Seeded from cleaned reference; refine visually.
+MK-005,closed_reference_figure12,ENT-014,50,26,CRV-05,indirect surface marker,0,0,low,yes,Exact property/curve relation to review.
+MK-006,closed_reference_figure12,ENT-016,71,98,CRV-06;CRV-08,late predominant / pattern marker,0,0,medium,yes,Seeded from cleaned reference; refine visually.
+MK-007,closed_reference_figure12,ENT-015,71,85,CRV-07;CRV-08,late optical marker,0,0,low,yes,Exact curve association to review.
+MK-008,closed_reference_figure12,ENT-018,96,84,CRV-07;CRV-09,captured fine-grain marker,0,0,low,yes,Final-region marker.
+MK-009,closed_reference_figure12,ENT-014,96,72,CRV-07;CRV-08,captured smooth-texture marker,0,0,low,yes,Final-region marker.
+MK-010,closed_reference_figure12,ENT-015,96,55,CRV-04;CRV-05,captured/possible opacity marker,0,0,low,yes,Final-region marker.
+MK-011,closed_reference_figure12,ENT-013,96,47,CRV-04;CRV-09,captured residual-volume marker,0,0,medium,yes,Final-region marker.
+MK-012,closed_reference_figure12,ENT-010,94,24,CRV-02;CRV-05,re-emergent/captured volume marker,0,0,medium,yes,Final-region marker.
+MK-013,closed_reference_figure12,ENT-019,98,24,CRV-05;CRV-08,rippled texture marker,0,0,low,yes,Exact relationship to review.
+MK-014,closed_reference_figure12,ENT-013,98,5,CRV-04,disconnected/diminished residual marker,0,0,low,yes,Final-region marker.

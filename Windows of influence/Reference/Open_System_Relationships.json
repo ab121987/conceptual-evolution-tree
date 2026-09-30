@@ -1,0 +1,11 @@
+{
+    "id": "magnet_to_surface_texture",
+    "source": "magnet_proximity",
+    "target": "surface_texture",
+    "state": "paused",
+    "strength": 0.4,
+    "start_time": 20,
+    "end_time": 45,
+    "memory_trace": true,
+    "can_recouple": true
+  }

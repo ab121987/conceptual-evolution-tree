@@ -1,0 +1,155 @@
+{
+  "schema_version": "4.0",
+  "mapping_id": "linear_fabrication_stage_mapping",
+  "last_updated": "2026-07-24",
+  "source_of_truth": "uk_linear_fabrication_flows_v4.csv",
+  "primary_material_backbone": [
+    "Virgin Resources",
+    "Extraction",
+    "Material Processing",
+    "Fabrication / Manufacture",
+    "Use / Consumption",
+    "End of Use"
+  ],
+  "secondary_networks": {
+    "Energy": "separate input network; quantitative values use independent energy scales",
+    "Distribution / Transport": "service overlay between stages; not a primary material-transformation node",
+    "Atmospheric Emissions": "stage outputs; independent emissions scale",
+    "Waste / Losses": "terminal/secondary material sinks",
+    "Reuse": "recovery network for direct reuse, repair or remanufacture; render as a separate node from recycling",
+    "Recycling": "recovery network for reprocessing/downcycling routes; render as a separate node from reuse",
+    "Contextual Impacts": "annotations/placeholders until defensible metrics exist"
+  },
+  "render_modes": {
+    "source_supported": {
+      "effective_value": "quantity",
+      "style": "solid primary family colour",
+      "tooltip_status": "SOURCE-SUPPORTED"
+    },
+    "derived": {
+      "effective_value": "quantity if present else estimates",
+      "style": "solid family colour + subtle derived marker/pattern",
+      "tooltip_status": "DERIVED"
+    },
+    "estimated": {
+      "effective_value": "estimates",
+      "style": "proportional width, distinct lighter tint or restrained hatch",
+      "tooltip_status": "ESTIMATE \u2014 NOT DIRECTLY MEASURED"
+    },
+    "unresolved_structural_relationship": {
+      "effective_value": null,
+      "style": "thin low-opacity/hatched structural ribbon; never imply scale",
+      "tooltip_status": "KNOWN RELATIONSHIP \u2014 QUANTITY UNRESOLVED"
+    },
+    "annotation": {
+      "effective_value": null,
+      "style": "annotation/callout only",
+      "tooltip_status": "CONCEPTUAL / CONTEXTUAL"
+    }
+  },
+  "legend_rules": {
+    "include_evidence_styles": [
+      "source-supported solid",
+      "derived subtle marker",
+      "estimated lighter or fine hatch",
+      "unresolved pale hatch"
+    ],
+    "include_outcome_colours": [
+      "reuse / repair / remanufacture = green",
+      "recycling / downcycling = green with amber pattern",
+      "export / other treatment / uncertain = amber",
+      "waste / losses / emissions / uncontrolled electrical waste = rust or dark red",
+      "unresolved = grey"
+    ]
+  },
+  "effective_value_logic": [
+    "If render_quantitative=true and quantity is numeric, use quantity.",
+    "Else if render_quantitative=true and estimates is numeric, use estimates.",
+    "Else if measurement_role=structural_required or default_visibility=structural, render an unresolved not-to-scale structural connection.",
+    "Never invent a value in rendering code."
+  ],
+  "default_visibility_logic": {
+    "primary": "show by default",
+    "secondary": "show by default but visually subordinate",
+    "drilldown": "do not add to default overview geometry; reveal on hover/click/expand",
+    "evidence_only": "metadata/audit only unless explicitly requested",
+    "structural": "show as unresolved low-opacity connection if no quantified stream covers the relation",
+    "annotation": "annotation layer only"
+  },
+  "double_counting_rules": [
+    "Do not add overlapping balance_group streams into one total.",
+    "Packaging overlaps plastic/glass/wood/metal material families: show packaging as a secondary overlay or drilldown, not additive mass.",
+    "Cement/concrete/mineral-product drilldowns can overlap aggregate inputs.",
+    "Sector-specific emissions/energy drilldowns must not be added on top of overview stage estimates if the overview already includes those sectors.",
+    "Different units never share one numerical thickness scale."
+  ],
+  "node_geometry": {
+    "shape": "rounded vertical rectangle",
+    "connection_faces": [
+      "left",
+      "right"
+    ],
+    "height": "geometric envelope from top of uppermost attached ribbon to bottom of lowermost attached ribbon for every node type, including Energy, recovery nodes and terminal sinks",
+    "width": "narrow and consistent, sufficient to visually contain flat ribbon ends",
+    "entry_exit": "long horizontal tangents before large-radius curves",
+    "loops": "large-radius routed curves with no kinks"
+  },
+  "terminal_sinks": {
+    "style": "low-opacity colour zone + hatch overlay + expanded invisible hover target",
+    "examples": [
+      "Landfill",
+      "Landfill / Incineration",
+      "Waste / Losses",
+      "Other Treatment / Losses",
+      "Export / Other Treatment"
+    ]
+  },
+  "recovery_node_rules": {
+    "principle": "End-of-use recovery should be split visually into direct reuse/repair/remanufacture and recycling/downcycling where the CSV relationship supports the distinction.",
+    "reuse_node": {
+      "id": "limited_reuse",
+      "label": "Re Use",
+      "match_targets": [
+        "Reuse"
+      ],
+      "match_terms": [
+        "reuse_flow",
+        "reuse",
+        "repair",
+        "remanufacture"
+      ],
+      "layout": "place in line with and below the Use / Consumption node; render as a positive green recovery node fed by End of Use"
+    },
+    "recycling_node": {
+      "id": "limited_recycling",
+      "label": "Recycling",
+      "match_targets": [
+        "Material Processing",
+        "Reuse / Recycling"
+      ],
+      "match_terms": [
+        "recycling",
+        "downcycling",
+        "recovery",
+        "recovered",
+        "collected"
+      ],
+      "layout": "place in line with and below the Material Processing node; render as a positive green recovery node fed by End of Use"
+    },
+    "terminal_sink_layout": "Landfill, incineration, export/other treatment, other/uncaptured electrical and electronic waste, waste/losses, atmospheric emissions and material movement service should sit to the right of End of Use, using solid white nodes with black borders. Use semantic vertical slots with enough spacing for wrapped labels rather than a uniform auto-stack so Waste / Losses, Atmospheric Emissions and Material Movement Service cannot overlap. Atmospheric Emissions should sit in the lower terminal stack around the former Landfill / Incineration position to reduce ribbon crossings. Labels should sit underneath their relevant nodes and be centre aligned. End-of-use terminal ribbons should flow outward into those sinks and should not use spiral loop geometry.",
+    "inspector_layout": "The Sankey inspector should sit above the SVG as a long, shallow, fixed-height, scrollable strip. Its size must not change on hover/click because resizing the inspector moves the Sankey diagram and makes interaction feel unstable.",
+    "backbone_spacing": "To preserve right-side space for End of Use outputs, the primary backbone may progressively compact left from Extraction onward while Energy and Virgin Resources remain aligned with the Linear Fabrication Flows title start.",
+    "combined_or_ambiguous_recovery": "Do not invent a reuse/recycling split. If a CSV row combines reuse and recycling without a measured split, route it to the closest supported recovery node and expose the ambiguity in the popout/source notes."
+  },
+  "scope": {
+    "focus": "designed/manufactured objects, products, materials and structures",
+    "excluded_by_default": [
+      "food",
+      "agricultural produce",
+      "food waste",
+      "green/garden waste",
+      "primary food/feed biomass",
+      "sewage/sludge"
+    ]
+  }
+}

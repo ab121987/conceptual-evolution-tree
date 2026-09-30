@@ -1,0 +1,32 @@
+{
+  "tree": {
+    "node_id_field": "ID Number",
+    "node_label_field": "Combined ID Number + Project",
+    "parent_field": "Parent Project ID",
+    "slug_field": "Webpage slug"
+  },
+  "visual_encoding": {
+    "node_colour": "Scaffold Type Sectors",
+    "node_outline": "Artefact Type",
+    "node_size": "State",
+    "branch_label": "Mutation",
+    "sector_field": "Scaffold Type Sectors",
+    "scale_field": "Scale of Interaction"
+  },
+  "hover_fields": [
+    "Combined ID Number + Project",
+    "Mutation",
+    "Scaffold Type Sectors",
+    "Scale of Interaction",
+    "State",
+    "What it helped me think",
+    "What question it opened",
+    "Possible future mutation",
+    "Possible mutation note"
+  ],
+  "filters": [
+    "Scaffold Type Sectors",
+    "Scale of Interaction",
+    "State"
+  ]
+}

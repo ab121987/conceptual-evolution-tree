@@ -1,0 +1,51 @@
+{
+  "schema_version": "3.0",
+  "dataset": "uk_linear_fabrication_flows_v3.csv",
+  "primary_material_backbone": [
+    "Virgin Resources",
+    "Extraction",
+    "Material Processing",
+    "Fabrication / Manufacture",
+    "Use / Consumption",
+    "End of Use"
+  ],
+  "secondary_processes": [
+    "Energy",
+    "Distribution / Transport",
+    "Atmospheric Emissions",
+    "Other Treatment / Export",
+    "Other Treatment / Losses"
+  ],
+  "value_selection_logic": {
+    "priority": [
+      "quantity",
+      "estimates",
+      "unresolved"
+    ],
+    "quantity": "Measured/reported/derived source-supported value.",
+    "estimates": "Designer estimate with explicit methodology and associated_sources.",
+    "unresolved": "Relationship may remain visible at low opacity without implying a magnitude."
+  },
+  "estimate_visual_logic": {
+    "source_supported": "solid primary family colour",
+    "derived_source_supported": "family colour plus subtle hatch or marker",
+    "designer_estimate": "distinct estimate tint/pattern; still width-proportional to estimates",
+    "unresolved": "low-opacity structural connector"
+  },
+  "estimate_rules": [
+    "Never replace a populated quantity with an estimate.",
+    "Use estimates only in the same unit declared by the row.",
+    "Do not sum incompatible unit families.",
+    "Show associated_sources and methodology_note in hover/popouts.",
+    "Estimates may use MIT global ratios only when scaled by a documented UK anchor.",
+    "Estimated values do not automatically contribute to formal stage balance."
+  ],
+  "scope_exclusions": [
+    "Food and drink",
+    "Agricultural produce",
+    "Food waste",
+    "Green/garden waste",
+    "Primary food/feed biomass",
+    "Sewage/sludge"
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": "4.0",
+  "last_reviewed": "2026-07-24",
+  "scope": "UK/GB evidence relevant to designed/manufactured objects, materials and structures; food/agriculture excluded by default.",
+  "sources": [
+    {
+      "source_id": "BGS_MINERALS_2025",
+      "publisher_or_title": "British Geological Survey \u2014 MineralsUK",
+      "use_for": "UK mineral extraction 2024",
+      "url": "https://www.bgs.ac.uk/mineralsuk/statistics/uk/",
+      "update_mode": "annual_dataset_discovery"
+    },
+    {
+      "source_id": "MPA_PROFILE_2025",
+      "publisher_or_title": "Mineral Products Association \u2014 Profile 2025",
+      "use_for": "Aggregates, recycled aggregates, cement, ready-mix, asphalt",
+      "url": "https://mineralproducts.org/MPA/media/root/Publications/2025/Profile_of_the_UK_Mineral_Products_Industry_2025.pdf",
+      "update_mode": "annual_or_periodic_report"
+    },
+    {
+      "source_id": "DBT_BUILDING_MATERIALS_2026",
+      "publisher_or_title": "Department for Business and Trade \u2014 Building Materials Statistics",
+      "use_for": "Cement/clinker, bricks and construction products",
+      "url": "https://www.gov.uk/government/statistics/building-materials-and-components-statistics-march-2026/construction-building-materials-commentary-march-2026",
+      "update_mode": "scheduled_annual_dataset"
+    },
+    {
+      "source_id": "UK_STEEL_STRATEGY_2026",
+      "publisher_or_title": "UK Steel Strategy / Primary Steelmaking Review",
+      "use_for": "Steel production, demand context and scrap",
+      "url": "https://www.gov.uk/government/publications/steel-strategy/the-uk-steel-strategy-web-version",
+      "update_mode": "periodic_strategy_data"
+    },
+    {
+      "source_id": "UK_STEEL_DEMAND_2026",
+      "publisher_or_title": "UK Steel Strategy Demand Assessment",
+      "use_for": "Finished steel demand",
+      "url": "https://assets.publishing.service.gov.uk/media/69afe1ee917847c0a4c89a28/uk-steel-strategy-demand-assessment-2025-executive-summary.pdf",
+      "update_mode": "periodic_report"
+    },
+    {
+      "source_id": "WORLDSTEEL_2026",
+      "publisher_or_title": "World Steel Association",
+      "use_for": "Global steel energy/emissions intensities and comparative data",
+      "url": "https://worldsteel.org/data/world-steel-in-figures/world-steel-in-figures-2026/",
+      "update_mode": "annual_report"
+    },
+    {
+      "source_id": "FORESTRY_STATS_2025",
+      "publisher_or_title": "Forest Research \u2014 Forestry Statistics",
+      "use_for": "UK-grown roundwood and wood processing",
+      "url": "https://www.forestresearch.gov.uk/tools-and-resources/statistics/publications/forestry-statistics/forestry-statistics-2025/2025-2-uk-grown-timber/",
+      "update_mode": "annual_dataset"
+    },
+    {
+      "source_id": "DESNZ_GLASS_ELECTRIFICATION",
+      "publisher_or_title": "DESNZ industrial electrification / glass sector evidence",
+      "use_for": "Glass production, energy and emissions",
+      "url": "https://assets.publishing.service.gov.uk/media/67295df0541e1dfbf71e8b50/future-opportunities-for-electrification-to-decarbonise-uk-industry.pdf",
+      "update_mode": "static_research_snapshot"
+    },
+    {
+      "source_id": "DEFRA_GLASS_RESOURCE_EFFICIENCY",
+      "publisher_or_title": "Defra resource efficiency \u2014 glass",
+      "use_for": "Flat glass end-of-life pathways",
+      "url": "https://assets.publishing.service.gov.uk/media/6620f15777a30aa0c4757dc0/unlocking-resource-efficiency-phase-2-glass-report.pdf",
+      "update_mode": "static_research_snapshot"
+    },
+    {
+      "source_id": "WRAP_PLASTICS_2019",
+      "publisher_or_title": "WRAP Plastics Market Situation Report",
+      "use_for": "Plastic waste arisings and packaging/non-packaging shares",
+      "url": "https://www.wrap.ngo/resources/market-situation-reports/plastics-2019",
+      "update_mode": "periodic_report"
+    },
+    {
+      "source_id": "DEFRA_UK_WASTE_2025",
+      "publisher_or_title": "Defra UK statistics on waste",
+      "use_for": "Packaging, C&D, industrial/commercial waste",
+      "url": "https://www.gov.uk/government/statistics/uk-waste-data/uk-statistics-on-waste",
+      "update_mode": "annual_dataset_discovery"
+    },
+    {
+      "source_id": "WRAP_TEXTILES_2024",
+      "publisher_or_title": "WRAP Textiles Market Situation Report",
+      "use_for": "Textile consumption and end-of-use",
+      "url": "https://www.wrap.ngo/resources/report/textiles-market-situation-report-2024",
+      "update_mode": "periodic_report"
+    },
+    {
+      "source_id": "UK_PARLIAMENT_WEEE",
+      "publisher_or_title": "UK Parliament Environmental Audit Committee",
+      "use_for": "WEEE collection/unmanaged routes evidence",
+      "url": "https://publications.parliament.uk/pa/cm5801/cmselect/cmenvaud/220/22010.htm",
+      "update_mode": "static_research_snapshot"
+    },
+    {
+      "source_id": "EA_WEEE",
+      "publisher_or_title": "Environment Agency WEEE dataset",
+      "use_for": "Quarterly EEE/WEEE statistics",
+      "url": "https://www.gov.uk/government/statistical-data-sets/waste-electrical-and-electronic-equipment-weee-in-the-uk",
+      "update_mode": "scheduled_download_and_transform"
+    },
+    {
+      "source_id": "DEFRA_ELV_2018",
+      "publisher_or_title": "UK End-of-Life Vehicle statistics",
+      "use_for": "ELV reuse/recycling flows",
+      "url": "https://assets.publishing.service.gov.uk/media/5fe1e48bd3bf7f089f999887/elv-waste-statistics-2018.ods",
+      "update_mode": "periodic_dataset"
+    },
+    {
+      "source_id": "DESNZ_ECUK_2025",
+      "publisher_or_title": "DESNZ Energy Consumption in the UK",
+      "use_for": "Industry energy total and fuel mix",
+      "url": "https://www.gov.uk/government/statistics/energy-consumption-in-the-uk-2025/energy-consumption-in-the-uk-ecuk-2025",
+      "update_mode": "annual_dataset_discovery"
+    },
+    {
+      "source_id": "ONS_GHG_2024",
+      "publisher_or_title": "ONS GHG provisional estimates",
+      "use_for": "Manufacturing GHG anchor total",
+      "url": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/greenhousegasintensityprovisionalestimatesuk/2024",
+      "update_mode": "annual_dataset_discovery"
+    },
+    {
+      "source_id": "DFT_FREIGHT_2024",
+      "publisher_or_title": "DfT Freight Statistics",
+      "use_for": "Domestic freight activity",
+      "url": "https://www.gov.uk/government/statistics/transport-statistics-great-britain-2025/transport-statistics-great-britain-2024-freight",
+      "update_mode": "annual_dataset_discovery"
+    },
+    {
+      "source_id": "DFT_TRANSPORT_GHG_2024",
+      "publisher_or_title": "DfT Transport & Environment",
+      "use_for": "HGV and transport emissions",
+      "url": "https://www.gov.uk/government/statistics/transport-and-environment-statistics-2024--2/greenhouse-gas-emissions-from-transport-in-2024",
+      "update_mode": "annual_dataset_discovery"
+    }
+  ],
+  "estimate_policy": {
+    "allow_external_ratios": true,
+    "allow_MIT_relational_scaling": true,
+    "require_formula_in_methodology_note": true,
+    "require_associated_sources": true,
+    "require_estimate_visual_distinction": true
+  }
+}

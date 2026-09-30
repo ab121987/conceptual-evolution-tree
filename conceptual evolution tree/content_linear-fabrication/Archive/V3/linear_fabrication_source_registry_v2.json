@@ -1,0 +1,109 @@
+{
+  "schema_version": "2.0",
+  "last_reviewed": "2026-07-24",
+  "scope": "UK/England evidence relevant to manufactured objects/products/structures; food/agriculture excluded by default.",
+  "sources": [
+    {
+      "source_id": "ONS_MFA_2025",
+      "title": "ONS Material flow accounts",
+      "url": "https://www.ons.gov.uk/economy/environmentalaccounts/datasets/ukenvironmentalaccountsmaterialflowsaccountunitedkingdom/current",
+      "use_for": [
+        "domestic extraction",
+        "imports",
+        "material inputs"
+      ],
+      "update_mode": "annual_dataset_discovery",
+      "automation_candidate": true
+    },
+    {
+      "source_id": "DEFRA_UK_WASTE_2025",
+      "title": "Defra UK statistics on waste",
+      "url": "https://www.gov.uk/government/statistics/uk-waste-data/uk-statistics-on-waste",
+      "use_for": [
+        "packaging",
+        "C&D evidence",
+        "waste treatment"
+      ],
+      "update_mode": "annual_dataset_discovery",
+      "automation_candidate": true
+    },
+    {
+      "source_id": "DEFRA_LA_WASTE_2024",
+      "title": "Defra Local authority collected waste management 2024/25",
+      "url": "https://www.gov.uk/government/statistics/local-authority-collected-waste-management-annual-results/local-authority-collected-waste-management-annual-results-202425",
+      "use_for": [
+        "WEEE proxy",
+        "textiles collection",
+        "other dry recycling"
+      ],
+      "update_mode": "annual_dataset_discovery",
+      "automation_candidate": true
+    },
+    {
+      "source_id": "WRAP_TEXTILES_2024",
+      "title": "WRAP Textiles Market Situation Report 2024",
+      "url": "https://www.wrap.ngo/resources/report/textiles-market-situation-report-2024",
+      "use_for": [
+        "used textiles generation",
+        "textile case study"
+      ],
+      "update_mode": "periodic_report_discovery",
+      "automation_candidate": false
+    },
+    {
+      "source_id": "DEFRA_WASTE_PREVENTION_2023",
+      "title": "Waste Prevention Programme for England",
+      "url": "https://www.gov.uk/government/publications/waste-prevention-programme-for-england-maximising-resources-minimising-waste/the-waste-prevention-programme-for-england-maximising-resources-minimising-waste",
+      "use_for": [
+        "furniture historical proxy",
+        "product-sector evidence"
+      ],
+      "update_mode": "static_research_snapshot",
+      "automation_candidate": false
+    },
+    {
+      "source_id": "EA_WEEE",
+      "title": "Environment Agency WEEE in the UK",
+      "url": "https://www.gov.uk/government/statistical-data-sets/waste-electrical-and-electronic-equipment-weee-in-the-uk",
+      "use_for": [
+        "UK WEEE collected",
+        "EEE placed on market"
+      ],
+      "update_mode": "scheduled_download_and_transform",
+      "automation_candidate": true
+    },
+    {
+      "source_id": "DESNZ_ECUK_2025",
+      "title": "DESNZ Energy Consumption in the UK 2025",
+      "url": "https://www.gov.uk/government/statistics/energy-consumption-in-the-uk-2025/energy-consumption-in-the-uk-ecuk-2025",
+      "use_for": [
+        "energy by sector/fuel",
+        "future stage allocation"
+      ],
+      "update_mode": "annual_dataset_discovery",
+      "automation_candidate": true
+    },
+    {
+      "source_id": "DFT_FREIGHT_2024",
+      "title": "DfT Transport Statistics Great Britain: 2024 Freight",
+      "url": "https://www.gov.uk/government/statistics/transport-statistics-great-britain-2025/transport-statistics-great-britain-2024-freight",
+      "use_for": [
+        "Distribution/Transport overlay",
+        "freight activity"
+      ],
+      "update_mode": "annual_dataset_discovery",
+      "automation_candidate": true
+    },
+    {
+      "source_id": "ONS_GHG_INDUSTRY_2026",
+      "title": "ONS Atmospheric emissions: greenhouse gases by industry and gas",
+      "url": "https://www.ons.gov.uk/economy/environmentalaccounts/datasets/ukenvironmentalaccountsatmosphericemissionsgreenhousegasemissionsbyeconomicsectorandgasunitedkingdom/current",
+      "use_for": [
+        "CO2/CO2e stage outputs",
+        "SIC-stage mapping"
+      ],
+      "update_mode": "annual_dataset_discovery",
+      "automation_candidate": true
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+    "title": "Linear Fabrication Annotations",
+    "note": "Interpretive framing only; not quantitative claims.",
+    "annotations": [
+      {
+        "id": "a1",
+        "anchor": "extraction",
+        "label": "MATTER AS RESOURCE",
+        "text": "Matter enters the system primarily as something to be extracted, standardised and made available for production.",
+        "priority": "high"
+      },
+      {
+        "id": "a2",
+        "anchor": "fabrication",
+        "label": "FORM IMPOSED",
+        "text": "Fabrication commonly fixes matter into predetermined forms rather than allowing form to emerge through ongoing material\u2013environment interaction.",
+        "priority": "high"
+      },
+      {
+        "id": "a3",
+        "anchor": "fabrication",
+        "label": "DISCOURSE REMOVED",
+        "text": "Once fabricated, materials are often expected to remain stable and passive; their capacity to respond, negotiate or adapt is largely excluded from the design process.",
+        "priority": "high"
+      },
+      {
+        "id": "a4",
+        "anchor": "use",
+        "label": "FIXED LIFE EXPECTANCY",
+        "text": "Products move through prescribed use phases and are often replaced when damaged, obsolete, unfashionable or economically inconvenient to repair.",
+        "priority": "medium"
+      },
+      {
+        "id": "a5",
+        "anchor": "end_of_use",
+        "label": "DEAD-END FLOWS",
+        "text": "Many outputs cannot re-enter equivalent material cycles and terminate as landfill, incineration, displaced waste or lower-value recovery.",
+        "priority": "high"
+      },
+      {
+        "id": "a6",
+        "anchor": "limited_recycling",
+        "label": "WEAK CLOSURE",
+        "text": "Some loops exist, but they are partial and often depend on downcycling, energy-intensive recovery or infrastructure that is not universally available.",
+        "priority": "medium"
+      },
+      {
+        "id": "a7",
+        "anchor": "resource_depletion",
+        "label": "EXTERNALISED CONSEQUENCES",
+        "text": "Resource depletion, habitat loss, toxicity, pollution and carbon release occur beyond the apparent boundary of the manufactured object.",
+        "priority": "high"
+      }
+    ]
+  }
